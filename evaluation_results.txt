@@ -1,0 +1,2280 @@
+REF : NỬA VÒNG TRÁI ĐẤT HƠN BẢY NĂM
+PRED: NỮA VÒNG TRÁI ĐẤT HƠNG BẢY NĂM
+----------------------------------------
+REF : BỐN CHIẾC TRỐNG ĐẠI PHÈNG LA
+PRED: BỘN CHỾC TRONG ĐẠI PHÀN LAA
+----------------------------------------
+REF : CỦA NHỮNG THẾ LỰC HÙNG MẠNH
+PRED: VỦA NHỮNG TH�ÁI LẀ KHÙNG MÀNH
+----------------------------------------
+REF : ÔNG NHẶT NÓ LÊN
+PRED: �NG NHẶT NÓ LÊN
+----------------------------------------
+REF : THẾ NHƯNG KHI GIÁ PHÔI THÉP THẾ GIỚI CAO DẦN
+PRED: THẂ NHƯNG KHI GIÁ PHÔI THÉP THẾ GIỚI CAO DẦNG
+----------------------------------------
+REF : TÊN GỌI TẠI ĐỊA PHƯƠNG LÀ TRẮC THỐI
+PRED: TÊN GỒI TàI ĐỊỆP PHƯƠNG LÀ C�ÁC THỐI
+----------------------------------------
+REF : DOANH NGHIỆP TUYỂN DỤNG LAO ĐỘNG NƯỚC NGOÀI
+PRED: DANH NGHIỆP TIỆNH DÙNG LAO ĐỘNG N�ẚC NGOÀI
+----------------------------------------
+REF : TỨC KHẮC ẬP VỀ KÉO MỌI NGƯỜI THỨ TRỞ LẠI THỜI HOANG SƠ
+PRED: T�ÍC KHÁC �ẢP VỜ KÉ MỌI NGƯỜI THỨ TRỞ LẠI THỜI HOAN SƠN
+----------------------------------------
+REF : MỚI ĐÂY NHẤT LÀ CÁC TIỂU VƯƠNG QUỐC Ả RẬP THỐNG NHẤT
+PRED: MỚI ĐÂY NHẤT LÀ CÁC TIỂU VƊN QUẤT� RẬP THỐNG NHẤT
+----------------------------------------
+REF : LẦN LỮA MÃI MỚI GẶP ĐƯỢC TUYÊN
+PRED: L�ẦN NỮA MẠI MỚI GẌP ĐƯỢC TIÊN
+----------------------------------------
+REF : TÔI NGHĨ THỦ TƯỚNG SẼ KHÔNG NÉ TRÁNH BẤT CỨ CÂU HỎI NÀO
+PRED: TÔI NGHỊ PHỤ TƯỚNG SẼ KHÔNG NÉ TRÁNH BẤT KỨA CÂU HỌI NÀ
+----------------------------------------
+REF : CHƯA RỤC RỊCH GÌ
+PRED: CH�ƯA RỤT RỊCH ĐỌ
+----------------------------------------
+REF : NGỒI CHỒM CHỒM CÁCH CHỈ MẤY MÉT
+PRED: NGỒI TRỒN TRỒN CÁCH CHỊ MAYY MÉT
+----------------------------------------
+REF : RA HIỆU CHO TÔI IM LẶNG
+PRED: L HIIỀU CHO TÔI DIÊM LẰNG
+----------------------------------------
+REF : HÃY TƯỞNG TƯỢNG RẰNG BẠN LÀ LÀ GIÁM ĐỐC DỰ ÁN TRONG MỘT CÔNG TY LỚN
+PRED: HẢY T�ỪNG TỜNG RẰNG BÀN LÀ GI�ÁM Đ�ÓC DỀ LÉN TRONG MỘT CONÔNG TI LỾN
+----------------------------------------
+REF : MÀ MƯỜNG TƯỢNG RA HÌNH BÓNG MẸ
+PRED: MÀ MƯỪNG TƯỜNG RA HÌNH BÓNG MÀY
+----------------------------------------
+REF : NHỮNG NGƯỜI SỐNG THÌ THA THẨN TRONG NHÀ NGOÀI NGÕ
+PRED: NHỮNG NGƯỜI S�NG THÌ THÁ PHẪN TRONG NHÀ NGOÀI NGỎ
+----------------------------------------
+REF : NHƯNG MỨC ÁN TỬ HÌNH ĐỐI VỚI CÁC BỊ CÁO LÀ TƯƠNG XỨNG
+PRED: NHƯNG MỚT KH ÁNG TỬ HÀNH ĐỔI VỚI CÁC VÌ CAÁO LÀ TƯN GIÍN
+----------------------------------------
+REF : CẢ KHÔNG GIAN NHUỐM MÀU TRO BẾP
+PRED: THẢI KHÔNG GIAN NHÚNG MÀU TRO BIẾP
+----------------------------------------
+REF : CHẬM NẮM BẮT XU HƯỚNG PHÁT TRIỂN CÔNG NGHỆ MỚI
+PRED: TRẲM NĂM BẮT S HƯỚNG PHÁT KIỆN CÔ NGHỀ MỚI
+----------------------------------------
+REF : MỖI NGƯỜI MỘT SỐ PHẬN EM À
+PRED: MỖI NGƯỜI MỘT SỐT VẀN N EM M
+----------------------------------------
+REF : LẠI QUAY RA TẬP VIẾT BÁO RỒI GỬI VU VƠ
+PRED: THẠI QUAY RA TỌC VIẾT BÁO RỒI NGƯỜI V VÊN
+----------------------------------------
+REF : LÀM HỎNG CÁC THIẾT BỊ CỦA TÊN LỬA
+PRED: LÀM HỌNG CÁC THIẾT BỌ CỦA T�N LỮA
+----------------------------------------
+REF : MÀ CÒN BỊ NHỮNG BỘ MẶT LẠNH TE KIA HOẠNH HỌE
+PRED: VÀ CÒN BỊ NHỮNG BỒN MẶT LÀNH T�AY YIA HOÀNH HOÀY
+----------------------------------------
+REF : NHƯNG MÙI HÔI VẪN XỘC VÀO TẬN ÓC
+PRED: NHƯNG MộI HÔI VẪN SỌC VÀO TẰNGÓC
+----------------------------------------
+REF : CHỊ HAI CHỦ QUÁN NGHE BÀN TÁN RÔM RẢ CŨNG RA GÓP CHUYỆN
+PRED: CHỊ HAI CHỤ QUÁN NGE BÀN TÁN RÒNG RẢ CŨNG RA GÓP CHYỆN
+----------------------------------------
+REF : TRÔNG MỘT CÔ NÀNG ĐỔ NGƯỜI LÊN LƯNG ANH NGƯỜI YÊU GẦY CÒM
+PRED: CONG MỘT CÔ NÀNG ĐỘA NGƯỜI LÊN LƊN ANH NGƯỜI YÊU LỀY CỒM
+----------------------------------------
+REF : NGUYÊN THỨ TRƯỞNG MAI VĂN DÂU ĐÃ BỊ BẮT
+PRED: NGYÊN THỨ TRƯỢNG MA VĂN DÂU ĐÃ BÌ B�ÁT
+----------------------------------------
+REF : CỘNG ĐỒNG NGƯỜI MÊ TOÁN HỌC TRÊN TOÀN THẾ GIỚI
+PRED: CỒNG ĐỒNG NGƯỜI MAYY TÁN HỌC TR�H TOÀN THẾ GIỾI
+----------------------------------------
+REF : NHỎ ĐƯA TAY RA CÀO HẾT BÙN KHÔ TRÊN CỔ TỚ
+PRED: NHỎ ĐƯA T�AY RA CÀO HẾT BÙNG KHÔ TRÊN CỘ TỾN
+----------------------------------------
+REF : KHI CÔ THỂ HIỆN KHÔNG MẤY THÀNH CÔNG Ở LỄ KHAI MẠC
+PRED: KHI CÔ THỂ HIỆN KHÔNG MẤY THÀNH CÔNG Ở LỀI THAYI MÀ
+----------------------------------------
+REF : ĐANG LÀM VIỆC KHÔNG NGỪNG NGHỈ
+PRED: ĐANG LÀM VIỆC KHÔNG NGỪNG NGHỊ
+----------------------------------------
+REF : THU HÚT RẤT LÀ NHIỀU LOÀI CHIM
+PRED: THÔ HỐC R�ÁT LÀ NHIỀU LÀI CH�M
+----------------------------------------
+REF : MỘT CÚ NGOẶT KHÔNG CHÍNH XÁC
+PRED: MỘT CUỐ NGOẰT KHÔNG CHÍNH SÁC
+----------------------------------------
+REF : THU CHẠM NGÕ RẤT HIỀN
+PRED: THÔ TRẲM NGỎ RẤT HIỀN
+----------------------------------------
+REF : BỌN BUÔN LẬU MA TÚY VÀ VŨ KHÍ
+PRED: BỒN BUÔN LẒU MÁ TÍ VÀ BỘC KHÍ
+----------------------------------------
+REF : NGHE TIẾNG XÌNH XỊCH XA XA THÌ ĐOÁN TRÚNG PHÓC LÀ HÚT HẦM CẦU
+PRED: NE TIỂN SÌNH SẼCH S X THÌ ĐÁN T�ÚNG PHÁC LÀ HỐNG HẰM CẦU
+----------------------------------------
+REF : THỜI HẠN SỬ DỤNG VÀ LOẠI SẢN PHẨM BỘT
+PRED: THỜI HÀNG SỰ DÙNG VÀ LàI SẢN PHẢM BỘT
+----------------------------------------
+REF : TRÁN GIÔ
+PRED: CẢN DỜ
+----------------------------------------
+REF : LÀM ĐƯỜNG DÂY ĐỂ NỐI CÁC MẢNH ĐỜI
+PRED: TH�ÀM ĐƯỜNG GIÂY ĐỂ N�ÓI CÁC MẠNH ĐỜI
+----------------------------------------
+REF : HỌ THÍCH NGHI VỚI VĂN HÓA CÔNG TY NHƯ THẾ NÀO
+PRED: HẢ THÍN ĐI VỜI VANH HÞ CÔNG TI NHƯ THỈ NÀO
+----------------------------------------
+REF : CUỐI CÙNG HỌ DẪN NHAU VỀ NHÀ VỚI THÚNG LÀN KHÔNG
+PRED: VỔI CÙNG HỎ GIẂN NHAU VÀ NHÀO VỔI TH�NG LÀ THÔN
+----------------------------------------
+REF : NGHĨA LÀ NẾU BẠN ĐANG LÀM VIỆC DƯỚI QUYỀN MỘT GIÁM SÁT VIÊN
+PRED: NHỮ LÀ NỂ BẢ Đ�GÀNG VIỆC SỂ QUỀ M�ỢT SỘNG SÁ VIN
+----------------------------------------
+REF : CŨNG ĐỀU TRONG TƯ THẾ NGÕ NHỎ PHỐ NHỎ PHỞ TÔI Ở ĐÓ
+PRED: CŨNG ĐỜU TRONG TƯ THÊ N�O PHỐ PHỐI NHỎ PHỢ TÔI Ở ĐÃ
+----------------------------------------
+REF : MÂM CƠM VẪN THANH ĐẠM TỦ ÁO CỦA VỢ CŨNG CHỈ VÀI BỘ ĐƠN SƠ
+PRED: BÂM CƠM VẢNH THAY BẠN CỦ�O CỒA VẢ CŨNG CHỈ VỀY VỘ ĐƠA SƠ
+----------------------------------------
+REF : THẬT RA THÌ CŨNG KHÔNG THỂ LÀM CẦU KÌ NHƯ Ở NHÀ ĐƯỢC
+PRED: THÁ RAÁ THÌ CỦ KHÔNG THỂ LÀ CỜU KỌ NHữ Ở NHà Đ�ỢC
+----------------------------------------
+REF : BẮT ĐẦU CUỘC CHẠY ĐUA MÙA KINH DOANH TẾT GIỮA BÁNH NỘI VÀ BÁNH NGOẠI
+PRED: BÁT ĐẦU CUỘC TRẢI ĐÔN MỒC K DÊN TẾ S� BẢNH ĐỔ VỢ BẢN HOẠ
+----------------------------------------
+REF : HÌNH THỨC KỶ LUẬT NÀO CŨNG CHỈ CÓ TÍNH ĐỊNH HƯỚNG RĂN ĐE
+PRED: THÌ THẾT KIỂ RỌN NÀO CỨNG CHỊA CỞ TIỊN ĐỆN HƯƠNG RANH B
+----------------------------------------
+REF : PHIM MỚI CỦA TRƯƠNG NGHỆ MƯU SỰ TRỞ LẠI DÒNG PHIM NGHỆ THUẬT
+PRED: THHI MỚI CỒI TRƠN NẠ MƯƠ SỰ TRỞ LẠI SÒNG PH N�Ã THỬT
+----------------------------------------
+REF : CÂU CHUYỆN CỦA QUÁ KHỨ ÔNG KỂ KHÔNG BIẾT BAO NHIÊU LẦN
+PRED: CÔU TRÀN CỘ K� H ÔNG KẢ KHỔU BIẾ BA NHƯ LÀM
+----------------------------------------
+REF : SÁNG CHÚNG TÔI TẠM BIỆT THUNG NAI VÀ NHỮNG CHỦ NHÂN MẾN KHÁCH MỘC MẠC
+PRED: THẢN�ỠNG TÔI TẢM ĐỆT THÔNG N VÀI NHỮNG TRỤNG NHANN BỊN KHÁI TỤT NGOÀ
+----------------------------------------
+REF : TRÊN THỰC TẾ MỘT CUỘC ĐIỀU TRA ĐÃ ĐƯỢC TIẾN HÀNH
+PRED: CÊN THƯỢC TIỂ MỘT CUỢC ĐỀU TRA Đ�Ã ĐỢC TIỊM HÀN
+----------------------------------------
+REF : ÔNG ĂN CHAY MÀ NGHĨ MẶN THÌ ĂN CHAY LÀM CHI
+PRED: ÔNGANH TRÂ MÀ N MẠNH TH ANH TH� LÀM CH
+----------------------------------------
+REF : TRÊN CƠ SỞ ĐÓ NHỮNG HÀNH VI VI PHẠM SẼ ĐƯỢC XỬ LÝ NGHIÊM
+PRED: CÊN CƠ SỢ BỎ NHỨNG THAY VI VI PHẢ SẼ ĐỜC SỰ LỂ NHÊM
+----------------------------------------
+REF : NẰM TRÊN GIƯỜNG GẦN CẢ THÁNG BẤT GIÁC TÔI CẢM THẤY MÌNH THẬT CÔ ĐỘC
+PRED: NÀM TRÊN GIƯỜNG GÀN CẢẢN BÓ TRỜ TỚI CẢM THỂ MÌN THỰ CÔ ĐỘC
+----------------------------------------
+REF : CÒN HÀNG TRĂM CHIẾC KHÁC ĐÃ BÁN THÌ ÔNG KHÔNG NHỚ HẾT
+PRED: CÒ HẀ TR�M CHẾT THÁT ĐẢ BÁM THÌ ÔNG KHÔNG NHỮ HẾT
+----------------------------------------
+REF : CUỘC THI TỰ HÀO SỬ VIỆT ĐÃ HẾT GIAI ĐOẠN I
+PRED: CỒA TII TỰẀO SỰ VIỆT B� H� XI ĐẠ
+----------------------------------------
+REF : HỌ KHÔNG BIẾT CHƠI PHÒNG NGỰ LÀ GÌ TRỪ KHI BỊ ĐỐI THỦ VÂY ÉP
+PRED: HỌ KHÔNG BI ĐẾP TRƠI PHÒNG NGỢI LÀO XÌ CHỰC KHI BỊ ĐỔI THỦ VäY ÁP
+----------------------------------------
+REF : HIỆN NAY BÀ ĐANG BỊ NHIỀU BỆNH VÀ SỐNG DƯỚI MỨC NGHÈO KHỔ
+PRED: NGẢ MAYY BÀI RA BỊ NHỀ BẠN VÀ SỰNG GIỾ MẤT NGẀU KHỔ
+----------------------------------------
+REF : ĐÂY LÀ THÁNG CÓ SỐ ĐĂNG KÝ THẤP NHẤT TỪ ĐẦU NĂM ĐẾN NAY
+PRED: ĐẂ LÀ THẢN CÒ SỦ ĐĂH K THẤP NHẾT TỪ ĐỦU N�M BỊ NAY
+----------------------------------------
+REF : VẢ LẠI THEO QUY CHẾ ĐÂY LÀ TRÁCH NHIỆM CỦA MỖI THÍ SINH
+PRED: VẠ LẠI THƯ KH CH� B�AYY LÀ TH�ÁT GIẢM CỢA MỘI TH X�INN
+----------------------------------------
+REF : THÀNH MỘT CHIẾC LỒNG ĐÈN KHỔNG LỒ TẠI CÔNG VIÊN Ở THỦ ĐÔ BẮC KINH
+PRED: THÀY MỒI CHẾM LẦU ĐÀN KHỦNG LÒ TẢI CÔNG VI ỞI TH� ĐỔ BÁ KÊN
+----------------------------------------
+REF : ĐIỀU NÀY KHÓ HƠN KHI BẠN VÀO BÀN TIỆC TOÀN NGƯỜI XA LẠ
+PRED: NỀU NÀY KHỔ HàN CH BẢ VỜ BÀN THỀ TÀN NG�ỜYI SA LẠ
+----------------------------------------
+REF : KẼM CÓ NHIỀU TRONG GAN SÒ THỊT ĐỎ CÁ ÓC TRỨNG
+PRED: CẢM CÓ NHỜU TR�ONG CA SỜ THỊ ĐỎ C�ÓNG TRƯỪNG
+----------------------------------------
+REF : CHẲNG LẼ ĂN CƠM NHÀ NGƯỜI MÀ LẠI KHÔNG CHĂM CHÚ LẮNG NGHE NGƯỜI NÓI
+PRED: TRẲN ANH CƯ NHÀ NGƯỜI MÀ LẠI KHÔU TÂ CHỰ NẮN NANGN GỀ NỎI
+----------------------------------------
+REF : UNG THƯ TỪ MỘT CƠ QUAN KHÁC DI CĂN VÀO HỆ THỐNG HẠCH BẠCH HUYẾT
+PRED: ÔNG THƯ T�Ờ BỘ CƠ QUÔN THÁ VI CA VÀO H� THỦNG HT BÀI THẾT
+----------------------------------------
+REF : CÔNG NHÂN ĐANG THI CÔNG HAI NHÁNH CẦU RẠCH CHIẾC ẢNH THUẬN THẮNG
+PRED: CÓNG NHÊN Đ� TH CÔNG HA NH�NG CẦU VỀI CHẾT ẠI THẢN TH�ÁN
+----------------------------------------
+REF : MỘT CƠ QUAN CHÍNH THỨC ĐỂ KHÁCH HÀNG KHIẾU NẠI THAM KHẢO VÀ TIN TƯỞNG
+PRED: MÒ T CƯA QUA CHỊN THỨC BẢT KHÁC HÀ KHIỮ NẠI TH� THẢO VỀI TIÊN TR CỮN
+----------------------------------------
+REF : MỘT TÌNH HUỐNG ỨNG XỬ SƯ PHẠM TÔI LÀM BỘ TỈNH RỤI ĐƯỢC CÔ DUYỆT
+PRED: MÙ TIÊ HỚA�N SỰ SƯ PHẢM TƠI LÀ BỘ TIỆN RỔI ĐƯỢC C SỆ
+----------------------------------------
+REF : CÁI NHÀ HÁT BỊ ĐẬP TAN TÀNH ÔNG KHOÁI LẮM À
+PRED: C�Á NHÀ HÁP BỆ BẢP T TÀNG ÔNG �ẢI LÀMÀ
+----------------------------------------
+REF : MẤY NGÀY ĐẦU THÚY HÀ PHẢI NHỜ KIM DẪN ĐI GIỚI THIỆU TRƯỜNG
+PRED: MẂY N ĐẦU TH� HÀ PHẢI NHỜ KÊN GIẢN ĐI GIỨ THỂ TRƯỜNG
+----------------------------------------
+REF : MÔ HÌNH CẤU TRÚC CHỨC NĂNG VÀ KHOA HỌC XÃ HỘI MANG TÍNH GIÁO DỤC
+PRED: MÔ HỌN CỦ TRÚC CHẤC NĂN VÀ KA HỌC S HỞ BN TIỊN GIẢO SỘC
+----------------------------------------
+REF : NHẢM NHÍ KHI GIỜ HỌC CHÁN PHÈO BUỒN NGỦ QUÁ Ờ BUỒN NGỦ
+PRED: NẠM NHỈ KH GIỒ HỒNG CHẢ PHO QUÌNHGỘ QUẢÀ VàN NGỖ
+----------------------------------------
+REF : TRẢI DÀI HÀNG CHỤC CÂY SỐ ĐỀU THU GỌN VÀO TẦM MẮT
+PRED: CẢI GIÀY HÀNG TRỤC K SỐ ĐỀU TH GỎ VÀ TỀ M�T
+----------------------------------------
+REF : THẢN NHIÊN GIÁ ĐÓ THÌ CHỈ CÓ THỂ LÀM VẬY THÔI
+PRED: THẢNG NHƯ VẢ Đæ THÌ CHỈ C�Ó THẂ LÀ VẢI TH HƠI
+----------------------------------------
+REF : NÓI CHUYỆN MỘT HỒI ÔNG LÀM BỘ ĐỂ TAY LÊN TAY EM TRÊN CẦN SỐ
+PRED: NÀ TRẺ Mộ HỜI T�NG LÀ BỘ ĐỂ TAY LÊM TAY� TRÊN CỦN SỮN
+----------------------------------------
+REF : MÀU SON TRÔNG THẬT TUYỆT TRÊN BẤT KÌ MÀU DA NÀO
+PRED: MỘT SÔ TRÔNG THỰI KỀ CH�I BẾT YÌ MỦU GI HẠO
+----------------------------------------
+REF : VÀ BẠN CẦN CÓ VIỆC LÀM ỔN ĐỊNH VỚI THU NHẬP CAO
+PRED: THÀ BẢM CỀN CỦ VI� LÀ CỦN ĐỂ N VỪI THU NHỘNG CAO
+----------------------------------------
+REF : CUỘC BIỂU TÌNH CỦA ÁO ĐỎ CÓ THỂ SẼ BIẾN THÀNH BẠO LỰC
+PRED: CÙ ĐỀU TIÌN CỦAẢO Đ�Ã C� THỀY SẼ BIÊN THAY BẢO LƯỰC
+----------------------------------------
+REF : CÒN ANH TRAI TÔI TRONG NHẬT KÝ CỦA MÌNH CŨNG LINH CẢM ĐIỀU ĐÓ
+PRED: CHÒN CHẾI TÔI TR�NG NHỀT KIỈ CỒNG MÌN CỦAÊN CẢ Đ�ỀU ĐỎ
+----------------------------------------
+REF : CHẮC SẮP TỚI THU XẾP ĐI DU LỊCH THÔI
+PRED: CH�ÁC SỮC TÓI THÙNG SẾP ĐIỌ DÙ NHỘ RỰC THÒI
+----------------------------------------
+REF : ĐỂ CÓ THỂ VẬN HÀNH CHÚNG ĐƯỢC HIỆU QUẢ HƠN
+PRED: ĐỂY KHÓ THỂI PHæN HÀNH ĐƯC TRÚNG Đ�ỢC HIỀU QUẢI HƠN
+----------------------------------------
+REF : PHÒNG TRÀ KHIÊU VŨ CÁNH QUẠT CỐI XAY ĐỎ
+PRED: VỘNG PHỒNG TRÀ THÊ VỤ TÁH QUẀ CÓ S�Y ĐỘ
+----------------------------------------
+REF : KHIẾN CẢ HAI PHẢI GIẬN HỜN VÔ LÝ
+PRED: THẾN TR� H HAAY PHẢI DÀN HæNG QUÔ LÝ
+----------------------------------------
+REF : NÓ TRỐN MẤT TIÊU RỒI CÒN ĐÂU
+PRED: NÓ TRÚ MẤT TIÊN VÀI CÒNG ĐÂU
+----------------------------------------
+REF : RỒI RƠM RẠ KHÔ THEO THÂN HÌNH GẦY NGẲNG
+PRED: THÒI RƠN RẠ KHÔ THE THÂNGÌNH DÀY DẶC N NHGẮNG
+----------------------------------------
+REF : CÂU TRẢ LỜI CỦA ÔNG TA RẤT KHIẾM NHÃ
+PRED: KÔ TRẢI LGỜI CỦA Ô�N T� LẤT KHI�M NHẢ
+----------------------------------------
+REF : ĐƯỢC MỸ RÁO RIẾT TUNG RA
+PRED: ĐƯỢC MỊ RAÁ BẾT T�UNGNG RA
+----------------------------------------
+REF : LÀM RỜM RỢP BIỂN MÂY LAU LÁCH PHẤT PHƠ
+PRED: LÀM RÒM RỌC BỊN MAY LÂU LẤCH PHẤT VƠ
+----------------------------------------
+REF : THÚ THẬT TUI CHƯA TỪNG CHƠI GÁI
+PRED: CUộU THẬC TÙI TR�Ư TỰNG TRỀY NHÁI
+----------------------------------------
+REF : ĐIỀU VÔ CÙNG QUAN TRỌNG TRONG THỜI ĐẠI CÓ QUÁ NHIỀU HOẠT ĐỘNG
+PRED: ĐIỀU VÔ CÙNG BAN TRỌNG TRONG THỜI ĐẠI CÓ NHIỀNG LẶT ĐỘNG
+----------------------------------------
+REF : TÁM CHÍN MƯỜI MƯỜI MỘT
+PRED: TÁM CHÍN MƯỜI MƯỜI MỘT
+----------------------------------------
+REF : THẾ NÀO LÀ HOÀN HẢO
+PRED: THẾI NÀO LÀ HOÀNG THẢO
+----------------------------------------
+REF : ĐƯỢC CẮT TỪ VỎ CHĂN BỘ ĐỘI CŨ CỦA CÁC ÔNG BỐ RA
+PRED: ĐƯỢC C�ÁC TỪ GỖI TRÂN BỒ ĐỘI Cộ CỦ CÁC KHÔNG BỐ RA
+----------------------------------------
+REF : XUÂN NÀY EM KHÔNG VỀ
+PRED: SÔ NÀY EM HÔNG VÀY
+----------------------------------------
+REF : LOÁNG THOÁNG TRĂN TRỞ LOÁNG THOÁNG BUỒN VUI
+PRED: LN THÁN TRðNG TRÀ LĂN THẮN BÙNG V HUÔI
+----------------------------------------
+REF : TRỨNG MỰC QUYẾN RŨ CÁC NGƯ DÂN
+PRED: K�ÍN MỰT QUYỾN VỘ CÁC NGƯỜI DÂN
+----------------------------------------
+REF : NGÀY CĂN BẬC HAI CHỈ DIỄN RA CHÍN LẦN TRONG MỘT THẾ KỶ
+PRED: NÀY CĂN BẶT NI CH� DIỆN RA CH�ÍNH NẰNG TRONG MỘT THẾI TỊ
+----------------------------------------
+REF : NĂM MƯƠI NĂM MƯƠI MỐT
+PRED: NĂM MƯƠI Đ�MƯƠI MỐT
+----------------------------------------
+REF : MƯỜI MỘT MƯỜI HAI MƯỜI BA
+PRED: NỜN MỘT BỜI HA MƯỜI BA
+----------------------------------------
+REF : BẠN CÓ THỂ KHIỂN TRÁCH NGƯỜI LÁI XE
+PRED: BẠN CÓ THẢ KHỆN TRÁCH NGỜI LÁI XE
+----------------------------------------
+REF : VÌ LƯỢNG CA KHÚC MỚI QUÁ NHIỀU
+PRED: VỀ L�ỢNG CA KHÚC MẚI QUÁ NHIỀU
+----------------------------------------
+REF : VÀ THẬM CHÍ BẠN CŨNG KHÔNG NÊN CỐ GẮNG
+PRED: VÀ PHẢM CHI BẠN CộNG KHÔNG NÊN CỐ ĐẮNG
+----------------------------------------
+REF : CĂN NHÀ ĐẰNG KIA NGHE NÓI CÓ MA
+PRED: CANN NHÀ ĐÀNG K� NHIAI NÁ CỐC MA
+----------------------------------------
+REF : HIỆN TRONG NHIỀU LOẠI TỎI CÓ MẶT TRÊN THỊ TRƯỜNG
+PRED: THỆN TRONG NHIỜ LẠI TỔI CÓ MẶT TRÊN NGHỊ TRƯỜNG
+----------------------------------------
+REF : VỀ CHUYỆN ĐANG THEO DÕI BỌN GIÁN ĐIỆP NƯỚC NGOÀI
+PRED: VỀ CHUYỆN ĐANG TH� GIỎI BỘN GIÁN ĐIỆT N�ỨC NGOI
+----------------------------------------
+REF : TỨC LẤY SỤN LÀNH TỪ NƠI KHÔNG PHẢI CHỊU LỰC GHÉP VÀO NƠI HƯ
+PRED: TẨC LẤY SỤNG LÀNH T�Ừ NÊ KHÔNG PHẢI CHỀU LỰC GÁP VÀO NƠI HƯ
+----------------------------------------
+REF : SỢ NHẤT LÀ MÙA MƯA SẤM SÉT ĐÙNG ĐOÀNG TRÊN NÚI
+PRED: THẢI NHẤT LÀ Mộ MƠI SONGM SÁC ĐÙNG LÒN TRINN NUỐI
+----------------------------------------
+REF : LÀ TỔ TIÊN CỦA ÔNG ĐẶNG LÊN ĐẢM TRÁCH VIỆC DẪN ĐƯỜNG
+PRED: LÀ THỘ TIÊN CỦA ÔNG ĐẰNG LÊN ĐẠM TRÁCH BIỆT DẪNG ĐƯỜNG
+----------------------------------------
+REF : THÍ SINH TỰ DO CẦN QUAN TÂM ĐẾN ĐỘ VÊNH KIẾN THỨC CÁC MÔN
+PRED: THÍT SINH T�Ừ DOIA CỦNG QUAN TÂM Đ�N ĐỘ V�ANH KIẾN THẨC CÁC MÔ
+----------------------------------------
+REF : TRÊN BẦU TRỜI ÁNH TRĂNG SÁNG VẰNG VẶC
+PRED: TRINH BỒ TRỜI ÁNH TRĂNG SÁN VẦNG QUẶC
+----------------------------------------
+REF : MỖI NGƯỜI CHÚNG TA SẼ CÓ NHỮNG THỨ KHÁC NHAU
+PRED: MÌ NGƯỜI TRÚNG TÂ SẼI KHÓ NHỰNG THỾ KHÁC NH
+----------------------------------------
+REF : CHÍN MƯƠI TÁM CHÍN MƯƠI CHÍN
+PRED: CHÍƯỜI TÁM CH� M� MỜI CHÍNH
+----------------------------------------
+REF : NƯỚC CHẢY QUÁ MẠNH
+PRED: NỨ CHỂY QUÁ MÀNH
+----------------------------------------
+REF : KHI MIỆNG VẪN NGẬM BẦU VÚ QUẮT QUEO
+PRED: THHI MỆN VẪN NHẰM BẦ VỐ QUẤC QUAY
+----------------------------------------
+REF : THỊT NGỌT LỪ ẤY LẠI MANG THEO TRÙNG SÁN GÂY BỆNH
+PRED: THẶT NGỌT LỪ LẤI LẠI M� TRÙNG SÁ NG�Y BÌNH
+----------------------------------------
+REF : RỒI CHÌM LỈM MỘT THỜI GIAN
+PRED: LÒI CHỆM NỂ MỘT HỜI GIAN
+----------------------------------------
+REF : PHƯƠNG CHÂM SỐNG CỦA TÔI LÀ NGƯỜI KHÔNG VÌ MÌNH TRỜI TRU ĐẤT DIỆT
+PRED: THƯƠNG TRONGM S�NG CỦI TÔI ĐÀ NG�ƜI KHÔNG QUÌ MÀN CHỜI TRÚ ĐẤT VIỆC
+----------------------------------------
+REF : CÓ CÒN HƠN KHÔNG
+PRED: KHÓ CỒT HƠN KHÔNG
+----------------------------------------
+REF : NẾU CHỦ ĐẦU TƯ KHÔNG TỰ PHÁ DỠ THÌ BỊ CƯỠNG CHẾ
+PRED: NẾU TRỦ ĐỘT TƯ KHÔNG TỰ PH GIẢ THIÌ BỊ CƯỰNG GIẾI
+----------------------------------------
+REF : BÂY GIỜ THÌ ĐÁNG ĐƯỢC KHEN LÀ THÔNG MINH CHỨ HẢ
+PRED: B GIỒ THÌ ĐÁN ĐƯỢC KHEM LẠ THÔNG MINNH CHỨ HẠI Á
+----------------------------------------
+REF : ĐÓ CŨNG LÀ SỰ TIẾP XÚC GẦN GŨI NHẤT CỦA BỌN EM
+PRED: ĐÓ CŨNG LÀ SỰ TIẾT SÚ CẦNG CUỦI NHẤT CỦA BỌN EM
+----------------------------------------
+REF : TÔI NẮM BÀN TAY XƯA BA TÔI TỪNG THƯƠNG YÊU ĐAU XÓT CẦM GIỮ
+PRED: TÔI NẤM BẀNG TÂY PHƯ BA TÔI TỪNG THƯƠNG TÔI T�I SÓ CẦM DỮNG
+----------------------------------------
+REF : VẪN CÒN NHƯNG BẠN KHÔNG DÁM CHẮC HỌ CÓ HẠNH PHÚC HAY KHÔNG
+PRED: VỰNG CÒN NHƯNG BẢN KHÔNG D�ÁM CHẤT HỎ CÓ HẢNH PHÚC HAYI KHÔNG
+----------------------------------------
+REF : ĐỂ XIN THỊ THỰC CÔNG TÁC VỀ CƠ BẢN BẠN PHẢI CÓ
+PRED: �Ể PHINH THỈ THẰC CÔNG TÁC VỀ CƠ BẢN BẠN PHẢI CÓ
+----------------------------------------
+REF : DO VẬY SẼ ẢNH HƯỞNG TỚI VIỆC THU SÓNG VÔ TUYẾN
+PRED: GI VẢY SẢH HỞN TẾI VIỆC TH SỐNG BUÙ TYỾN
+----------------------------------------
+REF : GIẢI NHẤT HUY CHƯƠNG VÀNG THUỘC VỀ NHÀ NHIẾP ẢNH CỦA CỘNG HÒA SÉC
+PRED: GIẢI NHẤT HI CHƯNG VÀNG THUỘC VỀ NHÀ NHIƾP BẢNH CỦA CẨNG HOÀ SẾP
+----------------------------------------
+REF : CHỈ CÓ THỰC PHẨM MỚI GIÚP BẠN LÀM ĐƯỢC VIỆC NÀY
+PRED: CHỈ CÓ THỰC PHẢM MỚI DÚ BẢN LÀM ĐƯỢC VIỆT NÀY
+----------------------------------------
+REF : TRÌNH ĐỘ CHUYÊN MÔN CỦA CÔ KHIẾN CÔ QUÁ THỪA TƯ CÁCH
+PRED: TRÌNH ĐỖI CHYÊN MÔN CỦA CÔ KIẾN CÔ QUÁ THỜA TỪ C�P
+----------------------------------------
+REF : NHÂN LỰC NGÀNH THIẾT KẾ ĐỒ HỌA ĐẮT GIÁ VÀ KHAN HIẾM
+PRED: NHƯNG LẰC NGẬNH TIẾT KÉ ĐỘ HOẢẢ ĐẮC CHÁ VÀ KHAN HIẾM
+----------------------------------------
+REF : VÌ CHÚNG CÓ THỂ LÀM RĂNG CỦA BẠN DỄ BỊ Ố VÀNG
+PRED: NGÌ CHÚNG CÓ THẂ LẦM ĐĂNG CỦA BẢN GIỂ BỊ VÀN
+----------------------------------------
+REF : NHỮNG CÂU HỎI TRÊN SẼ GIÚP BẠN LÀM ĐƯỢC ĐIỀU NÀY
+PRED: NHỮNG CÔU HỎI CHÊN PHẼI DÚM BẢN LÀM ĐƯỢC ĐIỀU NÀI
+----------------------------------------
+REF : ĐƯỢC BÀY TRÊN NHỮNG BỆ THỜ BÊN CẠNH NHỮNG BÓ SEN HUỆ THƠM NỨC
+PRED: ĐƯỢC BÀI TRÊN NHỮNG BẺ THỒ B�N CẢNH NHỮNG BÓ XEM HỂ THÔ PHÚC
+----------------------------------------
+REF : MỘT ANH TRAI TUẤN ĐANG NGỒI TÙ VÌ TỘI GIẾT NGƯỜI
+PRED: MỘT ANH CH�I T�ÚN ĐANG NGỒI TÙ VÊ T �ỔI GI�T NGƯỜI
+----------------------------------------
+REF : HÔM SAU MỞ MÁY THẤY CÁI TRUYỆN ĐÃ TỰ HOÀN CHỈNH RỒI
+PRED: KHÔNG SAU MỞ MÁY THẾ K� CHỂN Đ�Ã TỰ HÀIH CHỈNH RỒI
+----------------------------------------
+REF : SAU MỘT NGÀY LAO ĐỘNG CĂNG MỆT BẠN ƯU TIÊN CHỌN
+PRED: KAU MỘNG NGÀY LAAUO ĐỘNG TĂNG MỒN BẢN C� TIÊN CH TRỌNG
+----------------------------------------
+REF : TRONG DÒNG THÁC NGƯỜI CHỈ NHÌN ĐƯỢC MẮT KÍNH VÀ KHẨU TRANG
+PRED: TRONG DỒNG THÁ NGƯỜI CHỂN NHÌN ĐƯỢC MẮT KÍNH MÀ KHỔ CHAN
+----------------------------------------
+REF : BẢN THÂN TÔI CŨNG THAM GIA MỘT VAI RẤT NHỎ NỮA
+PRED: BẢN THƂNG TÔI CŨNG TH� G MỘT PHI ĐỤC NHỎ NỮI
+----------------------------------------
+REF : BA TÔI HÃNH DIỆN NÓI CHUYỆN VỚI SỐ HỌC SINH CÙNG LÊN XE ĐÒ
+PRED: B TÔI HẢNH DIỊN ĐÓ CHỂN VỚI KHỐ HỌC SINH CÙNG LÊN PHE ĐỘ
+----------------------------------------
+REF : THÌ HỢP ĐỒNG THẾ CHẤP NÀY CŨNG KHÔNG CÓ GIÁ TRỊ PHÁP LÝ
+PRED: THÌ HỌC ĐỒNG THẾ TR�NG NÀY CŨNG KHÔNG CÓ GIÁ CHỈ TÓ Đ L�Í
+----------------------------------------
+REF : HỌ ĐƯỢC BỌN ĐẦU NẬU NHỮNG TAY TRÙM THUÊ VỚI GIÁ RẺ MẠT
+PRED: HỌ ĐƯỢC BỘN ĐẦU NẠ NHỮNG TAY TRộNG THÊ VỚI GIÁ RẂ MẠN
+----------------------------------------
+REF : MỘT BÀ SANG TRỌNG ĐẾN GẶP BÁC SĨ TRẺ KHÁM BỆNH BÁC SĨ HỎI
+PRED: MỘT BÀ SAN CHỌNG Đ�NH GẌCÁ PHỂ CHẺ THÓNG BẢNH BÓ PHỊ HỌ�I
+----------------------------------------
+REF : CÓ MẤY NGƯỜI ĐỤNG PHẢI NÓ SUÝT NGÃ CHÚI XUỐNG ĐƯỜNG
+PRED: CÓ MÁ NGƯỜI ĐŨNG PHẢI NÓ S�ÍT NGẠIH CHỐI S�ÚNG ĐƯỜNG
+----------------------------------------
+REF : RỒI MẶC DÙ BIẾT LÀ NGỚ NGẨN TÔI CỨ NÓI RA
+PRED: LỒI MẶT DÙ BI� V LẠ NG� NGẪN TÔI C�ỨNG NÓ RÀ
+----------------------------------------
+REF : ĐẾN ĐÀ LẠT BẠN PHẢI CHUẨN BỊ ĐÔI CHÂN ĐỂ ĐI BỘ
+PRED: BẾN ĐÀ LẠC BẢN PHẢI CHỨNG BẨ ĐÔI CHƂN ĐỂ ĐI BỘ
+----------------------------------------
+REF : BÓNG MÀU XANH LÀ VÙNG TÂM BÃO CÓ THỂ ĐI QUA
+PRED: BỐNG MỒ SANH LÀ VÙNG TẦM BẢ ��O CÓ TH�Ể BI� QUA
+----------------------------------------
+REF : VỚI CÁC DÁT MÀU CÀ PHÊ SỮA KHÔNG CẦN ĐIỀU TRỊ
+PRED: VỚI CÁC GI�ÁT MẀU CÀ PH� SỞ KHÔNG CẦNG ĐIỊU TRỂ
+----------------------------------------
+REF : PHIM CHIẾU NGUYÊN BẢN TIẾNG PHÁP CÓ PHỤ ĐỀ TIẾNG VIỆT
+PRED: K�M CH�U NGUYÊN BẢN TIẾ PHÓ CÓ PHỦ ĐỠ TIẾN VIỆC
+----------------------------------------
+REF : ĐOÀN ĐI THUYỀN ĐẾN MỘT KHU LÀNG DÂN TỘC THIỂU SỐ
+PRED: VÀN ĐI� THỀN ĐÁN MỘT KH LÀNG DƯNG TỌC THỊ SỐ
+----------------------------------------
+REF : VÀ ĐỘI TUYỂN PHÁP ĐANG LÀ ĐỘI CHIẾM ƯU THẾ HƠN SO VỚI THỤY SĨ
+PRED: MÀ ĐỘI TIỂN PHÁP Đ LÀ ĐỔI CHẾM C� THẾ HÔN XO VỚI THỊ SẨ
+----------------------------------------
+REF : CHỊ TÌM NHÀ CHO EM Ở TRỌ NGAY CỔNG TRƯỜNG CHỊ HỌC
+PRED: CHỈ TIÌM NHÀ CHO EM Ở TRỌ NGÂ CŨNG CHƯỜNG CHỈ HỌNG
+----------------------------------------
+REF : RIÊNG ÔNG NGUYỄN VĂN BA BỊ GỖ ĐÈ DẬP SỌ NÃO CHẾT NGAY TẠI CHỖ
+PRED: TH�N ÔNG NGUYỨN VĂN BA BỊ RỖ ĐÀ DẬP SỎ N�ÃOI CHẾT NAY TẢI CHỒ
+----------------------------------------
+REF : MỖI NGƯỜI NỞ MỘT NỤ CƯỜI VỚI NHỮNG Ý NGHĨA KHÁC NHAU
+PRED: MỖI NGƯỜI NỖ MỘT NỤ C�ỒI VỚI NHỰNG YÍ NGHỊ THÁNG NH�AU
+----------------------------------------
+REF : HÀ CŨNG CHẲNG NHỚ MÌNH CÓ NÓI HAY KHÔNG ĐỂ CÃI LẠI ÔNG ẤY
+PRED: HÀ CŨNG SẲN NHỚ MÌNH CÓ ĐÓI HA KHỔNG ĐỂ CẢ LẠI ÔNGÁY
+----------------------------------------
+REF : HỌ BẢO TÔI GIỐNG NGƯỜI HÀN THÌ TÔI LẠI THẤY HỌ GIỐNG NGƯỜI VIỆT
+PRED: HỌ BỎ TÔI DỐNG NHƯ NGƯYỜ HÀN THÌ TÔI LẠY THẤY HỎI D�M NGƯỜI VIỌT
+----------------------------------------
+REF : EM HÃY TỈNH TÁO MÀ TÌM NHỮNG ĐỊNH HƯỚNG TỐT HƠN CHO TƯƠNG LAI
+PRED: EM HẢY PHÊNH TÁO MÀ TIÌM NHỮNG ĐỊNH HƯỚNG TỐT HàN CHO TƠNG RAI
+----------------------------------------
+REF : KHAI MẠC TRIỂN LÃM QUY MÔ LỚN VỀ TRANH SƠN MÀI VIỆT NAM
+PRED: THHI MẠI CHỮNG LẢM VI MUÔ LỐN VỀ TRANH PHÂN MÀI VIỊT N
+----------------------------------------
+REF : NHƯNG CHẲNG CÓ ĐIỂM SẢN XUẤT NÀO DÙNG BẠT PHỦ CHE CHẮN
+PRED: NHƯNG CHẲNG CON ĐỂM SẢN X�ÚC NÀO DÙNG BẠP PHỦ CH�IA CHẮNG
+----------------------------------------
+REF : SAU ĐÓ BẢN THÂN HỌC SINH PHẢI LÀM ĐƠN XIN HỌC BỔNG
+PRED: K�AU ĐÓ BẢN THƯNG HỌC SIN PHẢI LẀM ĐƠN PHINH N HỌC BỌNG
+----------------------------------------
+REF : CÁC BƯỚC SAU ĐÂY SẼ GIÚP BẠN TÌM RA ỨNG CỬ VIÊN THÍCH HỢP
+PRED: CÁC B�ÚN S� ĐÂ SẼ DÚP BẢN TIÀM RA �ẨN CỨ VIÊN THÍCH THỌC
+----------------------------------------
+REF : HAI LOẠI VĂN NÀY NÊN ĐƯỢC COI TRỌNG NHƯ NHAU TRONG CÁC KỲ THI
+PRED: MI LẠI VĂN MÀI NÊN ĐƯỢC CON CHỌNG NHƯ NHO CHONG CÁC TIỊ TH�
+----------------------------------------
+REF : BẠN CÓ THỂ TẮT CHƯƠNG TRÌNH ĐÓ ĐI VÀ THỰC HIỆN THAO TÁC CUỐI CÙNG
+PRED: ẠN CÓ THỂ TÁCH CHƯƯNG DÌNH ĐÓ ĐI VÀ THỰC HIỆN TA TÁT CUỐI CỒNG
+----------------------------------------
+REF : ĐƠN VỊ MÌNH KHÔNG NGHE AI NÓI GÌ CHƯA HẲN ĐÃ TỐT
+PRED: ĐÂN VỊ MÌNH THÔNG NGHE AI NÓI GÌ CHƯA HẮNG ĐÃ TỚC
+----------------------------------------
+REF : BẠN CẦN TRUNG THỰC VỚI NHÂN VIÊN CỦA MÌNH TRONG MỌI HOÀN CẢNH
+PRED: BẠN CẦN TRUNGNG THỰC VỚI NHÂNG VIÊN CỦA MÌNH CH� MỎI HðNG
+----------------------------------------
+REF : HẦU NHƯ CÁC PHẢN ỨNG PHỤ NẶNG NỀ LÀ RẤT HIẾM GẶP
+PRED: HẀU DƯ CÁ PHẢNG ỨNG PHỦ NẶNG NÀ LÀ R� KH�M NIÀP
+----------------------------------------
+REF : CÓ NGÀY CÁC BÁC SĨ ĐIỀU DƯỠNG MỔ MẮT CHO HÀNG TRĂM NGƯỜI MÙ NGHÈO
+PRED: CÓ MÀY CÁ BÁC SẼ ĐIỀU DỮNG MỘ MẮT CHO HÀNG CH�M NGƯỜI MÙ NGHÀU
+----------------------------------------
+REF : VẬY MỚI CÓ MỤC TIÊU ĐỂ MÀ PHẤN ĐẤU NÊN NGƯỜI CÓ Ý THỨC
+PRED: BẠI MỚI CONÓ MỘ TIÊU ĐỂ MÀ THẮN Đ�ÁU NÊN NGƯỜI CON TH�C
+----------------------------------------
+REF : MÙA ĐÔNG CẢ CÁNH ĐỒNG CHUYỂN SANG MỘT MÀU VÀNG RỰC
+PRED: N�ONGNG CẢ CÁH ĐẦU KIỂN XAN MỘT MÀU VÀN RỢT
+----------------------------------------
+REF : CÓ LẼ ĐÂY LÀ LỜI QUẢNG CÁO KHÔNG CÔNG HAY NHẤT CHO DU LỊCH LÀO
+PRED: Ó LẂ ĐÂ LÜ LỜI QU�ÁN CÁO HÔNG CÔNG HOAY NHẤT CHO D� LỊT NẠ
+----------------------------------------
+REF : MẸ CŨNG ĐÃ TỪNG THỐNG KHỔ TUYỆT VỌNG VÀ CÔ ĐƠN NHƯ VẬY
+PRED: NGẸY CŨNG ĐỂ TẪN TH�ÓNG KHỔ TIỆC BẎNG VÀ CÔ ĐÊN NHƯ VẠI
+----------------------------------------
+REF : CUỘC THI CÒN CÓ HAI GIẢI NHÌ BA GIẢI BA VÀ BỐN GIẢI KHUYẾN KHÍCH
+PRED: CỘC THI CÒN CÓ HAI GIẢI NHÌ BA PH GIẢI BA VÀ BỐN GIẢI KHẾN TH�ÍT
+----------------------------------------
+REF : GIÀ LÀNG NGUYỄN MẠNH TƯỜNG TRẢ LỜI PHỎNG VẤN BÁO GIỚI ẢNH TRUNG DÂN
+PRED: NÀ LÀNG NGGUYỄN MẶNH TƜNG CHẢ LỜI PHỔNG VẤN BÁO LỚI ẢNH TRUNG G�
+----------------------------------------
+REF : CHẲNG CẦN NHÌN VỀ PHƯƠNG TÂY QUÊ HƯƠNG CỦA HÀNG HIỆU
+PRED: CH�ÁN CẦNG NHÌNH VỀ PHƠNG TAAY QUÊ HƯƠNG CỦA HÀNG HỆ
+----------------------------------------
+REF : NHỮNG CHIẾC LỒNG ĐÈN ĐỒ CHƠI VIỆT VẪN LẶNG LẼ MANG HỒN VIỆT XUỐNG PHỐ
+PRED: NỮNG CHẾ LÒNG ĐỀN ĐƯỜI CHƠI VIỀ VẪN LẰNG LẸ MANG HOẒU VIỆC S� PHÔ
+----------------------------------------
+REF : TIÊU NHƯ PHONG CHẠY TRỐN KHỎI KINH THÀNH ĐỂ TÌM HUNG THỦ THẬT SỰ
+PRED: TÊ NHƯ PHÔNG CHẢI CHỐN THỎI KINH THÀNH ĐỂ TÀM H�NG THỦ THẰT SỞ
+----------------------------------------
+REF : NHÀ VĂN NGUYÊN NGỌC SINH VIÊN CÓ QUYỀN HOÀI NGHI VÀ TRANH CÃI
+PRED: NÀ VĂNG MGUYÊN NGỌC SINH NH� VĂN N MỞI NỌNG SINH LYÊ CON QUYỜ HOÀI NGH VÀ TRANH CẢI
+----------------------------------------
+REF : MẸ LẦN TAY TRONG VÍ VÀ LẤY RA CHIẾC PHONG BÌ
+PRED: NGẸ LẰN TAI CHONG V� VÀ LẤY RA NHIẾC PHÔNG BỀ
+----------------------------------------
+REF : NHỮNG ĐIẾU THUỐC VÔ Ý ĐỐT CHÁY VÀI CHỖ TRÊN CHIẾC SÔ PHA BỌC VẢI
+PRED: NHỮNG ĐIẾU THUỐT V� � �I ĐỐC GI�Y VÀI CHỞ CHÊN CHIẾT SƔ PH VỘC VẢI
+----------------------------------------
+REF : CHỈ MỘT ĐIỀU ĐƠN GIẢN VẬY MÀ ANH ẤY KHÔNG BAO GIỜ THỰC HIỆN ĐƯỢC
+PRED: CHỈ MỘT ĐIỀU ĐƂN GIẺN VẂY M�ÃẤY KHÔNG BA GIỜ THỰC HỆN ĐƯỢC
+----------------------------------------
+REF : ĐÓ LÀ CÂU HỎI MÀ ĐẾN NAY VẪN CHƯA CÓ CÂU TRẢ LỜI
+PRED: ĐÓ LÀ CÔU HỎI MÀ ĐẾN NAY VẪN CHƯA CÓ CAO CHẢ LÊ
+----------------------------------------
+REF : SỐ TIỀN QUÁ LỚN KHIẾN GIA ĐÌNH HƯƠNG PHẠM VÀ LÊ CHOÁNG VÁNG
+PRED: SỐ TÌ QUÁ LỚN KHẾN GIA ĐÌNH HƠNG PHẢM VÀ LÊ TRÁN VÁN
+----------------------------------------
+REF : MỘT SỐ ĐIỂM NƯỚC PHUN ĐẾN ĐÂU BAY HƠI HẾT ĐẾN ĐÓ
+PRED: MỘT SỐ ĐIỂM NƯỚC PHÔ ĐẾN Đ� VAYY HƠI THẾ T�INNH ĐO
+----------------------------------------
+REF : RÀ SOÁT CHẤT LƯỢNG CÔNG TRÌNH XÂY DỰNG TRÊN CẢ NƯỚC
+PRED: BÀ SÁ CH�ÁT LỰ CÔNG CHÌN X�Y DỮN CHÊN CẢ NỚC
+----------------------------------------
+REF : KHI BỊ PHÁT HIỆN HỌ ĐÃ TRẢ LỜI NHƯ THẾ NÀO
+PRED: THHI BỊ PHÁC THỆN HỎ Đ�Ã CHỢ LỜI NHƯ THẾ
+----------------------------------------
+REF : HÀ NỘI MỞ RỘNG KHU VỰC HỒ TÂY SÔNG HỒNG NÊN LÀ KHU VỰC TĨNH
+PRED: HÀ NỌI MỖI RỘNG KH VỜT HỒ TAYI S�ONGNG HỒNG NÊN LÀ C VỰT TẪNH
+----------------------------------------
+REF : ĐÓ LÀ GIAI ĐOẠN THỜI TIẾT ÍT BIẾN ĐỘNG VÀ NHIỆT ĐỘ KHÔNG QUÁ THẤP
+PRED: BÓ LÀ GIIAI ĐẠN THỜI TIẾT K�ÍT BIẾN ĐỘNG VÀ NHỆC ĐỔ KHÔNG QUÁ TH�ÁP
+----------------------------------------
+REF : CẢM GIÁC ĐƯỢC CHIA SẺ VỚI BẠN ĐỜI CÙNG SỞ THÍCH THÚ VỊ LẮM
+PRED: CẢM GIÁC ĐƯỢC CH SẼ VẚI BẠN ĐỜI CřNG SỞ THÍCH TH VỊ LĂM
+----------------------------------------
+REF : NHƯNG SAU NGHE CON NÓI RA NÓI VÀO LẠI ÁC CẢM VỚI EM
+PRED: NHƯNG SAU ME CON NÓI RA NÓI VÀO LẠI Á CẢM VỚ�
+----------------------------------------
+REF : VỢ HẮN THỊ NGẦN MANG LƯỚI RA VÁ ĐỂ CHIỀU THẢ
+PRED: VỞ THẮNG THỊ N NÀN M LƯỨI RA VÁ ĐỂ CHỀU THẢ
+----------------------------------------
+REF : TẠI ĐÂY CÓ MỘT ÔNG TRƯỞNG PHÒNG NHÂN SỰ CÔNG TY
+PRED: VẢI ĐÂ CÓ MỘT ÔNG CHỮNG PHÒNG NHÂN SỰ KHÔNG T�
+----------------------------------------
+REF : TÔI HỌC CÙNG VỚI CÁC ANH CHỊ LÀM VIỆC CHUYÊN VỀ SẢN XUẤT PHẦN MỀM
+PRED: TÔI HỌC CộNG VỚI CÁC T�H DỈ LðM VIỆC CHÊN VỀ S�N SỐC PHẦNG MỀ
+----------------------------------------
+REF : TỪ ĐÓ ĐẾN NAY GIA ĐÌNH CHỊ VẪN SỐNG TRONG CĂN NHÀ LỤP XỤP
+PRED: Ừ ĐÓ ĐẾN NAY GIIA ĐÌNH CHỊ VẪN SỐNG CHONG CĂNG NHÀ LỰC SỰI
+----------------------------------------
+REF : KHÔNG AI ĐƯỢC NGƯỢC ĐÃI CÁC EM VÌ CÁC EM HỌC CHẬM
+PRED: THHÔNG MA ĐƯỢC NGƯỢC ĐẢI CÁC EM VÌ CÁ EM HỌC CHẢM
+----------------------------------------
+REF : NHÓC ĐỎ MẶT TÍA TAI NHÓC THUA CHỊ MỘT TUỔI THÔI ĐẤY
+PRED: NÓC ĐỎ MẶT TIÍ TA NHÓ RỞ MẶT KẾ TAI NHỐ THƯƠA CHỈ MỘT TỔI THÔI Đ�ÁY
+----------------------------------------
+REF : DO VẬY VẤN ĐỀ KHU TRÚ KHỐNG CHẾ BỆNH TẢ HIỆN NAY RẤT KHÓ
+PRED: DO BẢI VẤN ĐỀ KH CH�Ú KHÔNG CHẾ VỆNH T� HIỆN MAY RẤT KHÓI
+----------------------------------------
+REF : KHÔNG AI MUỐN CÓ TIÊU CỰC CẢ VÀ CŨNG ĐỪNG TUYỆT ĐỐI HÓA VẤN ĐỀ
+PRED: HÔNG NGOI MUỐN CÓ TIÊU CỢC KẺ VÀ CŨNG ĐỦNG TIỆT ĐỔI HOÁ VẂN ĐỜ
+----------------------------------------
+REF : KHẮP NƠI QUANH CHÚNG TÔI VƯƠNG VÃI XÁC CHẾT CỦA NGƯỜI DÂN VÔ TỘI
+PRED: MẮP NÊI QUANH TRÚ TÔI VƠNG VẢI SÁT CHẾT CỪA NƯỜI D�N VÔ TỘI
+----------------------------------------
+REF : KHÔNG NẢN NGHĨA TIN RẰNG SẼ CÓ MỘT GIẢI PHÁP NÀO ĐÓ
+PRED: KHÔNG MẢN NGHỸ TINH LÀNG SẼ CON MỘT GẂ PHÁP NÀO Đ�
+----------------------------------------
+REF : HIỆN CƠ QUAN CHỨC NĂNG ĐANG TIẾP TỤC ĐIỀU TRA VỤ VIỆC
+PRED: THỆN CƠ QUAN CHẾC MĂ BANG TIẾP�ỘC ĐÌ TRA VỤ VIỆT
+----------------------------------------
+REF : TÔI VÀO QUẦY GIẢI KHÁT ĐẦU TIÊN VÀ GỌI MỘT CỐC NƯỚC CAM
+PRED: TÔI VÀ QUÀ GIẢI THÁC ĐẦU TI�N VÀ GẠI MỘT CÓC MƯỚC K EM
+----------------------------------------
+REF : TỚ ĐI KIẾM NHÀ TRỌ RỒI NHƯNG KHÓ QUÁ
+PRED: TỞI ĐIỊ K� NHÀ TRỒ RỒI NHỪNG KHÔ QUÁ
+----------------------------------------
+REF : BÀ CON RANG TRÍ CÀNH ĐÀO ĐỂ CHUẨN BỊ ĐÓN TẾT
+PRED: BÀ CÒN TRÀNG K CẦMH ĐẠO ĐỂ TR�ỪNG BỊ ĐÓ TỾT
+----------------------------------------
+REF : DU LỊCH SẼ TRỞ THÀNH NGÀNH KINH TẾ MŨI NHỌN
+PRED: DÙ LẬT SẼ TRỢ THẦNH NHGÌNH TÌH TỚI MộI NHỒ
+----------------------------------------
+REF : SAU ĐÓ BÀ HÀNG XÓM TÍNH TÌNH XỞI LỞI CHẠY QUA KỂ VỚI TÔI
+PRED: SẦU ĐỔ BÀ HẀNG SỔN TINNH TỪNH PHỢI LỖI GIẢI QUÀ CẂ VỚI TỒI
+----------------------------------------
+REF : THIẾU SỰ QUAN TÂM ĐÚNG MỨC TỪ CÁC CƠ QUAN CHỨC NĂNG
+PRED: THẾU SỰ VÀN TÒNG Đ�ÚNG MỚT TỰ CẢC CỜ QUÀN CHƨC NðNG
+----------------------------------------
+REF : KHÔNG PHẢI VÌ TÔI KHÔNG COI TRỌNG CHẤT LƯỢNG
+PRED: KHÔNG PHẢI VIÌ TỔI KHÒNG KHÒI TRỌNG CH�ÁCH LƯỢ
+----------------------------------------
+REF : CHÍN MƯƠI BỐN CHÍN MƯƠI LĂM
+PRED: CH�N MƯỜI BỐN CH MƯỜI LÒM
+----------------------------------------
+REF : NĂM MƯƠI HAI NĂM MƯƠI BA
+PRED: NÒM MƯỜI THÀI NÂM MƯƠI BÀ
+----------------------------------------
+REF : VÀ ĐÃ HIẾN MÁU BA LẦN
+PRED: VÀ ĐẠ HIÊN MẤU BAÀ LÀN
+----------------------------------------
+REF : DƯỚI ÁNH ĐÈN MỜ MỜ ẢO ẢO
+PRED: DƯữI ANH ĐỀN MÀI MÒ ẢOẠO
+----------------------------------------
+REF : TỪ SỰ DƯ THỪA QUÁ MỨC CỦA LUỒNG TIỀN NÀY
+PRED: T�Ờ SỰ D� THƯỜ QUA MỚT CỔI NGỘNG TIỀN NÀY
+----------------------------------------
+REF : HẦU HẾT NHỮNG VẤN ĐỀ XẢY RA TRÊN THẾ GIỚI
+PRED: HẌ HỌT NHỜNG VÂN ĐỂ SẢY RA TRỜN THỜI GIỚI
+----------------------------------------
+REF : ỊCH GÃ TO BÉO ỤC ỊCH
+PRED: ẬCH GÀ TỒ BEO QUỤC ��CH
+----------------------------------------
+REF : NÓ ĐƯỢC ĐẶT TRONG MỘT HỘP ĐỰNG TRANG SỨC BỌC DA ĐỎ
+PRED: NỖ ĐƯỢC ĐẶT TRỒNG MỘT HỌT ĐỪNG TRÀNG S�ÍC BỘC DÀ ĐỘ
+----------------------------------------
+REF : NĂM MƯƠI BỐN NĂM MƯƠI LĂM
+PRED: BÒM N MGƯỜI BỐN N�ONG N MƯỜI LÔM
+----------------------------------------
+REF : ÔNG ĐƯỢC NHIỀU NGƯỜI BIẾT ĐẾN
+PRED: �ÒNG ĐƯỢC NHIỀU NGƯỜI BIẾT ĐƊN
+----------------------------------------
+REF : BA MƯƠI HAI BA MƯƠI BA
+PRED: BÀ MƯỜI THẀY BÀ MƯỜI BA�
+----------------------------------------
+REF : CHÍNH THỨC ĐÃ LÂY LAN RA BÊN NGOÀI
+PRED: CH�NH THỨT ĐẠ LæY LÀNG RÀ BỌNH NGOÒI
+----------------------------------------
+REF : MỘT BA NĂM BẢY CHÍN
+PRED: MỘT BA NİM BẢY CH�N
+----------------------------------------
+REF : TRẢ LỜI TÔI BIẾT
+PRED: CÀ LỘI CỔI BIẾT
+----------------------------------------
+REF : TẠI CHỢ CÁ
+PRED: TẠI CHỢ CAÁ
+----------------------------------------
+REF : ĐỐI VỚI NHỮNG PHẢN ỨNG KHÁC BIỆT ĐÓ
+PRED: ĐỔI VÔI NHỰNG PHẀNG ĐƯữNG KHÁC BIỆT ĐỖ
+----------------------------------------
+REF : TIẾNG HÉT ĐỒNG THANH CỦA MẤY CHỤC CON NGƯỜI
+PRED: TÊN HÉT ĐỘNG THÌNH CỦA MẤY CHỤC CÒ NG�GỜI
+----------------------------------------
+REF : NHÓM THANH LONG TRẺ DIỄN TIỂU PHẨM HÀI HẮC BẠCH TRANH HÙNG
+PRED: NHONGN THÌNH LÒNG TRẂ DỀNG TIỀU PHÒM HÀI TH�T BẮT TRæNH THÙ
+----------------------------------------
+REF : TỪ KHI CHỒNG QUA ĐỜI VÌ BỆNH TẬT
+PRED: TỪ KHÌ CHỒNG QUÀ ĐỒI VIÌ BỊNH TẠT
+----------------------------------------
+REF : SÁU MƯƠI SÁU MƯƠI MỐT
+PRED: S�U M�ƯƜI S� MƯƜI MỐT
+----------------------------------------
+REF : XANH CỎ MƯỢT MÀ VEN ĐƯỜNG
+PRED: THÌNH CỔ M� MỢC MÀ VỀN ĐƯỜNG
+----------------------------------------
+REF : THIẾU TƯỚNG PHẠM QUÝ NGỌ CHO BIẾT
+PRED: KHIẾU TƯỨNG PHẒNG QU� NGỒ CHỒ ĐẾT
+----------------------------------------
+REF : TÔI KHÔNG THẤY GÌ LÀ ĐÚNG KHI TĂNG GIÁ XE VÀO CÁC DỊP TẾT
+PRED: TỒI THÒNG THỂY GỊ LÀ ĐŤNG KHÌ TÀNG GIA SẀ VO C�ÁC DỊT VỾT
+----------------------------------------
+REF : KHÔNG MỘT CHÚT TRẦY TRỤA MÀ ĐỀN CÁI GÌ
+PRED: KHÒNG MỘT CHÚC TRẦY TRỒA MÀ ĐỀNH KỂ GỊ
+----------------------------------------
+REF : TRONG CUỘC BỎ PHIẾU TẠI HỘI ĐỒNG BẢO AN HAI NGÀY TRƯỚC ĐÓ
+PRED: CỒNG CUỘC BỘT PHẾU TẠI HỒI ĐỘT BỒ�NG THÀY HGÀI TRƯỚC ĐỖ
+----------------------------------------
+REF : ĐÓ CHỨNG TỎ RẰNG CHÚNG TA ĐÃ GIÀ
+PRED: ĐỖ CHỨNG TỒ RẰNG CHUNGNG TÀ Đà GIÀ
+----------------------------------------
+REF : KHI CHÍNH PHỦ LÚC ĐẦU ĐỀ NGHỊ ÂN XÁ CHO NHỮNG NGƯỜI NỔI DẬY
+PRED: KHIH� CHINH PHỤ LÚC ĐẦU ĐỀ NGHỊ�N SÁ TRỒI NHỪNG NGƯỜI NỘI GIẂI
+----------------------------------------
+REF : BẢY MƯƠI BẢY MƯƠI MỐT
+PRED: BẢY MƯƠƠI BẢY MƯƠI MỐT
+----------------------------------------
+REF : ÁO RÁCH LƯƠM BƯƠM
+PRED: ẠU RẤP LỜNG B BUộNG
+----------------------------------------
+REF : TRẢ LẠI ĐẤT CHO RỪNG
+PRED: Cà LẠI ĐẊT CHỒ RƯỪNG
+----------------------------------------
+REF : CÁC LOẠI CÂY TRỒNG Ở RỪNG NÀY TOÀN CÂY KÉM GIÁ TRỊ
+PRED: CÁC VỘI KÌ TRỒNG ỞI R�ỪNG NẠY TOÒN KỦ KEMM GIÁ TRỊ
+----------------------------------------
+REF : PHỤ HUYNH VÀ HỌC SINH ĐANG PHẢI È CỔ VÌ SÁCH GIÁ CAO
+PRED: THộ HÌNH VÀ HỌC SÌNH ĐANG PHẢIẺ CÒ VÊ SẤT XÁ CÀO
+----------------------------------------
+REF : TRANG THỨ HAI CỦA TỜ BÁO
+PRED: CÀNG THữ HẀY CỦA TỜI BÀO
+----------------------------------------
+REF : THÌ ĐỌC ĐƯỢC HỒI KÝ KHÔNG THỂ CHUỘC LỖI TRÊN BÁO TUỔI TRẺ
+PRED: THỊ ĐỘC ĐƯỢC HỒI K KHÒNG THỜI CHỤC LỘI TRÊN BÓ CỔI CẺ
+----------------------------------------
+REF : PHÙ SA BỒI ĐẮP RUỘNG VƯỜN CHO XÓM LÀNG TRÙ PHÚ
+PRED: THÙ X BỒI ĐẮP RỒNG VƯỜNG DA SỐNG LÀNG R�Ờ PHỐ
+----------------------------------------
+REF : KHUYẾT ĐIỂM LỚN CỦA CHÚNG TA LÀ CHƯA CÓ DÂN CHỦ THẬT SỰ
+PRED: VẾI ĐIỀM L�ÓN CỦA CHÚNG TA LÀI GƯ CÁ DĂN DỤ THẬC SỢ
+----------------------------------------
+REF : NHỮNG BIẾN DẠNG NÀY THƯỜNG THẤY RÕ KHI DƯƠNG VẬT CƯƠNG
+PRED: NHỮNG BIIẾN GIẠN NÀY THƯỜNG TH�AYY RỌ KHI DUƯNG VẬT CƠNG
+----------------------------------------
+REF : NGƯỜI ANH SAU ĐÓ ĐƯỢC PHÉP THẦU XÂY KÊNH NÀY NHƯNG KHÔNG TIẾN HÀNH
+PRED: NGƯỜI ANH V�U ĐÓ ĐƯỢC THẾPẦU PH�AYY KÊN NÀY NHƯNG KHÔNG TIẾN HÀNH
+----------------------------------------
+REF : TRONG NGẮN HẠN THỊ TRƯỜNG VẬN HÀNH NHƯ MỘT CỖ MÁY BẦU CỬ
+PRED: CHONG N�NH HẠN THÌ TRƯỜNGNG VẌN HÀNH NHƯNG MỘT Cộ MÁI BẦU CỨ
+----------------------------------------
+REF : NÓI CÁCH KHÁC CÁI ĐƯỢC CỦA CHÂU Á LÀ CÁI MẤT CỦA CHÂU PHI
+PRED: NÓI CÁCH THÁC ĐÁI ĐƯỢC N�I GAU Á LÀ C�I MẮN CUỦI DOO PH
+----------------------------------------
+REF : EM HÃY TÌM CÁCH TIẾP CẬN ĐỂ BÀY TỎ VỚI MẸ
+PRED: NÊM THẦY BIÌM CÁCH TI CẌN ĐỂ BÂ TỎ VỚI MIỸ
+----------------------------------------
+REF : HỌ CHỈ THÍCH NHỮNG MÔN GÌ MẠNH BẠO BẠO LỰC VÀ KIẾM RA TIỀN THÔI
+PRED: HẠI GỊ B�CH NHỮNG MÔN DÌ MẠNH BẠ Bà LẬT VÀI THẾN RA TIỀN THÔI
+----------------------------------------
+REF : NHƯNG NẾU CHỈ NÓI CÁI GIỎI KHÔNG THÔI THÌ THẬT CHƯA ĐỦ VỀ CHÚ TƯ
+PRED: NHƯNG NÁ CHỊ NÓI TAÁI DỌI KHÔNG THƔI THÌ TẠT SẰ TR� ĐỦ VỀ TRỐ TƠ
+----------------------------------------
+REF : CHỊ NÊN ĐI KHÁM BÁC SĨ VÀ CHỌN PHƯƠNG PHÁP NGỪA THAI HIỆU QUẢ
+PRED: CHỊ NÊN ĐI MÁM BÁT PHỆ VÀY TRỒNG PHƯƠNG PH�ÁT NGƯỜI THI THIỀU QUẢ
+----------------------------------------
+REF : TỪ ĐÓ LẠI SA ĐÀ VÀO NHIỀU NGHỊCH CẢNH ĐÁNG TIẾC
+PRED: TỰ ĐÓ LẠI PH ĐÀ BÀO NHIỀUNG HẠ NỊCH CẠNH ĐÁI VIẾT
+----------------------------------------
+REF : TRANG VIẾT CỦA HỌ HƠN HẲN THỜI TUỔI TRẺ CỦA TÔI
+PRED: KAN VIẾP CỦA HỌ HƠN THẠNH THỜI TỪ CHỈ CỦA TÔI
+----------------------------------------
+REF : XÉT Ở KHÍA CẠNH NÀY THÌ ĐÚNG LÀ MẤT BÒ MỚI LO LÀM CHUỒNG
+PRED: KHI� Ở KHIẾ CẠNH NÀY THÌ KIỊC ĐỨNG LÀ MẮT BÀ MỚI LA LÀNH CHÙ�NG
+----------------------------------------
+REF : LÚC ĐÓ NẠN KẸT XE CHẮC SẼ KINH KHỦNG GẤP NHIỀU LẦN HÔM NAY
+PRED: L�ÚC ĐÁ NÀN KỆN VI TÁC PHỌ KINH KHÙNG LẤP NHIỀU LẦN HÔNG NAYI
+----------------------------------------
+REF : NHANH QUÁ ĐÃ LÀ LẦN THỨ BA XA NHÀ RỒI ĐẤY
+PRED: NÂH QUÁ Đ�Ã LÀ LẬNG TỨ BA PHI NHỀ RỜI Đ�ÃI
+----------------------------------------
+REF : LÊN CÁC CUỘC HẸN PHỎNG VẤN VÀ THỰC HIỆN PHỎNG VẤN
+PRED: LÊN CÁC CUỘC HIẆN PHÒNG BÓN VÀ THỰC HIỆN PHÒNG PHÁN
+----------------------------------------
+REF : ĐIỀU LẠ LÀ TÔI VẪN KHÔNG TỪ BỎ Ý ĐỊNH TRỞ THÀNH TU SĨ
+PRED: N�IỀU LÀ LÀ TÔI BẪN KHÔNG TỪ BẢI Y ĐÌNH TRỜ THÀNH TÔ PHỨ
+----------------------------------------
+REF : CHƯƠNG TRÌNH HỌC BỔNG THANH NIÊN CHÂU Á CỦA NHẬT BẢN
+PRED: DƯƠNG TRÌNH HỌNG BỌNG THANH NIIÊN DOOU Á CỦ NHỌNG BẢN
+----------------------------------------
+REF : MẮT TỰ NHIÊN HOA LÊN TRÍ CHỤP MỘT CÁI LY QUẬT MẠNH XUỐNG SÀN
+PRED: M�T TỰNG NHIÊN HOA LÊN RÍ CHỤC MỘT CÁ L� H� VẬT MẠN XỐN PHÀNG
+----------------------------------------
+REF : NỢ MỘT CUỘC CHIẾN CHỐNG THAM NHŨNG VẪN CHƯA VÀO ĐÂU
+PRED: NỀ MỘT CUỘC DIẾN CH�NG�M NHỤNG VẬN CHƯƯƠNG VÀ Đ�U
+----------------------------------------
+REF : VỢ LỠ CÓ TẬT THẾ ANH NÊN THAY ĐỔI CÁCH TIẾP CẬN
+PRED: BỌI LỜ TÁT BẌC T TH� ANH NÊN TAAYY ĐỘI TÁCH TI�M CÒN
+----------------------------------------
+REF : ĐỖ ĐỨC THUẦN NGUYÊN KẾ TOÁN TRƯỞNG CÔNG TY TIẾP THỊ ĐẦU TƯ
+PRED: LỰ ĐẤT HÒNG QUY�N CÁ TÔN RƯỜNG CÔNG T TIẾP T THỂY ĐẦU TƠ
+----------------------------------------
+REF : ÔNG NÓI CHÚNG TÔI HI VỌNG SẼ CÓ NHỮNG TIN TỨC TỐT LÀNH
+PRED: �NG ĐÓI CHUNGNG TÔI VI BỌNG PHÈ CÁ NHỮNG VIINN TẨT TÓT RÀNH
+----------------------------------------
+REF : VẤN ĐỀ NẢY SINH TỪ CÁI CÂU HỎI DINH CU ẤY
+PRED: BẂN ĐỀY NẂY XINH TỪ CÁI CÔU HỌI DINH C� QU ẢY
+----------------------------------------
+REF : TUY NHIÊN TÔI NGHĨ CẬU TA XỨNG ĐÁNG VỚI CHỨC VÔ ĐỊCH
+PRED: VYN NHÊN TÔI NGHỊ CẌU TA SINN ĐÁ VỚI D�M VÔI ĐỊN
+----------------------------------------
+REF : ĐÂY ĐƯỢC XEM LÀ VAI DIỄN THÀNH CÔNG NHẤT CỦA VƯƠNG TỪ TRƯỚC ĐẾN NAY
+PRED: BÂY ĐƯỢC PHM LÀ VÀI DIỆN TÀNH CÒNG NHẮT CUộA VƯƠNG TỪ TR�� ĐÊN NAY
+----------------------------------------
+REF : CHÓNG MẶT CÒN CÓ THỂ DO TÌNH TRẠNG RỐI LOẠN NHỊP TIM NẶNG GÂY RA
+PRED: CH CH�Ó MẠN CÒN CÓ THỂ DO RÊN TÌNH TRẠI RÓ LẌN NH�P TIÊ MẠNH CÂI RA
+----------------------------------------
+REF : ĐỂ NHỮNG KHÓ KHĂN VÀ MÂU THUẪN DẦN DẦN SẼ BỊ ĐẨY LUI
+PRED: ĐỂ NHỰNG THÁ THĂH VÀ M THỤNG NHæNG DẬNG PHỈ BỊY BẠI LU�I
+----------------------------------------
+REF : THÔNG THƯỜNG ÁN KỶ LUẬT NẾU CÓ THƯỜNG BAN HÀNH VÀO CUỐI TUẦN
+PRED: BÔNG THƯỜNGÁN KỊ LỘC NẾO CÁ THƯỜỜNG BA HÀNH VÀO CỦI TÔNG
+----------------------------------------
+REF : TÍCH CỰC HƠN VỚI VẤN ĐỀ LIÊN QUAN ĐẾN KIỀU BÀO
+PRED: ÍCH CẬC HƠN VỚI TẂN ĐỀ LIÊN QU ĐẾN KIỀU BẀO
+----------------------------------------
+REF : GIỎI GÌ BÁC MÌNH ĐẺ RA KHÔNG NUÔI THÌ AI NUÔI
+PRED: NỌI THÌ BẮM MÌNH ĐỂ RA KHÒNG NI THỈ�I NÔI
+----------------------------------------
+REF : CÁC QUI ĐỊNH CỦA PHÁP LUẬT KHÔNG THỂ ĐƯỢC BAN HÀNH THEO KIỂU ĐÁNH LÉN
+PRED: KÁCGUY ĐỊN CA TẤP RỘT KHÔNG T�Ể ĐƯỢC BAAN HẌÀNH THÊU VIỊU Đ�H L�
+----------------------------------------
+REF : EM CÓ SUY NGHĨ THÊM VỀ VIỆC THAM DỰ HỘI CHỢ KHOA HỌC KHÔNG
+PRED: DÊN C X NGHỊ THÊN VỀ VIỆC ĐANH DỰ HỌI CHỌ KA HỌNG CON�NG
+----------------------------------------
+REF : TỪ ĐẤY ÔNG CÀNG THÔNG CẢM SÂU SẮC TÂM TRẠNG CỦA NGUYỄN THIẾP
+PRED: Ừ Đ�ÁI ÔNG CÀNG THÔNG CẢMH RÂU PHÁCH TĂM TRẠN CUÙN N LIYỄN THẾT
+----------------------------------------
+REF : MONG ANH HÃY HIỂU CHO EM EM THƯƠNG NHỚ VÀ YÊU ANH NHIỀU
+PRED: MÔNG ANHGHÀY HIỀU CHOI Y EM YÊM THƠNG NHỚ VẀY Y ANH NHIỀU
+----------------------------------------
+REF : NHỮNG NGƯỜI TRẺ ẤY THẬT ĐÁNG PHÊ PHÁN ĐÁNG LÊN ÁN
+PRED: NHỮNG NGƯỜI GỈ ẢI T BẠN ĐÁ THÊ PHÁ ĐÁ LÊNÁN
+----------------------------------------
+REF : NHƯNG RỒI CÁI TÌNH VỚI BÀ CON CỨ NẮM NÍU KHÔNG DỨT RA ĐƯỢC
+PRED: NHƯNG RỒI CÁI TÌNH VỚI BÀ CON CỨ NĂM NẾU KHÔNG DẤT RA ĐƯỢNG
+----------------------------------------
+REF : VỀ NGUYÊN TẮC VÀO HỌC LÀ SINH VIÊN PHẢI ĐÓNG HỌC PHÍ
+PRED: VỜI N VIÊN BÁCH VÀO HỌC LÀI PHINN VIÊN PHâI ĐÓNG HỌC PHẤ
+----------------------------------------
+REF : SỐ ĐƠN VỊ THAM GIA HỘI CHỢ VIỆC LÀM TĂNG ĐÁNG KỂ QUA CÁC NĂM
+PRED: VỔ ĐÂN VỪI THANM G HỌI GIỌ VIỆC LẠMH TANH ĐANGN KỂ QUA ÁC MĂM
+----------------------------------------
+REF : ĐỂ RỒI CHÚNG TA KHAO KHÁT MÃI TRONG VÒNG LUÂN HỒI NHÂN GIAN
+PRED: NỂ RỒI CHÚNG TAI PH�O KHÁC MẠI TR�ONGNG VÒNG LUÔN HỒI NHÂN G
+----------------------------------------
+REF : THAY VÌ BỐN GIỜ NHƯ TRƯỚC ĐÂY
+PRED: HAY ĐỊ BỐN DỒ NHƯ CHYẾC Đ�
+----------------------------------------
+REF : MUỐN ĐẸP PHẢI GHÈ LÀM SAO CHO CÁC BÓ CƠ CHÂN NỔI BẬT LÊN
+PRED: MỐN ĐỆP PHẢI CHÊ LÀM SA CHO CÁ BÓ CƠI TRÊN N MỖI BẬT LÊN
+----------------------------------------
+REF : ANH BỊ ĐẨY TỪ HÀ NỘI VÀO SÀI GÒN
+PRED: ĂN BỊ ĐẂY T THÀI NỘI TOÀI SẢY RỒN
+----------------------------------------
+REF : ÔNG CHỦ TỊCH TUYÊN BỐ NHƯ THẾ NÀO
+PRED: ÔNG TRỦ TỰC ĐÊM BỐA NHI� THẾN NÀO
+----------------------------------------
+REF : VÀ KHI CHÚNG TA SAO NHÃNG CÔNG VIỆC CỦA MÌNH
+PRED: VÀT KHI CH�ÚNG TA SA NHẠN CÔ VIỆC CỦNG MẌNH
+----------------------------------------
+REF : CŨNG KHIẾN CHO HỌ DÈ DẶT
+PRED: CŨNG KHẾ CHO HỌI GỀ LẶT
+----------------------------------------
+REF : BÀ QUẢNG VẪN ĐANG BẬN RỘN
+PRED: B QUẢN VỾN ĐANG B ĐỢN RỒNG
+----------------------------------------
+REF : RỒI CHẠY SANG GÕ CỬA PHÒNG BA LE HAI DẤM DÚI
+PRED: NÒI TRẢY SAN GỘ CỰ VÒNG BA LÊN HI D�ÁM DÚI
+----------------------------------------
+REF : ĐIỆN THOẠI RENG NHƯNG TA CŨNG PHẢI NHẤC MÁY ĐÚNG KHÔNG
+PRED: VỆN THỢ LE DÊN TA TUỤNG VẢI NHẤT M�Y Đ�ÚNG KHÔNG
+----------------------------------------
+REF : HỢP VỚI HƯƠNG VỊ ĐẦU XUÂN
+PRED: HỌC BỐI THƠC VIỊ ĐẦU SÂN
+----------------------------------------
+REF : Y TẾ BÌNH HƯNG HÒA BỊ HƯ HỎNG
+PRED:  ĐẾ BÌNH THƠNG HOÀ BỊ HƯ HỌNG
+----------------------------------------
+REF : THÁNG TRƯỚC CHỒNG VỀ MẤY NGÀY MÌNH NẰM NGỦ THẤY ẤM KINH KHỦNG
+PRED: THÁN CHƯỚC TRÒNG VỀ MẤY NGÀY MỀN NẦNG NGỤ THẤY ẤM VÊ KHŨNG
+----------------------------------------
+REF : CHÚNG CỨ CỐ LÙI LẠI MẶC DÙ VƯỚNG VÍU GÔNG XIỀNG
+PRED: CHÚNG CỨ CỐ LUộI LẠI MẶT D�ỜCƯỨNG VIẾU G� XYỀN
+----------------------------------------
+REF : CÁC CHƯƠNG TRÌNH CA NHẠC PHẦN LỚN ĐỀU KHÔNG ĐỘT PHÁ
+PRED: CÁC TYÊN TRÌNH TRA NHẠ VÌNH LỚN ĐỀU KHÔNG ĐỘC HOẂ
+----------------------------------------
+REF : ỦY BAN CHÂU ÂU KÊU GỌI NHỮNG QUỐC GIA PHÁT TRIỂN CÒN LẠI
+PRED: � BA CHO Ô KƊ GỌI NHỮNG QU�ÍT DA PHÁT CHYỆN CỒI LẠI
+----------------------------------------
+REF : KHIẾN HAI CHA CON CẬU
+PRED: SYẾN HA CHIA CON CẬU
+----------------------------------------
+REF : CHỊ GẶN HỎI ANH THỀ SỐNG THỀ CHẾT LÀ KHÔNG CÓ
+PRED: CHYỊ DẠNG HỌI ANH THỀ S�NG THỀ TRẾT ĐÀ KHÔNG C�
+----------------------------------------
+REF : TIẾNG MÃ TẤU SẮC LẠNH CHẠM NHAU VÀ CẢ TIẾNG RÊN RỈ
+PRED: T� MẢ ĐÔ SÁT LẠN TRẢM NHAU VÀ CẢ TIẾN GÊN LỂ
+----------------------------------------
+REF : ĐỂ TRẢ TRỞ LẠI ĐẠI DƯƠNG
+PRED: ĐỂ TRẢ CHỞ LẠI THẢY DƯNG
+----------------------------------------
+REF : HẦU HẾT NANG NÀY CÓ NGUỒN GỐC TỪ GÂN CƠ CHÂN NGỖNG
+PRED: HẀU HẾT TRA MÀY CÓI VỒNG G�P ĐỰ RÂN KƠI TR�INN N NHỌNG
+----------------------------------------
+REF : TỐNG CỔ HẮN ĐI KHÔNG ĐƯỢC ĐỂ HẮN VÀO ĐÂY NỮA
+PRED: ĐÓNG GỔ THẮN ĐI KHÔNG ĐƯỢC ĐỂ HẮNG VÀ ĐÂY NỮA
+----------------------------------------
+REF : MÀY DÁM CHƠI VỢ TAO TAO PHẢI GIẾT MÀY
+PRED: MÀY RAÁM CHÊ VỜ Đ TA CHỂ YẾT MẀY
+----------------------------------------
+REF : HÔM NAY EM CÓ TỚI NĂM KHÁCH
+PRED: HÔMAYEM TOÓ ĐỚI NÂM SÁC
+----------------------------------------
+REF : CÓ THỂ LÀNH LẶN MÀ KHÔNG ĐỂ LẠI VẾT SẸO
+PRED: Ó THỂ LÀN LẠN MÀ KHÔNG ĐỂ LẠI ĐþT SẼO
+----------------------------------------
+REF : NÀNG CÓ ĐÔI MẮT TO SÂU VÀ VẦNG TRÁN RỘNG MÊNH MÔNG
+PRED: NÀ CÓ ĐàI MÁT Đ SAAU VÀ VÌN CHÁN GỘNG M� MINNH M
+----------------------------------------
+REF : CHO EM GÓP MỘT VIÊN GẠCH
+PRED: CHO EM GÓC MỘT VIN GIẠC
+----------------------------------------
+REF : ĐI KIỂM TRA LẠI BÁC SĨ KHUYÊN NÊN MỔ NỘI SOI
+PRED: ľ TIỂM TRAIA LẠI VÁT SỈ KHÊN NÊ MỘI ĐỘI XI
+----------------------------------------
+REF : LÀM ĐẸP KHÔNG ĐÚNG CÁCH
+PRED: NÀM ĐẆP KHÔNG T�NG CÁC
+----------------------------------------
+REF : CŨNG THUỘC LOẠI DÀY ĐẶC NHẤT TRONG HỆ MẶT TRỜI
+PRED: CỐN THỘI LẠI GIỀ ĐẠT NHẾT CHO HỆ MẶT GIỜI
+----------------------------------------
+REF : MỖI KHI XE RÁC ĐI NGANG QUA ĐÁNH KẺNG MỚI ĐEM RA ĐỔ
+PRED: MỘ KHI XE LÁ TI NGHANG QUA TẂN KỂN MỚI ĐÊM RA ĐỒ
+----------------------------------------
+REF : TÔI TỰ HỎI PHẢI CHĂNG ĐÓ LÀ DO DAN CÒN QUÁ TRẺ
+PRED: TàIT TỰ HỌI PHẢI TRANH ĐÓ LÀI CHO G� CÒN QUÁ CHỂ ĐN
+----------------------------------------
+REF : BỌN BUÔN DỰ ÁN CHẠY CHỌT BÀY RA CÁC DỰ ÁN ĐỂ KIẾM CHÁC
+PRED: BỌT BU� DỰ Á CHỂ TRỌ VæY RA CÁI GỊ ĐỂ KIÊN CHÉ
+----------------------------------------
+REF : HẮN CHƠI VỢ ANH THÌ SAO ANH KHÔNG CHƠI VỢ HẮN
+PRED: ÁN CHƊI VỦ � ANH TIÊ CHOO � AN KHÔNG CHẾI VỢN
+----------------------------------------
+REF : ỔNG NÓI Ở SÀI GÒN ỔNG ĐÃ LÀM ÔNG HỘI ĐỒNG NHƯ THẾ NÀO
+PRED: ỖNG MÓI ỞI SỦI RÒ �ỘNG ĐẢI LÀM ÔNG HỘI ĐỒNG NHIƯC THẾN NÀ
+----------------------------------------
+REF : TẤT CẢ MỌI THỨ ĐỀU KỲ LẠ MỘT CÁCH PHI THƯỜNG
+PRED: �ẾT CẢ MỘI THỨA ĐỀ KÌ LẠ MỘT CÁC PH THƯỜNG
+----------------------------------------
+REF : CÁC VỤ THAM NHŨNG VÀ BÊ BỐI KINH TẾ
+PRED: CÁC VỘC TH�AN NHỘNG VÀ Đþ BỐI KINH ĐẾ
+----------------------------------------
+REF : TRỞ NÊN THỤ ĐỘNG
+PRED: TRỢ NÊ THộI ĐỘNG
+----------------------------------------
+REF : NẾU TƯỞNG TƯỢNG BẢY TÁM NĂM NỮA
+PRED: NẾ TƯỮNG T�ỢC BẬY ĐÁM ĐĂM NỮA
+----------------------------------------
+REF : CÔ CỨ NHÈ NGAY CÁI NỌNG CÁ TRÊ
+PRED: CÔ CỨA NHÀ TRÁN ĐỘNG C� CHÊ
+----------------------------------------
+REF : CÓ HẲN MỘT LOẠT BÀI VIẾT CHUYÊN ĐỀ VỀ QUẢN TRỊ THƯƠNG HIỆU
+PRED: CÓ THẢN MỘT LẠP BÀI ĐẾT CHYÊN ĐỜ VỀ QUẢN CHỊ THƯNG HIỆU
+----------------------------------------
+REF : CHÚNG TÔI YÊU NHAU ĐƯỢC HAI NĂM THÌ GIA ĐÌNH TÔI XẢY RA CHUYỆN
+PRED: CHÚNG TÔI YÊU NHAU ĐƯỢC HAI NĂM THÌ G ĐÌNH TÔI SẢY RA TIỆN
+----------------------------------------
+REF : CHUẨN BỊ CHO NGÀY KHAI TRƯƠNG CỬA HÀNG ĐẦU TIÊN
+PRED: CHỨNG BẬY CHO NGÀY KHI TRƠNG CỞA HÀNG ĐẦU TIÊN
+----------------------------------------
+REF : MÀ PHẢI CHE CHÁI Ở TẠM BÊN HÔNG NHÀ CHA RUỘT
+PRED: MÀ PHẢI CH�IA CHÁI Ợ TẢM BÊN HÔNG NHỀ CH RỘT
+----------------------------------------
+REF : DÃI DẦU NẮNG GIÓ TRƯỜNG SƠN
+PRED: DẢI DẦU NẮNG XÁ TRƯỜNG SƠN
+----------------------------------------
+REF : THÔI THÌ CỨ SẮP XẾP NHƯ VẬY
+PRED: THÔI THÌY CỨA SÁP SÁP NHƯ VẬY
+----------------------------------------
+REF : NÉT MẶT HỌ KHÔNG NGỜI LÊN HẠNH PHÚC CỦA NGƯỜI MẸ
+PRED: NẾT MẶT HỌ KHÔNG NGÒI LÊN HÀNH PH�ÚC CỢA NGƯỜI MẸ
+----------------------------------------
+REF : VÀNG ÓNG ĐÔI GHỆT CAO CỔ CỦA NGỰ LÂM QUÂN
+PRED: VÀNG ÓNG ĐÔI GẠCH COO CỔ CỦA NGỰ LÂM QUæN
+----------------------------------------
+REF : NHỮNG NGƯỜI NÀY ĐỀU ĐƯỢC ĐÀO TẠO VỀ HỘI HỌA
+PRED: NHỮNG NGƯỜI NÀY ĐỀU Đ�ỢC ĐẠO TẢO VÀ HỌI NGOÒ
+----------------------------------------
+REF : TÌM HUNG THỦ HIẾP DÂM BẰNG NƯỚC BỌT NẠN NHÂN
+PRED: TÀM HÔNG THỦ HẾP DĂM BẰNG NƯỚC BỘT NẠNG NHÂNH
+----------------------------------------
+REF : CHÍN MƯƠI TÁM CHÍN MƯƠI CHÍN
+PRED: CHÍN MƯỜI TẢM CHÍN MƯƠI CHÍN
+----------------------------------------
+REF : ĐỪNG BAO GIỜ ĐỂ CHO BẤT KỲ AI NÓI VỚI BẠN RẰNG
+PRED: ĐỦNG BAO DÀ ĐỂ CHO BẤT KÊ AI AII NÓI VẚI BẠN RẰNG
+----------------------------------------
+REF : THÌ CHỦ ĐẦU TƯ PHẢI TỰ PHÁ DỠ PHẦN NỘI DUNG SAI PHÉP ĐÓ
+PRED: THÌ TRỦ ĐẦU TƯ PHẢI TỪ PHÁ GI� PHẦNG NG NỘI D�UNG SAI PHÉP ĐÓ
+----------------------------------------
+REF : TRỌNG TÀI PHẠT THẺ ĐỎ
+PRED: CỌNG TÀI PHẢT THẂ ĐỎ
+----------------------------------------
+REF : TÔI CÓ THỂ CĂM GIẬN ĐỦ THỨ
+PRED: TÔI CÓ THỢI CĂM LẬN ĐỦ THỨ
+----------------------------------------
+REF : CHÍN MƯƠI CHÍN MƯƠI MỐT
+PRED: CHÍNƜI CHÍN MƯƠI MỐT
+----------------------------------------
+REF : LƠ LỬNG TRÊN ĐẦU LÀ NHỮNG CHIẾC BẪY ĐÁ HÀNG TRĂM KHỐI
+PRED: LỜI LẰN TRÊN ĐẦU LÀI NHỮNG CH�ÍC BẢY ĐÁ HÀNG TRĂM KHỔI
+----------------------------------------
+REF : NGỤ ẤP HÒN NGANG
+PRED: NGỘ ẮP HÒN NHÊN
+----------------------------------------
+REF : KHI NHÂN VIÊN CỨU HỘ CỐ GẮNG ĐƯA NÓ LÊN SÀ LAN
+PRED: KHI NH�NG VIÊN CỐ HỌ CỐ GẮNG ĐƯƯA NÓ LÊN SÀ LAN
+----------------------------------------
+REF : MỌI THỨ ĐỀU ĐƯỢC MỔ XẺ LẠI
+PRED: MỘI THỚ ĐÈU ĐƯỢC MỘ� SẼ LẠI
+----------------------------------------
+REF : GẮN LÔNG CHIM HỘT ĐÁ LÓNG LÁNH HAY BÈO DÚN TÙA LUA ĐẦY CỔ
+PRED: LẮNG LÒNG CHÌM HỌC ĐÃ L�ONGNG LANH HAY BỆU DÚN TÒA LÔ ĐỦY CỔ
+----------------------------------------
+REF : MỘT SINH VIÊN ĐƯỢC VAY VỐN TÍN DỤNG HỌC TẬP
+PRED: MỘT SINH VIÊN ĐƯỢC VAY VỐNG KÍNH DỒNG HỌNG TẬP
+----------------------------------------
+REF : ĐI BỘ LEO NÚI ĐẾN NHỪ CHÂN
+PRED: ĐI BỌI LA EMO NỐI ĐẾN NHỜ TR�NH
+----------------------------------------
+REF : SẼ LÀM GIẢM TÌNH TRẠNG ÓI ỌC CỦA TRẺ
+PRED: SẼ LÀM TÌH TRẠNG �ÓI HỌC CỦA TRẺ
+----------------------------------------
+REF : MÀ PHẢI CHUYỂN QUA HÌNH THỨC GIAO DỊCH
+PRED: MÀ PHẢI TRỂN QUA HÀNH TẤC GIOO DỊCH
+----------------------------------------
+REF : NẾU VÌ CHÚNG TÔI
+PRED: NÉ PHÌ CH�ÚNG TÔI
+----------------------------------------
+REF : CÁC CÔNG TY DU LỊCH PHẢI XÁC ĐỊNH
+PRED: KÁC CÒNG TÌ DÙ LẬCH PHẢI SÁC ĐæNH
+----------------------------------------
+REF : NẾU BẠN VẪN CẢM THẤY TỘI LỖI
+PRED: N�O BẠN PHẪN CẢM THẂY TỒI LỖI
+----------------------------------------
+REF : KHÔNG PHẢI NẮP KHUM
+PRED: KHÔNG PHẢI NẮP KHÔNG
+----------------------------------------
+REF : VỚI SỰ XUẤT HIỆN CỦA QUÁI THÚ VÀ RỒNG
+PRED: VỚI SỰ SỨC THỆN CỦA QUÁI TH�Ú VÀ RæNG
+----------------------------------------
+REF : NĂM ĐẦU TIÊN
+PRED: NẰM ĐẦU TIÊN
+----------------------------------------
+REF : MỘT SỐ NGƯỜI CHO RẰNG
+PRED: MỘT SỐ NGƯỜI CHOI RẰNG
+----------------------------------------
+REF : VỚI TRÊN LÀ NÚI VÀ DƯỚI LÀ SÔNG
+PRED: VỚI TRNH LÀ NỐI VÀI GIỚI LÀ SONGNG
+----------------------------------------
+REF : ĐẶC ĐIỂM CỦA PHẨY TRÙNG TẢ
+PRED: NẶT ĐỂM CỦ PHẢY TÙNG TẢ
+----------------------------------------
+REF : ÍT NHẤT Ở HƠN BA MƯƠI TRƯỜNG THUỘC CÁC ĐỊA PHƯƠNG NÓI TRÊN
+PRED: ĐỾT NH�ÁT �Ả HƠN BA MƯƠI TRỜNG HỘT CÁC ĐỀ PHƯƠNG NÓI TRÊN
+----------------------------------------
+REF : NỮ DIỄN VIÊN XINH ĐẸP PHẠM BĂNG BĂNG
+PRED: NỂ DẾN VI� SÌNH ĐÀ PHẢM BĂNG BĂNG
+----------------------------------------
+REF : THEO PHÓ CHỦ TỊCH ỦY BAN AN TOÀN GIAO THÔNG QUỐC GIA
+PRED: THEOO PHÓ CHỦ TẬCH VỊ BANG EM TOÒNG DOO THÔNG QUẤC CA
+----------------------------------------
+REF : BÂY GIỜ CƯỚP NHIỀU QUÁ ĐI ĐƯỜNG CŨNG THẤY SỢ
+PRED: BẀY GIÀ CƯỨC NHIỀU QUÁ ĐI ĐƯỜNG CŨNG THẤY SẢI
+----------------------------------------
+REF : VÌ BAN ĐÊM CHỊ NGỦ KHÔNG NGON
+PRED: VÌ BÀNG Đ� CHỆN NGỦ KHÔNGG�N
+----------------------------------------
+REF : BẢY MƯƠI BỐN BẢY MƯƠI LĂM
+PRED: BẢY MƯƠI BỐN BẢY MƯƠI LĂM
+----------------------------------------
+REF : KIỂU NÀY CHẮC PHẢI CẮT GIẢM BIÊN CHẾ
+PRED: CỂU NGÀY CHẮC PHẢI CẮCH SẢM ĐỌN GIẾ
+----------------------------------------
+REF : BÁC ĐANG SUY NGHĨ GÌ THẾ
+PRED: VÁ ĐANG X�GHỂ DỊN THẾ
+----------------------------------------
+REF : MẸ ƠI CÓ MUA ĐỒ CHO CON KHÔNG
+PRED: NGẂ ƔI CÓ MU� ĐỒ CH� BÂ KHÔNG
+----------------------------------------
+REF : BÀ CON CHÒM XÓM
+PRED: BÀ CON TRộNG SỐM
+----------------------------------------
+REF : TÔI ĐANG BẬN HỌP
+PRED: VÔI ĐANG BẪN HỌC
+----------------------------------------
+REF : ĐÂY LÀ MỨC LÃI SUẤT THẤP NHẤT QUA CÁC PHIÊN ĐẤU THẦU
+PRED: BÂY LÀM MẤT LẠI SỤC THÁC NH�ÁT QUA CÁC PHINN Đ� HỦU
+----------------------------------------
+REF : CHỨ KHÔNG PHẢI TÀI NĂNG THIÊN BẨM NÀO
+PRED: CHẾI KHÔNG PHẢI TÀI NĂNG THINN BẪNG NÀO
+----------------------------------------
+REF : VAI TRÒ CỦA CHẾ ĐỘ DINH DƯỠNG
+PRED: BI TRÒ CỦA CHẾI ĐỘ D�IN NH�ỮNG
+----------------------------------------
+REF : BÊN TRONG TRÁI VẢ KHI BỔ RA SẼ RỖNG CHỨ KHÔNG ĐẶC NHƯ TRÁI SUNG
+PRED: BÊN TR�ONG TRÁI VẢ KHIÊN BỘ RA SẼ RỘNG CHỨC KHÔNG ĐẶT NHƯ TRÁI S�UNG
+----------------------------------------
+REF : NÀY BÓN CHO CON THƯƠNG ĐỠ YẾU ĐAU CÒI CỌC
+PRED: MÀY BÓN CHOT CON� THƯƠNG ĐỞI Y�UA Đ CÒI CỌC
+----------------------------------------
+REF : SƯƠNG MÙ ĐÃ ĐỌNG THÀNH NHỮNG HẠT GIÁ BĂNG
+PRED: SƠ MÙ ĐÃ ĐỘNG HÀNH NHỮNG HẠT GIẾ BĂNG
+----------------------------------------
+REF : GHÉP CÀNH MAI GIẢO VÀO THÂN CỔ THỤ CHO HOA CÁNH LỚN
+PRED: L�P CẰNH MA GIẢO VÀO TH�ANN CỦI THỤ CHO HOA CÁH LẾN
+----------------------------------------
+REF : KHIẾN PHỤ HUYNH HIỂU NHẦM
+PRED: KHẾN TộANH HIỂU NHẰM
+----------------------------------------
+REF : RỒI ĐI KHẮP NƠI TÌM THẦY CHỮA BỆNH CHO ANH
+PRED: �Ề ĐI THÓNG NƠI TỀN HÀY CHỮA BẢNH CHO ANH
+----------------------------------------
+REF : LUÔN ỔN ĐỊNH VÀ CÁC XE TRẤU KHÁ NẶNG
+PRED: LƔ NGỘN ĐỊNH VÀ CÁC XE TRẤ KHÁN NẰNG
+----------------------------------------
+REF : DỌC HAI BÊN SÔNG NGÀN SÂU
+PRED: NỌC HA BÊH SÔNG NGÀNG SÂU
+----------------------------------------
+REF : CỠI NGỰA ĐI THI
+PRED: CỞI NGỖA ĐI THI
+----------------------------------------
+REF : DIỄN VIÊN CHÍNH ĐỨNG NHƯ KHÚC GỖ
+PRED: NHIỂ VÌ CHÍNH ĐẾNG NHƯ KHỐA GỌ
+----------------------------------------
+REF : CỦA CHÍNH SÁCH ĐỐI VỚI QUY MÔ CỦA THỊ TRƯỜNG
+PRED: CỦ CHÍNH S�ÁCH ĐỚI VỚI QUÊ NGOÔ CỦA THỊ TRƯỜNG
+----------------------------------------
+REF : CƯỚP ĐẦY ĐƯỜNG CÔNG AN CHỈ LO HẠCH SÁCH
+PRED: CỐC ĐÀY ĐƯỜNG CÔNG NGANG CHỈ LA HẠT SÁCH
+----------------------------------------
+REF : NHƯNG OÁI ĂM THAY
+PRED: NHƯNG ỖI� TH�AYI
+----------------------------------------
+REF : VÀ KHI HỌ VẠCH TÓC RA
+PRED: VÀ KHI HỎ VẠCH TÓC RA
+----------------------------------------
+REF : KHÔNG MỘT CHIẾC XE LẠ NÀO CÓ THỂ MON MEN VÀO ĐƯỢC
+PRED: KHÔNG MỘT CHẾC SE LẢ NÀO V�Ó THỂY MÔN MANG VÒO ĐƯỢC
+----------------------------------------
+REF : SAU CẢI CÁCH
+PRED: SAUO CẢI CÁCH
+----------------------------------------
+REF : VÌ BẠN CÓ THỂ LẢY CÒ TỪNG PHÁT MỘT
+PRED: VỌ BẠN GÓ THẂ LẤY CÔ TÌNH TÁC MỘT
+----------------------------------------
+REF : TRONG TƯ THẾ PHI NGỰA CHỒM LÊN
+PRED: T�ONG TƯ THẾ PH NGỮA CHỒNG LÊN
+----------------------------------------
+REF : NÊN HAI MỐ CẦU BỊ SỤP ĐẤT KHIẾN LỐI ĐI BỘ QUÁ NGUY HIỂM
+PRED: NÊNH HA MUỐ CæU BỊ SỘC ĐẾT KHIẾN LOÓ ĐI BỘ QUÁ NGU� HIẂM
+----------------------------------------
+REF : MÀ CŨNG ĐẦY THANH KHIẾT
+PRED: MÀI CỦNG ĐÂY TH�ANH KHIẾT
+----------------------------------------
+REF : MỖI KHI CƠN GIÓ ĐẾN
+PRED: MỖI KH CƔ GIÓ ĐẾN
+----------------------------------------
+REF : LÀ TIẾNG TRỐNG LÂN TÙNG XÈNG VUI TAI
+PRED: LÀ TIẾN TR�NG LÂN TộNG XAN VỐI TAI
+----------------------------------------
+REF : MỘT CHUYẾN DU LỊCH DÃ NGOẠI TẠI BÒ CẠP VÀNG
+PRED: VỘT CHYẾN D LẊCH GIÁ NGOỀI TỠI BA� CẢP VẰNG
+----------------------------------------
+REF : BÁC VẪN CHƯA TRẢ TIỀN CHO TÔI ĐÂY NHÉ
+PRED: BÁC PHẪN CHƯI Đ�Ã TIÌN CHÜ BA�I Đ LẂ NHÉ
+----------------------------------------
+REF : TRONG PHIM CÓ NHIỀU CẢNH CHÉM GIẾT
+PRED: TÔ PHÊ CÓ NHIỀU CẢN CH�M GIẾT
+----------------------------------------
+REF : ÔI DÀO
+PRED: ÔI GIÀO
+----------------------------------------
+REF : MỘT KẾ HOẠCH TƯƠNG TỰ ĐƯỢC ÁP DỤNG Ở ANH
+PRED: MỘT KẾI HOẶT TƯƠNG TỔI Đ�ỢC ÁP DỤNGỞ � ANH
+----------------------------------------
+REF : ĐỂ CHỌN MÁY IN CHO PHÙ HỢP
+PRED: ĐỂ CHỒN M�ÁYANH CHO CÙ HỌ H�T
+----------------------------------------
+REF : KHÔNG HIỂU SAO
+PRED: KHÔNGGHỆU SAO
+----------------------------------------
+REF : MỘT VỤ CHẬP ĐIỆN ĐÃ KHIẾN NGỌN LỬA BÙNG LÊN
+PRED: MỘT Vộ TRỌC ĐỆN Đ KHIẾN NỌN �Ữ BÙNG LÊN
+----------------------------------------
+REF : CON CHÓ LỦI THỦI ĐI THEO CHỦ NÓ
+PRED: KH CHO LỦ THỔA ĐI THEEOO CHỦ NÓ
+----------------------------------------
+REF : ÂM THẦM CHẮT CHIU NUÔI TÔI KHÔN LỚN
+PRED: ĂM THẦM CH�ÁC CHÊU NÔI TÔI KHÔNG RẾN
+----------------------------------------
+REF : PHÙ HỢP CHO MỌI CÂN NẶNG
+PRED: VộA HỌP CHOU HỘI TÂN NẠNG
+----------------------------------------
+REF : MUỐN CÔNG NHẬN NGAY PHA BÓNG ẤY THÌ PHẢI SỬA LUẬT
+PRED: M�N C�NG NHẠN NGAY PH BÒNG  Ở THÌ PHẢI SỮ LẌT
+----------------------------------------
+REF : BẢO THẰNG QUYẾT NÓ BẮT CON GÀ SỐNG NÂU MÀ THỊT
+PRED: THỞ THẰNG THẲN QUẾT NÀ B�ÁT CON� GÀ SỦNG NÂU MẠ THỆC
+----------------------------------------
+REF : VÀ GIÁO DỤC CON NGƯỜI TRỞ THÀNH VIỆC LUYỆN TRÍ NHỚ
+PRED: VÀI GẢ DỤC CON NGƯỜI TRỔ THÀNH VIỆC LỆN CHỊN NHỮ
+----------------------------------------
+REF : LẦN ĐẦU TIÊN MỘT NHÂN VIÊN NGƯỜI VIỆT THÁCH THỨC VIỆC TÁC NGHIỆP CỦA TÔI
+PRED: NÀN ĐỦU KÊN MỒ NÊN VIÊN NGƯỜC VIỆT THÁCH CẤC VIỆC TẮC NGHỆP CỦA TÔI
+----------------------------------------
+REF : TRÊN MẶT AI CŨNG CÓ KHĂN TAY KHẨU TRANG CHE MIỆNG
+PRED: NHIEM MẶCHI CÙNG C� KHANH T�AY KHỦ TR� CHE MIỆN
+----------------------------------------
+REF : NHỮNG KIỂU VẾT THƯƠNG MÀ TRẺ THƯỜNG MANG THEO CÓ THỂ LÀ GÌ
+PRED: CHỰ VI�ÍCH THƯƯƠNG MÀ CHẺ THƯỜNG MĂN THEEOO CÓ THỂ LÀO GÌ
+----------------------------------------
+REF : PHÓNG SỰ ẢNH NHỮNG MÀN BIỂU DIỄN NGOẠN MỤC TRÊN BẦU TRỜI
+PRED: UỐNG SỰ ẢNH NHỮNG MÀN ĐỰ GIỄN MẠNH MỘT TRÊ�Ờ TRƯỜI
+----------------------------------------
+REF : NHƯNG CUỐI CÙNG CHẲNG AI CHỊU NỔI CÁI TÍNH HAM VUI CỦA TÔI
+PRED: ��C CÙNG TRẲN AI CHỰ NỜI CẢI TÊN H� V�I QUỢI TÔI
+----------------------------------------
+REF : TỐI QUA NGƯỜI TA ĐẾN BẮT TÔI GIỮA ĐÊM HÔM KHUYA KHOẮT
+PRED: TỪI CON NGƯỜI TA ĐIỀN BẤT TÔI GIỢA ĐÊM KHÔN KHÊ KHÁCH
+----------------------------------------
+REF : TRƯỚC HẾT BẠN CẦN TÌM HIỂU THÔNG TIN QUY HOẠCH KHU ĐẤT
+PRED: KỾC KHẾT BẢN CÀNH TỊM HIỮ THÔNG TI� QU HOẠN KHÔ ĐẾT
+----------------------------------------
+REF : LÀM ĐƯỢC HẾT KHỐI CÔNG VIỆC ẤY LÀ MỘT NỖ LỰC RẤT LỚN
+PRED: VỮC HẾT KHỔI C�UNG VIỆC �ẨY LÀ MỘT NỘ LỢC VẤT LỮ
+----------------------------------------
+REF : KIỂU HÀI DUNG TỤC VẪN CỨ LỀNH KHÊNH Ở MỘT SỐ TỤ ĐIỂM
+PRED: KỂ HÀI DƂNG TỤC VÊNH CỨ LÊN THÌN Ở MỘT SỦ TỦ BI ĐỂM
+----------------------------------------
+REF : ĐẦU TIÊN LÀ MỘT TẤM ÂM BẢN SAU ĐÓ MỚI ĐẾN DƯƠNG BẢN
+PRED: TRÊN L� MỘT TẦM ÔM BẢN SAOO ĐÒO M�YỜI ĐỊN D�ƠNG BẢN
+----------------------------------------
+REF : TẤT NHIÊN HÓA ĐƠN TIỀN NƯỚC CŨNG KÈM LUÔN KHOẢN TIỀN
+PRED: TẾTCH NHÊ H� ĐÔN TIÌNH NƯỚC CřNG KÀM THEO LàN �ẠNH TIỀN
+----------------------------------------
+REF : CÀNG NGÀY MÌNH CÀNG NGHĨ NHIỀU VỀ CÔNG VIỆC GIẢNG DẠY
+PRED: C� NGÀY MÌNH CẰNGGHIỂN NH�Ề VIỆ CÔ VIỀC GIẬN GÀI
+----------------------------------------
+REF : BẠN KHÔNG BAO GIỜ RA NGOÀI MÀ KHÔNG DÙNG KEM LÓT
+PRED: BẠN KHÔNG BA GI�ỜI RA NGOÀI MÀ KHÔNG DÙNG K EM LÓ
+----------------------------------------
+REF : SAU ĐÓ HỌ LÂN LA SANG CHƠI RỒI ĐÁNH CẮP ĐỨA BÉ
+PRED: THO ĐỎ HỎ LÊN LA PH� TRƠI RỒI ĐÁNH CẤP ĐỢA BẺ
+----------------------------------------
+REF : VẤN ĐỀ ĐẶT RA Ở ĐÂY LÀ LÀM THẾ NÀO ĐỂ
+PRED: VÊNH ĐÌ ĐẰT RA� ĐÂY LÀ LÀM THỆ NÀO ĐỂ
+----------------------------------------
+REF : NGỒI NGHE TIẾNG BIỂN VÀ THƯ THẢ ĐẾM TỪNG GIỌT ĐEN RƠI
+PRED: NG�ỜI NGH�E TIÊ ĐỂN VÀ THƯ TẢI ĐỾM TỪNG GIẌP ĐÊN RƠI
+----------------------------------------
+REF : KIỂM TRA TRUNG TÂM NÀY CÔNG AN ĐÃ BẮT GIỮ TỚI
+PRED: TR TRA CHUNG TÂ NÀY CÔNGANH ĐẠ BẮCH DỰ TỰ �I
+----------------------------------------
+REF : VÀI LẦN TRIỂN LÃM TRANH TƯỢNG KHÔNG LỜI NHƯ THẾ HẮN SẼ NHẬN RA
+PRED: VÀI LæN CHỆN LẀM TRANH TƯẢNG KHÔNG LỒIGHï VIờ HẢNH SẼ NẠN RA
+----------------------------------------
+REF : LÚC ĐÓ CHỊ TƯỞNG LÀM NHƯ VẬY CŨNG LÀM MÁ VUI
+PRED: ĐÚC ĐỞ CHỈ TỮNG LÀM NHƯ VỊ CŨNG LÀ M�Ã QU HU
+----------------------------------------
+REF : TUY NHIÊN HỢP ĐỒNG NÀY CHỈ CÓ GIÁ TRỊ TRONG NHỮNG NGÀY BÌNH THƯỜNG
+PRED: NHIÊN HỤC ĐỒNG NÀY CHỈ CÒ VÀ CHỊ TRONG NHỮNG NGÀY BÌNH THƯỜNG
+----------------------------------------
+REF : KHÔNG NÊN CHỈ DỰA VÀO BÀI VIẾT CỦA BẠN ĐỂ THUYẾT MINH THÊM
+PRED: KHÔNG LIÊN CHỊ GIỢ VÀO BÀI VIẾT CỦA BẢI ĐỂ KẾC NIÊN THÊM
+----------------------------------------
+REF : MỜI THAM DỰ CUỘC THI VIẾT NGẮN MỘT GIỜ KHÔNG ĐIỆN
+PRED: MỜI TĂM GI�ỰC CỤC TH VIẾT NGẮNH MỘT G GIỜ KHÔNG ĐIỆN
+----------------------------------------
+REF : NGƯỜI ĂN XIN THƯA BÀ NGÀY THƯỜNG THÌ BÀ CHO GÌ CŨNG ĐƯỢC
+PRED: NƯỜ ANH XIN TH�A BÀ NGÀY THƯỜNG THÌ BÀ CHO GÌ CŨNG ĐƯỢC
+----------------------------------------
+REF : HIỂN NHIÊN KHÔNG AI MUỐN XUẤT HIỆN BÊN CẠNH MỘT NGƯỜI NHƯ VẬY
+PRED: NHƯNG KHÔNG AI MỒI SẾCH THẆN B�H CẢN MỘT NGƯỜI NHƯNG VẬ
+----------------------------------------
+REF : HÀNG CHÂN MÀY ĐEN VÀ XẾCH KHÔNG LẪN VÀO ĐÂU ĐƯỢC
+PRED: KÀNG TRANH MÀY ĐÊ VÀ PHÁCH KHÔNG LỆN VÀO ĐƂU ĐƯỢC
+----------------------------------------
+REF : XIN VỚI MẸ CHO ĐI CAI TẬP TRUNG SAU MỘT NĂM BẠN TRỞ VỀ NHÀ
+PRED: KHI�N VỂI MẸY CHO ĐI CAI TỬC TRUNG TAO MỘT NĂM BẠ CHỂA VIÀ NHÀ
+----------------------------------------
+REF : ANH NHƠN BẢO TÔI VỀ TRƯỚC CÒN ANH ĐI THEO CÔ GÁI
+PRED: ANH NHƯM BỢU TÔI VỊ CHƯỚC CÒN ANH BII THEO C� GÁI
+----------------------------------------
+REF : CẢ NGÀY TRỜI KHÔNG NẮNG GIÓ LẠNH NÊN THƯA VẮNG DU KHÁCH
+PRED: N NÀY TRƯỜI KHÔNG NẮNG GỎ LẠNH NIÊN THƯƠA VẪN TI KHÁCH
+----------------------------------------
+REF : HOA PHƯỢNG VẪN NỞ ĐỎ TRỜI TRONG TIẾNG VE XAO XÁC KHÔN NGUÔI
+PRED: HÓ PHƯỪNG VẪNH NỮ TRỜI TRONG TỊN V PHÀO PHÁC KHÔNG MUÔ
+----------------------------------------
+REF : HÌNH ẢNH QUẢNG CÁO ĐIẾU THUỐC ĐIỆN TỬ ĐƯỢC CÔNG TY T
+PRED: THHIÌNẢNH CẪN CẢO Đ�Ể THỨC ĐIỊM TỮ ĐƯỢC CONÔ TI
+----------------------------------------
+REF : NHỮNG SẢN PHẨM GIÚP NỞ NGỰC VÀ TAN MỠ CẤP TỐC ẢNH YẾN TRINH
+PRED: NỮNG SẢN PHỪNG GIÚC NỞ NƯỜC VÀ TA MỞ CẤC T�C� ANNH NHỆN ĐỊN DIỊN CHINH
+----------------------------------------
+REF : NGƯỜI ĐÀN ÔNG TRÊN GIƯỜNG THÌNH LÌNH RÊN LÊN MỘT TIẾNG RỒI MỞ MẮT
+PRED: NGƯỜI ĐÀN ÔNG CH�INN DƯỜNG THÌNH LÌNH RÊ LÊN MỘT TIỂNG VỒI MỞ M�CH
+----------------------------------------
+REF : QUẢN LÝ NHÀ NƯỚC VỀ GIAO THÔNG VẬN TẢI ĐÔ THỊ
+PRED: CẢ LIÊ NANH NƯỨC VIÀ RAO THÔNG VẰNH TẠI ĐÔI TH
+----------------------------------------
+REF : VỊ BÁC SĨ HIỀN LÀNH ẤY CÓ NHỮNG LÝ THUYẾT TRỒNG CÂY THẬT THÚ VỊ
+PRED: NHIỨ BẮ PHĈ GÌN LÀNH �Y CÓ NHỮNG VI KH�ÍT TRÙNG KÂ THỊT THỦ VIỊ
+----------------------------------------
+REF : MẤY NGÀY NAY CHÚNG TÔI ĐÃ TỊCH THU ĐƯỢC KHÁ NHIỀU GÀ CHẾT
+PRED: K� NAYY TRÙNG TÔI ĐÃ TIỊCH TH ĐƯỢC KHẢNH NHỜ GÀ CHẾ
+----------------------------------------
+REF : CHÚC BẠN ĐỌC CÓ THẬT NHIỀU THỜI GIAN THƯ GIÃN THOẢI MÁI
+PRED: NẶN ĐỘNG CỞ TẠT NHỀ THƯỜI DON TI� GẠN THẢI MẠI
+----------------------------------------
+REF : NHƯNG NHIỀU DU KHÁCH THẤY THẤT VỌNG KHI LÊN ĐẾN NƠI
+PRED: NHƯNG NHỜ G� KHÁCH BẪN THỂI TẤT VỌNG KHI LÊN ĐỊN NƠI
+----------------------------------------
+REF : MỘT ĐƯỜNG HƯỚNG CHUYÊN NGHIỆP
+PRED: MỘT ĐƯỜNG HƯỨNG KIUYÊN NGHIỆP
+----------------------------------------
+REF : DÙ LÀ ĐẬU SỨC MẠNH HOẶC CẢI BÔNG KHỦNG LONG
+PRED: GIÙ LÀ ĐẦU SỨC MẀNH HẬC CẢI BÔ CŨNG LÔNG
+----------------------------------------
+REF : MỘT TRĂM MỘT HAI BA
+PRED: MỘT TRĂM MỘT HAAY BA
+----------------------------------------
+REF : RỒI KHỀ KHÀ ĐÔI CÂU VỌNG CỔ VỚI CHÂN CHUỘT
+PRED: �ỒI THỀ PHÀ ĐÔI CÔU VỘNG CỘ VỚI TRÂN CHỘC
+----------------------------------------
+REF : TÁM MƯƠI SÁU TÁM MƯƠI BẢY
+PRED: TÁM MƯƠI SÁU TÁM MƯƠI BẢY
+----------------------------------------
+REF : BA MƯƠI BA MƯƠI MỐT
+PRED: BA MƯƠI BA MƯƠI MỐUT
+----------------------------------------
+REF : ĐƠN GIẢN LÀ TÁN GẪU VỚI NHAU
+PRED: ĐƂN DẢ LÀ TÁN GỤ VỚI NHAU
+----------------------------------------
+REF : NÓI TRƯỚC BƯỚC KHÔNG QUA
+PRED: NỐI TRƯỚC BƯỚC KHÔNG QUA
+----------------------------------------
+REF : PHÍ CHUYỂN GIAO CÔNG NGHỆ LÀ BA CHỤC NGÀN ĐỒNG
+PRED: THẾ CHYỂN DOO CÔ NGHỆ LÀ BA CHỤC NG�AMN ĐỒNG
+----------------------------------------
+REF : NHỮNG NGƯỜI TRÊN GHE CỦA CÔNG AN ĐÃ NHẮM THẲNG VÀO GHE ANH CHỦ
+PRED: NỮNG NGƯỜI TRINH GHIA CỦA CÔNG EM ĐẠI NHẮNG THẪNG VÀO GH� ANH CHỤ
+----------------------------------------
+REF : MÀ BẠN CÓ THỂ THAM KHẢO ĐỂ LÀM ĐẸP GIAN BẾP
+PRED: NGÀ BÀN CÓ HỂ HĂH THẢU ĐỂ LÀM ĐỆP GH� BẾP
+----------------------------------------
+REF : CÔ ẤY ĐÃ QUÁ CHÉN
+PRED: CÔ ẤY Đ�Ã QUÁ CHÉN
+----------------------------------------
+REF : LÀM CÔ NÀNG RỌ RẠY THỨC TRẮNG CẢ ĐÊM
+PRED: LÀM CÔ NÀNG RỘ R�AY THỨC TRẮNG CẢ ĐÊN
+----------------------------------------
+REF : HOẶC BẠN SẼ ĐẾN ĐẤY VỚI MỘT TÂM TRẠNG CHÁN NGÁN VÔ CÙNG
+PRED: HẶP BẠN SẼ ĐẾNH ĐẤY VỚI MỒN TĂM TRẠN CHÁNG NGÁNG VÔ CÙNG
+----------------------------------------
+REF : SỐ KHÁC SUY ĐOÁN RẰNG ANH TA HÀNH ĐỘNG ÁC TÂM VẬY
+PRED: SỐ KHÁC X Đ�ÓN RẰNG ANH TA HÌNH ĐỘNGÁ TĂM BẬY
+----------------------------------------
+REF : CÁC EM NHỎ SẼ KHÔNG CÒN PHẢI ĐI TRÊN NHỮNG CHUYẾN ĐÒ NGUY HIỂM
+PRED: CÁC EM NHỎ SẼ KHÔNG CÒN PHẢI ĐI TRINH NIỆNG CHẾN ĐÒN NGUYÊ HIỆM
+----------------------------------------
+REF : MÀ DO LỐI SỐNG CHUI NHỦI CỦA CHÚNG
+PRED: MÀ DOO L�ÓI S�NG CHƠI NH�ỮI CỦA CHÚNG
+----------------------------------------
+REF : ĐANG HẤP DẪN CÁC TẬP ĐOÀN PHÂN PHỐI ĐA QUỐC GIA
+PRED: ĐĂNG THẤP DỰN CÁC TẬP ĐẒN PHÂN PHỐI Đ QUỐC GIA
+----------------------------------------
+REF : CÔNG TY TRÁCH NHIỆM HỮU HẠN ĂN UỐNG
+PRED: CÔ T TR�ÁCH NGHIỀM HỮA HÀNG ĂNG GỐN
+----------------------------------------
+REF : GIẢI QUYẾT KHỐI UNG NHỌT NÀY PHẢI CẦN ĐẾN MỘT CUỘC ĐẠI PHẪU NGHIÊM TÚC
+PRED: DỂ QU BIỾC KHỐI�UNGNG NHỌT NÀY PHẢ CẦN ĐẾN MỘT CUộ ĐẠY PHỘU NÊN TỐC
+----------------------------------------
+REF : CÁI VỊ CHÁT CHÁT VÀ ĐẮNG NGẮT CỦA CÀ PHÊ NGUYÊN CHẤT
+PRED: C�ÁI VỊ CHÁC GIÁC BÀ ĐẮN NGẤT CỦA CÀO PHÊN NGUÊN CHẤT
+----------------------------------------
+REF : ĐÔI MÔI MẸ PHAI SON MẤP MÁY MỘT LỜI CA HOANG HOẢI
+PRED: ĐÔI MÔI MẸ PHAY S MẤP MẤY MỘT L�ỜI CA HOĂN HOẠY
+----------------------------------------
+REF : NĂM MƯƠI NĂM MƯƠI MỐT
+PRED: NĂM MƯƠI NĂM MƯƠI MỐU
+----------------------------------------
+REF : TÁM MƯƠI TÁM TÁM MƯƠI CHÍN
+PRED: TÁM MƯƠI TÁM TÁM MƯƠI CHÍN
+----------------------------------------
+REF : LƯƠNG BA CỌC BA ĐỒNG THÌ NUÔI ĐƯỢC AI
+PRED: LƯƠNG BA CỘC BA ĐỒNG HÌ NƔI ĐƯỢC AI
+----------------------------------------
+REF : MỘT BA NĂM BẢY CHÍN
+PRED: MỘT BA NĂM BẢY CHÍNH
+----------------------------------------
+REF : RÂU RIA ĐÃ BA NGÀY KHÔNG CẠO
+PRED: RÔU YÊ Đ�Ã BA NGÀY KHÔNG CẠO
+----------------------------------------
+REF : ĐỪNG BUỒN VÌ TỰ GIẰN VẶT MÌNH NỮA
+PRED: ĐÊNG BUÙN BÌ TỰI RẰNG BẠP MÌNH NỮ
+----------------------------------------
+REF : LÀM KHUNG
+PRED: THÀM KH�UNG
+----------------------------------------
+REF : CHẲNG LÀ MẤY HÔM NAY TÔI ĐAU BỤNG QUÁ
+PRED: CHẲN LÀ MẤY M HÂN NAY TƔI Đ� BÙNG QUÁ
+----------------------------------------
+REF : HAI MƯƠI SÁU HAI MƯƠI BẢY
+PRED: HAI MƯƠI SÁU HAI MƯƠI BẢY
+----------------------------------------
+REF : LÍNH CỨU HỎA KHÓ TIẾP CẬN HIỆN TRƯỜNG
+PRED: NÍNH CỨ HOẢ KHÓ TIẾP TRẬN N NHIỆNG TRƯỜNG
+----------------------------------------
+REF : CÒN BỘ KHANG HI TỪ ĐIỂN
+PRED: CÒN BỒ KHĂNG HI TỪ ĐIỂN
+----------------------------------------
+REF : VÌ NÓ KHÔNG NHẮC ĐẾN NHỮNG CUỘC TẤN CÔNG NHẮM VÀO NGƯỜI DO THÁI
+PRED: VÌ NÓ KHÔNG NHẮT ĐẾNH NHỮNG CUỘC TẤN CÔ NHẮN VÀU NGƯỜI DOO THẢI
+----------------------------------------
+REF : VÀ HÍT VÀO MŨI LÀM CHẤT NÀY LOÃNG RA
+PRED: BÀ TH�ÍCH VÀO MỐI LÀN CHẤT NÀY LẠN RA
+----------------------------------------
+REF : SAO KẾT QUẢ RA TỆ VẬY
+PRED: SAU KẨT QU� RA TỦ VÀY
+----------------------------------------
+REF : Ở LỚP NẤU ĂN GIA ĐÌNH
+PRED: Ở LẚP NẤU �ĂNG GIA ĐÌNH
+----------------------------------------
+REF : PHẢI ĐƯỢC THỰC HIỆN TRÊN CƠ SỞ
+PRED: VẢI ĐƯỢC THỰC HIỆN TRÊN CƠI SỞI
+----------------------------------------
+REF : THẬM CHÍ CÀNG GIỐNG ÁO QUÍ NÀNG CÀNG MỐT
+PRED: HẪNH CH� CẦNG DỐNG ÁO QU� NÀNG ĐÀNG MÓT
+----------------------------------------
+REF : TÔI CHỈ MUỐN XEM NHỮNG ĐOẠN HAY MÀ THÔI
+PRED: TÔI TIỈ MUỐN XEMHGHỮNG ĐỒN HAY MÀ THÔI
+----------------------------------------
+REF : PHẢI CHĂNG XÂY DỰNG NIỀM TIN VÀO TÌNH YÊU KHÓ THẾ
+PRED: THẢI TRĂN S� DỰNG N NIÀM T�INH VÀO TÌNH YÊU KHÓ THẾ
+----------------------------------------
+REF : HÔM NÀO TAN CA SỚM HẠNH ĐƯỢC GIAO NHIỆM VỤ ĐI CHỢ CHO BỮA TỐI
+PRED: HÔN NÀO TAN CA SỐN HẌNH ĐƯỢC DO NHIỀM VỤ ĐI CHỜ CHO BỔI TỐI
+----------------------------------------
+REF : NHƯNG CÔ QUYẾT CHỨNG MINH NGƯỜI MÙ KHÔNG PHẢI VÔ DỤNG
+PRED: NHƯNG CÔ QUẤT CHỨNG M MINH NGƯỜI MÙ KHÔNG PHẢI VÔ DộNG
+----------------------------------------
+REF : THỰC TẾ VAI TRÒ CỦA BẠN VÀ NGƯỜI PHỎNG VẤN ĐỐI CHIẾU NHAU
+PRED: THỰC TẾ V TRÒ CỐA BẠN VÀ NGƯỜC PHẘNG VẤN ĐỔI CHẾU NHAU
+----------------------------------------
+REF : XEN KẼ GIỮA NHỮNG MÀN BIỂU DIỄN LÀ NHỮNG PHÚT VUI CHƠI TẬP THỂ
+PRED: KEM KỂ DỮA NHỮNG B�NG ĐIỂU DIỆN LA NHỮNG PHÚT V CHƠI TẬP THỂ
+----------------------------------------
+REF : HỌ ĐÃ TRAO NHAU LỜI HẸN ƯỚC NÊN DUYÊN CHỒNG VỢ
+PRED: HỌI Đ�Ã TRAO NHAUO LỜI HIỆN CƯỚC NÊNGHÊN CHỒNG PHỒ
+----------------------------------------
+REF : TÔI KHẼ CHỚP MẮT VÀ THẦM CẦU NGUYỆN XIN CHÚA GIÚP CON
+PRED: TÔ KHẂ CHẾP MẮT VÀ THÀM CẦU NGGUYỆN SINH CHÚ DÚC CON
+----------------------------------------
+REF : TỪNG LÀ CHỦ TẾ HÀNG TRĂM LỄ AN TÁNG MỘ GIÓ
+PRED: TẪNG L NÀ CHỦ TẾI HÀNG TRĂM LỂ � ANH PHÁN BỘ GIÓ
+----------------------------------------
+REF : SÁNG RA THẤY DÂN TÌNH XÚM QUANH CON TÊ GIÁC KHỔNG LỒ ĐÃ CHẾT
+PRED: THÁN RA THẤY DÂN TæNH SÚNG QUANH CON TAY GIÁC KHỔNG LÒ Đ�Ã CHỾT
+----------------------------------------
+REF : ĐỘI NÀO THÀNH TÍCH CÀNG CAO THÌ QUẢN LÝ CÀNG KHÓ
+PRED: ĐỒI NÀO THÀN TÍCH CæNG CAO THÌ QUẢN LÝ CÀNG KH�Ó
+----------------------------------------
+REF : VÀ MỘT ĐIỀU SÂU XA LÀ MÌNH ĐÃ THẬT SỰ YÊU BẠN
+PRED: V MỘT ĐIỀU SÂU SA LÀ BÌNH Đ�Ã THỰC SỰ YÊU BẠN
+----------------------------------------
+REF : LÚC HƯNG PHẤN NÓI CHUYỆN PHÓNG LAO CHẲNG CÓ CHI PHỨC TẠP
+PRED: LÚC HƠNG PHÓNG Đ NÓI TRUYỀN PHÓNG LA CHẦN CÓ CHI PHẤC TẠN
+----------------------------------------
+REF : TRUNG QUỐC ĐƯA RA HÌNH PHẠT CỤ THỂ ĐỐI VỚI TỘI THAM NHŨNG
+PRED: TUNG QU�T ĐƯA RA HÀNH PHẢI CộỂ Đ�I VỚI L TỘI TH�M NHỤNG
+----------------------------------------
+REF : VÀO ĐƯỢC NHÀ ANH ĐẤY SỬA CỬA ĐI NGUY HIỂM ĐẤY
+PRED: VÀO ĐƯỢC NHÀ ANH ĐẤY SỰ CỮA ĐÊN VI� HIỆM ĐẤY
+----------------------------------------
+REF : CHÚNG TÔI ĐÃ ĐIỀU TRA NHỮNG TRƯỜNG HỢP CÓ NGHI VẤN GIAN DỐI
+PRED: CHÚNG TÔI ĐÃ ĐIỀU TRA NHỮNG TRƯỜNG HỌC CÓ NGHI VẤN DÊ NHỐI
+----------------------------------------
+REF : NHỮNG NGƯỜI CÔ LẬP MÌNH CÓ THỂ GẶP PHẢI CHỨNG TRẦM CẢM HOẶC LO LẮNG
+PRED: NHỮNG NGƯỜI CÔ LẬM MÌNH CÓ THỂ GIẬC PHẢI CH�ÚNG TRẦM CẢM HOẶT LA LẮN
+----------------------------------------
+REF : SẼ LÀM CHÚNG TA NGỦ KHÔNG ĐỦ KHÔNG ĐÚNG QUY LUẬT
+PRED: KHIẼ LÀM CHÚNG TA MỤ KHÔNG ĐỦ KHÔNG ĐÚNG QUI LỤC
+----------------------------------------
+REF : CÙNG VỢ ĂN VỘI CHÉN CƠM THÀNH LẠI LO ÔN BÀI LÀM BÀI TẬP
+PRED: CÙNG VỜ ĂNG VỘI CHẾN CƠM THÀNH N LẠI LA�N BÀY LÀM BÀI TẰP
+----------------------------------------
+REF : ĐẦU TƯ TIÊU DÙNG VÀ XUẤT KHẨU ĐỀU SẼ TĂNG MẠNH
+PRED: BẦU TƯI TIÊU DÙNG VÀ PHẤT KHẦU ĐỀU SỂ TĂN MẠNH
+----------------------------------------
+REF : VẬY NHỮNG ĐỐI TƯỢNG NÀY SẼ ĐƯỢC GIẢI QUYẾT NHƯ THẾ NÀO
+PRED: VÀI NHỮNG ĐỐI TƯỢNG MÀY SẼ ĐƯỢC GIẢI QUẾT NHƯ THẾI NÀO
+----------------------------------------
+REF : PHÍA DƯỚI VÀ XUNG QUANH KỆ LÀ NƯỚC BẨN LÊNH LÁNG CHẢY QUA
+PRED: TH GIỚI VÀ SUNGNG QUANH KẂ LÀ NƯỚC BẪN LÊN LÁN CHẢY QUA
+----------------------------------------
+REF : NHÀ TRƯỜNG ĐỘT NGỘT HỦY ĐỀ TÀI KHIẾN TÔI MẤT PHƯƠNG HƯỚNG
+PRED: NHÀ TRƯỜNG ĐỘT NGỒT HỊ ĐỊ TÀI KHIẾN TÔ MẤT PHƯƠNG HƯỚNG
+----------------------------------------
+REF : ĐỒ CỔ KHÔNG CÔNG KHAI NGUỒN GỐC PHẢI BỊ COI LÀ HÀNG GIẢ
+PRED: ĐỒ CỐ KHÔNG CÔNG KHI MUÙN GÓC PHỢI BỆT CONI LÀ HÀNG GI�
+----------------------------------------
+REF : SỰ GIÚP ĐỠ CỦA BÀ LÀ VÔ CÙNG QUÍ BÁU CHO CHÚNG TÔI
+PRED: THỰ GIÚP ĐỢ CỐA BÀ LÀ VÐT CÙNG QU BÁO CHO CHÚNG TÔI
+----------------------------------------
+REF : CÒN BA CẦU THỦ VĂN TRƯƠNG BẬT HIẾU VÀ HẢI LÂM THÌ SAO THƯA ÔNG
+PRED: CÒNG BAÁẦU THỦ VĂN THƯƯC BẬT VIẾU VÀ HẠI LĂM THÌ PHO THƯ�NG
+----------------------------------------
+REF : BÊN CẠNH ĐÓ CHÚNG TÔI CÒN LÀM HÀNG LOẠT VIỆC KHÁC NHƯ
+PRED: BÊN CẦNG ĐÓ CHÚNG TÔI CÒN LÀM HÀNG LÀI VIỆC KHÁC NHƯU
+----------------------------------------
+REF : TẤT CẢ ĐỂ CHO NGƯỜI BỆNH VÀ THÂN NHÂN HÀI LÒNG KHI ĐẾN BỆNH VIỆN
+PRED: TẤT CỢ ĐỂ CHO NGƯỜI BỆNH VÀ THÂNG NHÂN HÀI LÒNG KHI ĐẾN ĐỊNH VIỀN
+----------------------------------------
+REF : NHIỀU HÔM MƯA GIÓ BÁN Ế GÁNH CHÈ NẶNG TRĨU TRÊN VAI MẸ
+PRED: NHIỀU HƠN MƯ GIÓ BANN �É GÁNH CHỀN ĐẰNG TRỂU TRÊN VI MỸ
+----------------------------------------
+REF : HAI CHÁU NGẠC NHIÊN ĐÓN KHÁCH LẠ SUNG SƯỚNG ÔM CẶP MỚI
+PRED: H CHÁO NGẠT NHIÊN ĐÓ KHÁP LỌ S�UNG PHỨNG�N CẬP MỚI
+----------------------------------------
+REF : NẾU THỈNH THOẢNG CÓ VÀI NGÀY NGHỈ NGƯỜI THỤY ĐIỂN THƯỜNG RA ĐẢO CHƠI
+PRED: N�ÁO THỊNH THẢN CÓ VI NGÀY NGHỊ NGƯỜI THÌ ĐỊN THƯỜNG RA B�ÃO CHƠI
+----------------------------------------
+REF : VẬY CHỪNG NÀO MỚI TỚI XIN LỖI NHÂN DÂN TẬP CUỐI
+PRED: VẬY CHỦNG NÀ MÓ TỐI XINH LỘI NHÂN DÂNẬ C�I
+----------------------------------------
+REF : HÌNH NHƯ KHÔNG CÓ CẢ MỘT TRONG HAI TÀI VÀ ĐỨC
+PRED: HÌNH NHƯ KHÔNG CÓ TRẢ MỘT TRONG HA TÀI VÀ B ĐỨT
+----------------------------------------
+REF : CÁC PHẬT TỬ HƯỞNG ỨNG LỜI KÊU GỌI CỦA THẦY NHƯ THẾ NÀO
+PRED: CÁC PHẬNG TỪ HƯỢNG TẨN LÒI K�EOOU VỒI CỦA THÀI NHƯU THẾN NÀO
+----------------------------------------
+REF : THÁNG BẢY NHIỀU NGƯỜI CON KHÓC NÊN TRỜI BUỒN VÀ KHÓC THEO
+PRED: THÁN BẪY NHỀU NGƯỜI CONÔ KH�ÓC NÊN TRỜI BÙN VÀ KH�ÓC THÊU
+----------------------------------------
+REF : CẢ ĐỜI CHƯA BAO GIỜ TÔI CÓ CẢM GIÁC SUNG SƯỚNG NHƯ VẬY
+PRED: K�I ĐỂU CH�A BA GI�I TÔ CÓ KHẢM GIÁT SUNG S�ỨNG NHƯU VẢY
+----------------------------------------
+REF : CA KHÚC ĐƯỢC KHÁN GIẢ YÊU THÍCH NHẤT BÀ TÔI NGUYỄN VĨNH TIẾN
+PRED: K KH�ÚC ĐƯỢC TH�ÁN GIỢ Đ�U THÍCH NHẤC BÀO TÔI NGHYỆN VÊNH TIẾN
+----------------------------------------
+REF : TÔI ĐỨNG TRƯỚC HAI LỐI RẼ VÀ TÔI CHỌN CON ĐƯỜNG ÍT NGƯỜI ĐI HƠN
+PRED: TÔI ĐẤNG TR�ỚT HA LỐI RẂ VÀ TÔI CHỌN CON Đ�ỢNGẤM NGƯỜI ĐI HƠN R� RẠ
+----------------------------------------
+REF : CÓ BAO GIỜ ÔNG GẶP TÌNH HUỐNG KHÔNG TRẢ LỜI ĐƯỢC CÂU HỎI CỦA DÂN
+PRED: CÓ BA DỜ ÔNG GẌC TÌNH HỐN KHÔNG TRẢ LỜI ĐƯỢC CÔU HỎI CỦA DO�N
+----------------------------------------
+REF : ÍT CÓ CƠ HỘI SỐNG SÓT CHO CÁC HÀNH KHÁCH TRÊN MÁY BAY
+PRED: �T CÓ CÔ HỒI S�NG PHÓ CHO CÁC HÀNH KHÁCH TRÊ MẤY BAY
+----------------------------------------
+REF : CHÚNG NÓ YÊU NHAU RẤT TỰ NHIÊN GHÉT NHAU CŨNG RẤT TỰ NHIÊN
+PRED: CHÚNG ĐÓ YÊ NH RẤT TỪI NHIÊN CHẾT NAUO CŨNG RẤT TỰ NHIÊN
+----------------------------------------
+REF : CHƯƠNG TRÌNH ĐÃ TẠO ĐƯỢC HIỆU ỨNG TỐT TỪ PHÍA KHÁN GIẢ NHÍ
+PRED: CHƯƠNG TRÌNH Đ�Ã TẠO ĐƯỢC KHỂ ẨN TỐT�Ừ PHẾ KH�NG NHỢ NH�
+----------------------------------------
+REF : CHÍNH SỰ LÊN SÀN Ồ ẠT ĐÓ
+PRED: CHÍNH SỮ LÊN GÀ �Ồ ĐÓ
+----------------------------------------
+REF : THÌ BỖNG NGHE MẤY TIẾNG OÁC OÁC TỪ VẠT RỪNG PHI LAO
+PRED: Ủ BỌNG N� MẤY TIþN QU�ÁT NÁC TỪ VẬT RỪNG PH LA
+----------------------------------------
+REF : HOẶC CHỈ BIỂU HIỆN BẰNG CÁC RỐI LOẠN CO BÓP
+PRED: VẶT CHỈ BỀU HIỂN VÀNG CÁC RAO LỒN C BỐP
+----------------------------------------
+REF : DỊCH VỤ KIỂM TRA SỨC KHỎE ĐỊNH KỲ LÀ MỘT Ý KIẾN HAY
+PRED: DỰC RỘ KI�ANM RA SẨC QUẠH KỦY Læ� Ý KIẾN HAY
+----------------------------------------
+REF : BUỔI ĐẦU THẬT KHÓ KHĂN THEO ĐUỔI CHƯƠNG TRÌNH HỌC
+PRED: MỖI ĐỒ GẀT KHÓC KHĂNG TH�O ĐỔI CHƊNG TR TÌNH HỘC
+----------------------------------------
+REF : QUÁ TỐT RỒI
+PRED: VÁ TỐT RỒI
+----------------------------------------
+REF : VỀ VIỆC MANG ĐẾN CHO CÁC EM NIỀM VUI HỌC
+PRED: VỀ VỆC MANG ĐẾN G�ÁT C�É EM NIỀM VỐI HỌC
+----------------------------------------
+REF : NĂM MƯƠI BỐN NĂM MƯƠI LĂM
+PRED: N�M MƯƠI BỐN NĂM MƯƠI LĂM
+----------------------------------------
+REF : PHẦN LỚN HỌC SINH GIÀU CÓ NGƯỜI NƯỚC NGOÀI
+PRED: VẪN LỚ HỌC XINH LỌC KHÓ NGƯỜI ĐỚT NGOÀI
+----------------------------------------
+REF : BẢY MƯƠI HAI BẢY MƯƠI BA
+PRED: BAẢY MƯƠII B�Y MƯƠI BA
+----------------------------------------
+REF : VÀ NẾU BẠN TRÓT LÀM LỘN XỘN MÀN HÌNH NỀN
+PRED: VÀ NẾ BẀN TRÓT LÀM LỘNG SỘN HOÀN HÌNH NỀN
+----------------------------------------
+REF : HAI MƯƠI SÁU HAI MƯƠI BẢY
+PRED: HAIUƠI GIÁU HAI MƯƠI BẢY
+----------------------------------------
+REF : KHI SỨC ÉP BIẾN MẤT CHÚNG TRỞ LẠI TÌNH TRẠNG MỀM DẺO BÌNH THƯỜNG
+PRED: THHI SẨC KÉP BIẾN M�T CHÚNG CO LẠI TÌNH TRẠN MÌN GHỄ BÌNH THƯƠN
+----------------------------------------
+REF : ĐÀN ÔNG CÓ HAI THỨ ĐỂ BUỒN
+PRED: ĐÀ HA Ô LAI TỨ ĐIÊA BỒN
+----------------------------------------
+REF : VÀ VẢI HOẶC CÓI NHIỀU MÀU
+PRED: VÀ VẢI HOẶT CÓ NHIỀNG MÀO
+----------------------------------------
+REF : NĂM MƯƠI NĂM MƯƠI MỐT
+PRED: NĂM MƯƠI NĂM MƯƠI MỐT
+----------------------------------------
+REF : CÂY CỔ THỤ ẤY BẤT CHỢT BỊ BỆNH TẬT QUẬT NGÃ
+PRED: CÂ CỐ THỦ ẤY BẤT CHẢT BỊ BỆNH TẬT QUỢC NGHGẢ
+----------------------------------------
+REF : ÁN MẠNG TRÊN TOA TÀU TỐC HÀNH
+PRED: ÁNG MẸN TRINH TOO TẠO TÓC HÀNG
+----------------------------------------
+REF : CÓ LẼ PHẢI MẤT NHIỀU THỜI GIAN
+PRED: CÓ LẼ PHẢI MẮT NHỀ TỪI RAAN
+----------------------------------------
+REF : BA MƯƠI BỐN BA MƯƠI LĂM
+PRED: B MƯƠI MỐN BA MƯƠI LĂM
+----------------------------------------
+REF : NÓ LẬT ĐẬT ĐẠP CHIẾC XE CÀ TÀNG BĂNG NGAY RA ĐẦU ĐƯỜNG
+PRED: N�Ó LẬT ĐẶT ĐẶP CHẾC XE CÀ TOÀNG BĂ NGE RA ĐẦU ĐƯỜNG
+----------------------------------------
+REF : VỚI NGƯỜI MẸ Ở XÓM CHÀI LONG BIÊN
+PRED: VỚI N HƯỜ MẸ SÁN CHÀ L�ONG BIÊN
+----------------------------------------
+REF : HAI MƯƠI HAI HAI MƯƠI BA
+PRED: HAY MƯƠI HAI HAI MƯƠI BA
+----------------------------------------
+REF : VÌ KHÔNG CÓ TIỀN ĐÓNG HỌC PHÍ
+PRED: VỀ KHÓNGG�ÓT TIỀN NÓNG HỘC PHÍ
+----------------------------------------
+REF : TÔI CHẾT CÙNG VỚI ÁNH TRĂNG
+PRED: TÔI CHẾT CộNG VỚI AN T�
+----------------------------------------
+REF : LÀ TƯƠNG ĐỐI CÓ HIỆU QUẢ
+PRED: BẀ TỨNG Đ�ÓI CÓ HIỀ QUẢ
+----------------------------------------
+REF : ĐẠO DIỄN TRẺ NÀY CÓ NHIỀU ĐIỀU NGẪM NGỢI VỀ NGHỀ
+PRED: ĐẠO HIỄN CẺ NÀY CÓ NHIỀU Đ�U NGẮM NGỜI VỀ NGHÀ
+----------------------------------------
+REF : KHÔNG MỘT HAI BA BỐN
+PRED: KH� MỘT HAI BA BỐN
+----------------------------------------
+REF : KẾT QUẢ CHỈ CÓ VỎN VẸN BA NGƯỜI CÒN BIẾT DỆT
+PRED: KẾCH QUỢ TIỊ CÓ VÌN VẆN BA NGƯỜI CỒN BIẾT GIỆCH
+----------------------------------------
+REF : NÓI THẬT ĐẤY À
+PRED: NỚI THẬP BAE
+----------------------------------------
+REF : NƯỚC GỖ TRÊN CHIẾC ĐỒNG HỒ ĐÃ BẮT LÊN MÀU GỤ BÓNG LOÁNG
+PRED: NƯỚC GỞ TRINH CHẾC ĐỒNG HỒ ĐỞ BẮT LÊN LÀU GỤ M�N LÓN
+----------------------------------------
+REF : BỞI CƠ QUAN CHUYÊN MÔN HOẶC THUÊ TỔ CHỨC KIỂM TOÁN ĐỘC LẬP
+PRED: BỞI KƠ QUAN CHÊN MƠ MẶT THÊ TỔ CHÍT KIỊM TONGN ĐỘC LẶP
+----------------------------------------
+REF : ĐỪNG ĐỂ CON SÂU ĂN
+PRED: ĐỪNG ĐỂ CON SAUU Ă
+----------------------------------------
+REF : KHI TÔI LÀ CON BÉ LỚP BỐN THÌ CÂY VẢ ĐÃ CAO QUÁ NÓC NHÀ
+PRED:  TÔI LÀ CON�N BẾ LẤP BỐN THÌ K VẢ ĐÁT CA QUÁ N�ÓC NHÀ
+----------------------------------------
+REF : THAM GIA GIẢNG DẠY LÀ LỰC LƯỢNG ĐOÀN VIÊN
+PRED: THANM RA GIẼN DẠI LÀ LỰC ĐƯỢNG ĐẦN VIÊN
+----------------------------------------
+REF : HAY ĐẢM BẢO RẰNG NGÀY NÀO CHÚNG CŨNG ĐƯỢC ĐI NHỮNG ĐÔI TẤT SẠCH
+PRED: H ĐẀM BẢO LẀNG NGÀ NÀO CHÚNG CŨNG ĐƯỢC ĐI NHỮNG ĐƠI TẤT SẠP
+----------------------------------------
+REF : VIỆC ĐƯA TÍN HIỆU TRUYỀN HÌNH TRỰC TIẾP BẰNG HỆ THỐNG CÁP QUANG
+PRED: VỆT ĐỚ TINNH HIỆU TRỀNG HÀNH TRỰC TIẾP BẰNG HỂ THÓNG C�ÁP QUA
+----------------------------------------
+REF : GIÀU ĐỔI BẠN SANG ĐỔI VỢ
+PRED: SÀO ĐỞI BẠN XAN Đ�ÓI VỀ
+----------------------------------------
+REF : SẼ KHÔNG KHIẾN BẠN TRÔNG GẦY NHƯ NHỮNG TRANG PHỤC MỘT MÀU
+PRED: SẼ KHÔNG KIẾN VÀNG TRONG GÀI NHƯ NHỮNG TR� PHỘC MỘT MÀO
+----------------------------------------
+REF : TỨC CHANH CÓ THỂ TRỊ ĐƯỢC BỆNH
+PRED: ÍT TRAN TOÓ THỂ TRỊ LỢC BẢN
+----------------------------------------
+REF : VỪA ĐƯỢC TRAO TẶNG GIẢI THƯỞNG NHÀ NƯỚC
+PRED: VỜI�Ồ TRAO TRẢNH GIỢI THỔ NHÀNG NỐT
+----------------------------------------
+REF : KHI BỊ CÔNG AN THỘP CỔ KHẨN CẤP
+PRED: THHI BỊ CÔNG MAN HẬP CỔ HẢNH CÁC
+----------------------------------------
+REF : VỚI MỘT TỐC ĐỘ MÀ CHÚNG TA KHÔNG THỂ ĐI ĐẾN TẬN CÙNG CỦA NÓ
+PRED: VỔI MỘT TÓC ĐỘ MÀI TÚNG TA HÔNG N MẸ L� LẾN CẦN CộNG CỪN NÓ
+----------------------------------------
+REF : CHỈ MUỐN LÀM MỘT HƠI CHO ĐÃ CÁI MIỆNG
+PRED: CHỊ MUỐN N LÀM MỘT HƠI CÒI�I MỸN
+----------------------------------------
+REF : TỪ TRÊN NÓC NHÀ NHÌN XUỐNG CÓ KHÁC
+PRED: CỪ TRÊN NÓC N NHÀ NHÀN SUỐNG CÓ HÉC
+----------------------------------------
+REF : NGOÀI TRỜI MƯA CỨ LAY PHAY RẮC HẠT
+PRED: VÀI TRỒI MƯ TỨ LÊ PHAY GÁC HẠT
+----------------------------------------
+REF : VIỆC ÁP DỤNG CẢ BÀN VÁ LỖI VÀ CÔNG CỤ QUÉT
+PRED: VỆC ÁP DộNG CẢ BÀNG QUÁ LỘI VÀ CÔNG CỦ QUẤ
+----------------------------------------
+REF : MỘT TRĂM MỘT HAI BA
+PRED: MỘT TRĂM MỘT THAYI BA
+----------------------------------------
+REF : CHÍNH PHỦ ĐỒNG THỜI CŨNG LẬP THÊM CỤC XÚC TIẾN TIÊU THỤ DẦU CỌ
+PRED: CHINNH PHỦ LÒNG HÒI CŨNG LẶP HÊ CỘC SÚC KẾN TÊU HỦ DẤU �ẌO
+----------------------------------------
+REF : CAO NGỒNG NGỒNG
+PRED: CAU NGÒNG NGÒNG
+----------------------------------------
+REF : THUA XA TIỆM TẠP HOÁ NHÀ TAO
+PRED: H�C XE KỊM CẬP HOÁ NHÀ CAO
+----------------------------------------
+REF : CŨNG LÀ TIN VUI CHO TẤT CẢ NHỮNG AI
+PRED: CŨNG MÀ KINH QUUII TRAO C�ÁCH CẢ NHỮNG NG EM
+----------------------------------------
+REF : ĐIỀU NÀY ĐÚNG VỚI MỌI CẤP ĐỘ VÀ TRONG MỌI LĨNH VỰC CỦA ĐỜI SỐNG
+PRED: �ỀU NGÀI LÚNG VỚI MỌI CẤC LỘ VÀ TRONG MỘIN VẬT CỦI �ỜI SỐNG
+----------------------------------------
+REF : MÀ DUNG DĂNG NHÉ CẦM TAY ĐẤT TRỜI
+PRED: NÀ DÙ DANH NHÉ TẦM TA LẤT TRỜI
+----------------------------------------
+REF : TÔI THẤY ĐỒNG LƯƠNG CỦA MÌNH NĂM NĂM RỒI VẪN ĐỨNG NGUYÊN
+PRED: CỔI THẤY LỒNG ĐƯƜNG CỘ MÀNH NĂH N�H LÒI VẢN GÍNH� NGUÊN
+----------------------------------------
+REF : HƯỢM ĐÃ CÒN PHẢI ĐIỀU CHỈNH
+PRED: HỪNG ĐÃ TÒN PHẢIỀU CHẈNH
+----------------------------------------
+REF : SÁU MƯƠI SÁU MƯƠI MỐT
+PRED: SÁU MƯƠI SÁ MƯƠI MỐT
+----------------------------------------
+REF : LÀM ĐƯỜNG SÁ NGẬP XẮP XẮP QUANH NĂM SUỐT THÁNG
+PRED: �ÀM ĐƯỜNG XÁ NGẶP SÁP SÁP QUANH NGĂM XUỐC THÉ
+----------------------------------------
+REF : TÔI LỚN LÊN TRONG SỰ GHẺ LẠNH CỦA NGƯỜI MẸ KẾ
+PRED: CÔI L �ƚN NÊN TRONG SỰ GỈ �ẠNH CŔ NGƠI MẸ CẾ
+----------------------------------------
+REF : NUÔI MÔ HÌNH TINH HOÀN RỒI TẠO RA TINH HOÀN VỚI ĐẦY ĐỦ HÌNH HÀI
+PRED: NÔI MÔ HÌNH TINH QUÀNG GÒI CẢ Y TINH HOÒI VỚI H� LẦ HÌNH HÀI
+----------------------------------------
+REF : NGA KHI ẤY CÀNG THÌN NẾT NA
+PRED: N� HÌ ẤY CÀNG NHÌN NÁP NG
+----------------------------------------
+REF : TÁM MƯƠI BỐN TÁM MƯƠI LĂM
+PRED: �M MƯỜI BỐN TÁM MƯƠI LĂM
+----------------------------------------
+REF : TRONG TÌNH THẾ ẤY CHỈ ĐÁM TRẺ VEN SÔNG
+PRED: CONG CæNH THẂY �Y CHỈ ĐÁM KỈ BAN SONGNG
+----------------------------------------
+REF : KHUNG RĂNG HÀM TRÊN KHUM
+PRED: KHÔNGANH HÀM TRÊN HÔNG
+----------------------------------------
+REF : BẢY MƯƠI BỐN BẢY MƯƠI LĂM
+PRED: BẢY MƯƜI BỐN BẢY MƯƠI LĂM
+----------------------------------------
+REF : THẾ NHƯNG TÔI KHÔNG ÂN HẬN KHI TRỞ THÀNH ĐẢ NỮ
+PRED: H�Y NHÌN CÔI HÔNG MANN HẌN K CHO HÀNH ĐẢ NGỮ
+----------------------------------------
+REF : SAU KHI ĐỌC NHỮNG THÔNG TIN TRÊN BÁO
+PRED: SÀO HÌ LỌC NHẮN THỒNG KINH KÊN BÁN
+----------------------------------------
+REF : CHÀNG TRAI LỒM CỒM BÒ DẬY MẶT MÀY XANH LÉT NHƯ TÀU LÁ CHUỐI
+PRED: CẰNG TRA ĐẦP CÒM BÒI GIẢ MẶT MÀI SANH Đ�É NHƯ CÀO CH�ÚI
+----------------------------------------
+REF : CÁI KHÓ LÀ
+PRED: CẢI THI LẀ
+----------------------------------------
+REF : ĐỂ CHẤM DỨT NẠN BẠO HÀNH TRONG GIA ĐÌNH
+PRED: �ỂY TẮM DỨC NGẠN BẀU HÀNH TRONG GIƠN
+----------------------------------------
+REF : CHÍN MƯƠI SÁU CHÍN MƯƠI BẢY
+PRED: CHÍN M�Ì SÁO CHINN MƯỢ BẢI
+----------------------------------------
+REF : NẾU ĐI TIẾP NHA TRANG
+PRED: NẂU VIÌ KẾP NH�I KEM
+----------------------------------------
+REF : KHÔNG HAI BỐN SÁU TÁM
+PRED: HÒNG HÀI BỤN SÁO TÁM
+----------------------------------------
+REF : BA MƯƠI BA MƯƠI MỐT
+PRED: BM MƯƠ�I BA MƯƠI MỐT
+----------------------------------------
+REF : TỘI NGHIỆP ĐỨA NHỎ KHÔNG AI CHĂM SÓC
+PRED: CỔI NGHIỆP ĐƯỠNG NHỎ HÔNG NGO TRANM SÁC
+----------------------------------------
+REF : HAI MƯƠI TÁM HAI MƯƠI CHÍN
+PRED: HAI MƯƜI TÁM HAI MƯƠI CHÍN
+----------------------------------------
+REF : EM SỢ CÓ MỘT NGÀY ANH GẶP NGƯỜI CON GÁI KHÁC TỐT HƠN EM RỒI ANH BỎ EM
+PRED: D�EM SỌ C MỘT NGÀI ANH GẶP NGƯỜI CON GÁI THÁ CỔ THÂN EM GÒ ANH BỎ EM
+----------------------------------------
+REF : TIỀN ĐIỆN THÁNG NÀY BAO NHIÊU
+PRED: CÌ NGHỂN THÁNG H NGÀY BA NHÊU
+----------------------------------------
+REF : CÓ THỂ GIÚP TA QUÊN ĐI NHỮNG NỖI ƯU PHIỀN
+PRED: C THẢI GIÚC TA QUÊN NI NHỮNH NỎI C PHỀN
+----------------------------------------
+REF : TÔI ĐÃ CÓ THỜI GIAN TUYỆT VỜI KHI CHƠI CHO ĐỘI TUYỂN
+PRED: CÔI ĐÃ CÓ THỜI DIÊN VIỆC VỜI KH CHƯI CHO ĐỔI TỂN
+----------------------------------------
+REF : TÔI LÀ MỘT NGƯỜI MIỀN TÂY ĐANG LÀ NGHIÊN CỨU SINH Ở MỸ
+PRED: TÔI LÀ MỘT NGƯỜI M MIÌN TAY ĐÂ LÀGH YÊN CỐ SINH Ở MẬY
+----------------------------------------
+REF : THAM GIA THIẾT KẾ LĂNG CHỦ TỊCH HỒ CHÍ MINH THÌ CÓ NHIỀU NGƯỜI
+PRED: THAN NHIA THẾT CẾ NĂNG TRỦ TỊCH HỒ CHỾ MÌNH THỊ �Ó NHIỀU NG�ỜI
+----------------------------------------
+REF : YẾU TỐ HẤP DẪN MỚI THU HÚT ĐẦU TƯ NƯỚC NGOÀI VÀO VIỆT NAM
+PRED: LẾU TỔ HẤP DỪNG MỚI TÔ HỐT ĐẦU TỨ NƯỨC NGOÀI VÀ VIỆT NÊM
+----------------------------------------
+REF : MINH NHẬT HỒNG QUÂN VŨ CÔNG THÀNH SƯU TẦM TỪ BÁO NƯỚC NGOÀI
+PRED: M�H QUÂN HỌNG QUÂN QUỐA CÔNG THÌNH SƯ TẬP TỰ BÁƯỚC HÀI
+----------------------------------------
+REF : CÀNG ĐI SÂU VÀO BÊN TRONG CẢNH TRÍ THIÊN NHIÊN CÀNG HÙNG VĨ
+PRED: KHÈY ĐI SAU VÀ BÊN TRONG CẢNH CHÍ TH� NHIÊN CÀNGGUÙNG VỂ
+----------------------------------------
+REF : YÊU NHAU KHOẢNG VÀI THÁNG THÌ CHÚNG TÔI ĐÃ CÓ QUAN HỆ TÌNH DỤC
+PRED: LÀU NH�AU KẢN VÀI THÁ TIỊ CH�ÚNG TÔI ĐÃ CÓ QUÊ HỂ
+----------------------------------------
+REF : BẠN CÓ THỂ THAM KHẢO MỘT SƠ YẾU LÝ LỊCH ĐIỆN TỬ SAU ĐÂY
+PRED: BẠN ĐÓ PHỂ THAN� MỘT SỐ SƠ Đ LỊCH ĐỊN Ở SAUU Đ�
+----------------------------------------
+REF : MỘT GÓC CÂU CÁ TRÊN CẦU SÀI GÒN ẢNH MAI VINH
+PRED: VỘT LÓC Cæ CÁ CH�INNH CẦO SÀI LàNẢNH MI V�H
+----------------------------------------
+REF : THÌ NGƯỜI XEM CŨNG ĐƯỢC NÂNG CAO KIẾN THỨC VỀ ĐỊA LÝ
+PRED: THỌ NGƯỜI XEM CŨNG ĐƯỢC NÂN CAO KẾN THẤT VỜ ĐỂU LÝ
+----------------------------------------
+REF : KHÓ SAO DUYÊN DÁM CHO ANH UỐNG RƯỢU TRONG ĐÁM CƯỚI
+PRED: KHÓ SÀO GỆN GIÁM CHÀNH CỐNG N ĐỮ TRÒ ĐÁM C�ỨI
+----------------------------------------
+REF : CÓ BẰNG THẠC SĨ NHỮNG NGÀNH TRÊN LÀ MỘT LỢI THẾ
+PRED: CÓ BẰNG THẆC SỼ NHƯNG NÀNH TRÊN NÀ MỘT ĐỞI THẾ
+----------------------------------------
+REF : NGÀY XƯA CÁC CỤ LÀM BÌA SÁCH LÀ MINH HOẠ CHO CUỐN SÁCH ĐÓ
+PRED: NÌ S�ƯA KÁT CỦ LÀM ĐỊ SÁP LÀM� HẢ CHỦ CỐNG SÁCH ĐÓ
+----------------------------------------
+REF : CHÚ BỘ ĐỘI QUA NHỮNG CÂU CHUYỆN CỦA ÔNG MỚI GẦN GŨI LÀM SAO
+PRED: CH� VỘ ĐỘ QUA NHỮNG CÒU TRỀN CỔ �ÒNG MỚI LẰNG CỦ LÀNH SẀÀNG
+----------------------------------------
+REF : NHẠC SĨ LA HỐI VỚI CA KHÚC XUÂN VÀ TUỔI TRẺ
+PRED: NHIỆC SỈ RA HỐI VỚ ĐÁ KHÚC SÂNG VÀ TỦI TRẺ
+----------------------------------------
+REF : MỘT VÀI NGƯỜI TRONG BỌN HỌ ĐƯA MẮT NHÌN MẢNH GIẤY
+PRED: VỘT BÀI NGƯỜI TRONG BẌN H Ọ ĐƯ�A MẮT NHÌNH LẠNH GIÁY
+----------------------------------------
+REF : MỘT SỐ BẠN TRẺ CŨNG CÓ Ý NGHĨ NHƯ CAO CƯỜNG
+PRED: CỘT S� BẢN CHỈ TŨNG CÓ NGHĨ NHƯ CAO CƯỜNG
+----------------------------------------
+REF : NHIỀU GIA ĐÌNH HIỆN NAY THÍCH TỰ GIỚI THIỆU CHƯƠNG TRÌNH
+PRED: NHIỀU RAIA ĐÀNH NHỆN NGAYI PH�ÍT TỞ GHẾ THỂ TRƯƠNG TRÌNH
+----------------------------------------
+REF : VÌ VẬY CÔNG TY B PHẢI CÓ TRÁCH NHIỆM BỒI THƯỜNG
+PRED: VỌ VẂ CÔNG TI BÊ PHẢI CÓ CHÁCH NHI�M BỒI THƯỜ
+----------------------------------------
+REF : MONG BẠN BÌNH TÂM SUY NGHĨ VÀ CHỌN ĐƯỢC CÁCH GIẢI QUYẾT TỐT NHẤT
+PRED: MÔ BẠN BÌNH Đ�M X� NGHỈ VÀ TRẢN ĐƯỢC KHÁCH GIẂ QUẾT TỐC NHẤP
+----------------------------------------
+REF : TÔI ĐÃ NHIỀU LẦN PHẢN ĐỐI QUYẾT LIỆT VIỆC NƯỚC THẢI TUỒN RA NGOÀI
+PRED: M�I Đ�Ã NHỀ LẒNG PHẢN ĐỔ QUẾIT THỆP VIỆC NƯỚC THẢI TÙNG Đ� NGO HOẠI
+----------------------------------------
+REF : HƠN LÀ DẪN DẮT CÁC EM THEO CHỦ Ý CỦA GIÁO VIÊN
+PRED: HƠ LÀ GIỪN GI�ÁC CÁC EM TH�IA CHỦ Y� CỦA DO QU VIYÊN
+----------------------------------------
+REF : BỐN NĂM TRỜI BỊ CÂM MỘT MÌNH VỚI BÓNG MÌNH NHIỀU PHEN ÒA KHÓC
+PRED: BỐN NĂM TRỜI BỊ C MỘT MÌNH VỚI B�NG MÌNH NHIỀU PHAN MẠC THÓNG
+----------------------------------------
+REF : THỈNH THOẢNG CON ĐI QUA DỪNG LẠI DỰNG XE NGỒI HÚT THUỐC
+PRED: THỊNH THẢN CON ĐI� QU DỜNG LẠI DỰNG XE NGỜI HỐT �ỐT
+----------------------------------------
+REF : HẮN THAY ĐỔI LẦM LÌ SAU KHI THEO GIA ĐÌNH ĐẾN XỨ NGƯỜI
+PRED: HÁNG THÀY ĐỦ LæM LÌ SẦ KÊ HE YÀ ĐÌNH ĐẾN SỨGỜI
+----------------------------------------
+REF : ÔNG DƯƠNG ĐỨC LÂN PHÓ TỔNG CỤC TRƯỞNG TỔNG CỤC DẠY NGHỀ
+PRED: ÔNG DƯNG Đ�ỨC LÊN PHÓ TỔNG CỤC TRƯỮNG TỌC CŨNG GIẈ NHÀ
+----------------------------------------
+REF : VẬY AI SẼ CHỊU TRÁCH NHIỆM VỀ NHỮNG TRƯỜNG HỢP NÀY
+PRED: VẂY AII S� CHỊ CHÍCH NHIỀM VỊ NHỮNG TRƯỜNG HỌP N�AYY
+----------------------------------------
+REF : NÔNG DÂN TRỒNG MÍA THAN CỨ MỘT VỤ ĐƯỢC LẠI BA VỤ THẤT
+PRED: NÔNG DƯNG TRỒ BIẾ THAN CỨA MỘT QUỦ LẠI ĐƯỢC BA Bộ THẤT
+----------------------------------------
+REF : TRÒ ĐÙA ĐỐI VỚI THẦY NHƯNG LẠI LÀ CHÂN THẬT CHÂN THẬT VỚI MỘT NGƯỜI
+PRED: CH�O ĐÙ ĐỐI VỚI THẠI NHƯNG LẠI LÀ TRÂN THẌC TRẦN THẬT LỚI MỘT TH�ỜI
+----------------------------------------
+REF : MUỐN CÓ BẰNG LÁI PHẢI QUA MỘT ĐỢT THI RẤT KHẮT KHE
+PRED: NGỐ CÓ BẰNG ÁI PHẂI QUA MỘT ĐỢC THI L ĐỤC HÁC H
+----------------------------------------
+REF : VẬY MÀ GIỜ ĐÂY NÓ KHÔNG ĐỢI ĐƯỢC ĐẾN LÚC HUY VỀ
+PRED: VẂM MÀY NHƯ B� NÓ KHÔNG ĐỠI ĐƯỢC ĐẾN LÚC TH VÊ
+----------------------------------------
+REF : TUY PHÍA TRƯỚC CÒN VÔ VÀ KHÓ KHĂN ĐỐI VỚI CON
+PRED: C PHẾT TRƯỚC CÒN QU VÀHOÓ HĂNG ĐỔI VỚI CÒNG
+----------------------------------------
+REF : NHƯNG TRƯỚC ĐÂY NHÌN TỪ BÊN NGOÀI NƠI NÀY KHÔNG KHÁC MỘT CĂN NHÀ HOANG
+PRED: TRƯỚC ĐÂ NHÌNH TỪ V�H NGOẠI NƚI L HÀY PHÔNG HÁT NHỌ MỘT�NG NHẠ HOAN
+----------------------------------------
+REF : NGƯỜI PHÁP ĐÃ ĐỒNG Ý VỚI CÁCH QUẢN LÝ LĨNH VỰC DÀNH RIÊNG
+PRED: NGƯỜI PHÁ TẀI ĐỒNG Ý VỚI CÁCH BẢNH L� LỆNH MỰT DÌNH VIN
+----------------------------------------
+REF : EM SỢ MẤT ANH ẤY NHƯNG LẠI CẢM THẤY MÌNH BỊ XÚC PHẠM
+PRED: �M SẞM MẠ� ANH THẤY NHỜNG LÀ C�ÁM TH MÌNH BỊ SỤC PHẢM
+----------------------------------------
+REF : CÓ NHƯNG PHẢI LÀ THUỐC ĐẶC TRỊ CỦA PHÁP HIẾM VÀ CỰC KỲ ĐẮT
+PRED: THÓ NHƯNG PHẢI LÀ THUỐT RẶC CHỈ CỦA PHÁP HIIẾN VẰT KÌ ĐẮT
+----------------------------------------
+REF : ĐÓ LÀ NHẬN XÉT CHUNG CỦA NHIỀU TỔNG GIÁM ĐỐC ĐIỀU HÀNH NGÀY NAY
+PRED: NÓ LÀ NHỬNG SÉT TRUNG CỦA NHIỀU TỌNG GIÁM Đ�ÓC ĐIỀU HÀNH NGHÀ NÀY
+----------------------------------------
+REF : BIÊN CHẾ NÀY NHÀ THANH GỌI LÀ AN NAM QUỐC NHẠC
+PRED: BIÊN CHẾ NÀY NHÀ THANH LỜI LẠ� NAM CUỐC NHIỆ
+----------------------------------------
+REF : ĐỐI XỬ VỚI BẠN NHƯ NGƯỜI YÊU CŨ CỦA BẠN ĐÃ TỪNG LÀM
+PRED: VỚI SỰ HƠI BẢY NHƯG�ỜIÊU CỦ QUA BẠN Đ�Ã TæNGH LàN
+----------------------------------------
+REF : ĂN CÁ NGỪ CÁ THU VÀ CÁ MÒI VỚI RAU TRỘN
+PRED: ẀNH CÁN NG�Ự PHÁ TH� VỀ CÁ MỀI VỚI ĐÂ TRỘN
+----------------------------------------
+REF : RẠCH BÀU MỚP
+PRED: LẶCHẦU NƯỚC
+----------------------------------------
+REF : CHỦ TỊCH NƯỚC ĐÃ ĐẾN KIỂM TRA TIẾN ĐỘ THI CÔNG
+PRED: CHỨ TỌNH NƯỚC ĐÃ ĐẾN CHỊN TRA CHỾN ĐỘA THIC CONG
+----------------------------------------
+REF : ĐÓ CŨNG LÀ ĐỘNG LỰC THÚC ĐẨY TÔI
+PRED: ĐÓ CŨNG RAÀ ĐỒNG LỰC THÚC ĐỂ TÔI
+----------------------------------------
+REF : CÔ CHỈ MỚI VÀO LƯỚI NHẶT BÓNG HAI LẦN
+PRED: C� CHỊN MỚI VỒ LƯỚI NHẬT B�ÓNG HAAYI LẰN
+----------------------------------------
+REF : BA NÀY CHỈ GIỎI BỐC PHÉT
+PRED: B NÀY CHÌ DỖ BỐC PHÁC
+----------------------------------------
+REF : NGOÀI VIỆC PHÁT HIỆN KẺ THÙ
+PRED: NGAYY VIỆC PHẤT HIIỆN CÁI THÔN
+----------------------------------------
+REF : CON NHỎ MỞ CÁI TÚI GÚT ĐEO TRÊN CỔ
+PRED: CÔN NHỎ MỖ CÁI TỨI GÚC ĐÂU TRINH CỦ
+----------------------------------------
+REF : VÌ TỐI ĐÓ
+PRED: VÌ TỤ ĐÓ
+----------------------------------------
+REF : ANH KHEN EM ĐẸP EM CHÊ ANH GIÀ
+PRED: ANH KHAN KEM ĐỊP EMIN CHÍANN DÀ
+----------------------------------------
+REF : CŨNG CHẲNG CÒN XÚNG XÍNH QUẦN ÁO MỚI
+PRED: CŨNG CHÁN CÒN S�ÚNG SÍNH CỦNG NÁ MỚI
+----------------------------------------
+REF : ANH ĐI CÔNG TÁC CẦN THƠ TUẦN SAU MỚI VỀ
+PRED: ANH ĐI CÔNG TẤT CẦNG THÓ TỪNG SONGNG MỐA VÀ
+----------------------------------------
+REF : NHẬN ĐƯỢC TIN NÀY GỌI LẠI CHO TÔI GẤP
+PRED: NHẬNG ĐƯỢC TINH NÀY VÀI LẠI CHO TƔI G�C
+----------------------------------------
+REF : NGỦ TRÊN NỆM KHÔNG PHÙ HỢP
+PRED: THỦA TRANHGHỂM KHÔNG PHÙ HỰC
+----------------------------------------
+REF : ĐÔI KHI BẠN CŨNG CÓ THỂ LÀM NHỮNG ĐIỀU ĐÓ
+PRED: ĐƯC KHI BẪN CŨNG CẤT THỂN LÒM NHỮNG ĐIỀU ĐÓ
+----------------------------------------
+REF : NHẰM TẠO RA SỰ HẤP DẪN
+PRED: NHẀM TẌU ĐÁ SỰ THẤP DỮNG
+----------------------------------------
+REF : CHÍNH BÀ CŨNG LÀ NGƯỜI NUNG NẤU NIỀM ĐAM MÊ DIỄN XUẤT CỦA CÔ CON GÁI
+PRED: CHÍNH BÀ CŨNG LÀ NGƯỜI NUNG ĐÓU NÀM ĐÂM MÊ DIỮN SỨC CỦC C�A CON GÁI
+----------------------------------------
+REF : MỘT CÔ GÁI VÁY NGẮN CŨN CỠN CHẠY LÊN HỎI
+PRED: MỘT RẤY PHÁI NG�ÁN CŨNG CỪN CHẢ LÊN HỎ
+----------------------------------------
+REF : TỪ NỖI CÔ ĐƠN CỦA MỘT CÔ BÉ BỊ CHA MẸ BỎ QUÊN
+PRED: T�Ừ ĐỞ CỦA ĐÊN CỦ MỘT CỦA BÁI BIỊ CHO MẠI BỘT QUANH
+----------------------------------------
+REF : THỨ ÂM THANH KHÔNG CHỈ CẢM NHẬN BẰNG THÍNH GIÁC
+PRED: KỨC Ô�M THANH KHÔNG CHỊC CæM NHẬNG BẀNG TH TÍNH GIẤT
+----------------------------------------
+REF : TÔI KHÔNG NỠ LÀM CÔ BÉ THẤT VỌNG
+PRED: TƯ KHÔNG ĐỎ LÀN C�A BÁI TẤC PHỘNG
+----------------------------------------
+REF : TRẺ EM ĐÂU CÓ CHƯỚNG NGẠI VẬT
+PRED: TREM ĐÂU KHÓT CHỨNG LÀI VẌT
+----------------------------------------
+REF : CÓ TRẢ TIỀN CHO BỐ KHÔNG THÌ BẢO
+PRED: CÓ TRO TIỀN CHO BỐ KHÔNG THỌ BÁU
+----------------------------------------
+REF : MỘT LÀ GẶP LẠI TẤT CẢ CÁC EM PHÒ
+PRED: MỘT LÀ GẬP ĐẠI TẤT CẢ CẤT YÊM PHÒN
+----------------------------------------
+REF : TAY KIA XÁCH MỘT TAY GIÓNG MANG CHIẾC VỊM LỚN
+PRED: TAYY CHIA S�CH MỘT TÂ D�NG NGOĂ CHỨC VỪN ĐẤN
+----------------------------------------
+REF : NHỮNG NGÀY ĐẦU VẮNG BÓNG BA VIỆT CỨ THỪ NGƯỜI NGHĨ NGỢI
+PRED: NHỮNGGÀY ĐẦU V�ÁN B�NG BA MỆC CỨ THƯ NGƯỜI NGH�IA YỢI
+----------------------------------------
+REF : RẤT NHIỀU GỬI GẮM VÀ KỲ VỌNG VÀO ÔNG
+PRED: LẤT NHỀ Y�Ể GẤNG VÀ KÌ VỌNG VÔ�NG
+----------------------------------------
+REF : BÀ NÓI
+PRED: BÀ NỐI
+----------------------------------------
+REF : CAM SÀNH LỘT VỎ CÒN CHUA
+PRED: CÔNG SÀNH L NỘC PHÓ CÒNG CH LN
+----------------------------------------
+REF : NGHĨA LÀ KÉM CỎI NAM TÍNH HAY SAO
+PRED: NẾ LÀ K�ÍM CỎ NÔNG TÍNH THAYI X
+----------------------------------------
+REF : CHÁU SỐT NÊN RẸO RỌC SUỐT ĐÊM
+PRED: CHÓ SỐC NANH RẸU RỌC SỨT ĐÊM
+----------------------------------------
+REF : CHO TÔI NHẮN ĐẠI TIN NÀO CŨNG ĐƯỢC
+PRED: CHO TÔI NHẮNG ĐẠI TIN NẀU CỨNG ĐỢC
+----------------------------------------
+REF : ĐANG THẢO LUẬN VỀ ĐỀ XUẤT
+PRED: ĐĂN THỔ LẰN VIÌ ĐIỊ S�ÚC
+----------------------------------------
+REF : TRƠ TRỌI GIỮA ĐỒNG CÁI NHÌN KHẮC KHOẢI
+PRED: TRO TRẠI L ĐỒNG CÁI NHỊN KHẤT KHẢI
+----------------------------------------
+REF : SẼ KHÔNG KHIẾN BẠN TRÔNG GẦY NHƯ NHỮNG TRANG PHỤC MỘT MÀU
+PRED: S� KHÔNG KHIỨNG BẬN TRUNG LÀY NHƯN NHỮNG TRONG PHỤC MỘT MÀT
+----------------------------------------
+REF : GÍ HÒN THAN VÀO RƠM
+PRED: LẾU HỒN THÔN VÒU RƯƠNG
+----------------------------------------
+REF : NHỮNG SAI LẦM KHI ĐI CHỌN KHÁCH SẠN
+PRED: NHỮ SẼ LẦM KH ĐI CHỌNG KHÁ SẠN
+----------------------------------------
+REF : NHÓM SINH VIÊN TẠI TRƯỜNG CÙNG HỌP MẶT ĂN TẾT CHUNG
+PRED: NHÓNG SINH RÊN TẠI TRƯỜNG CUNGNG HỌC BẶT Ă T�ÍCH TRUNG
+----------------------------------------
+REF : VÀ TÔI THẤY HOA VẠN THỌ VÀNG ƯƠM
+PRED: VÀ TƔI THẤY QUA VẀN THỔ VÀN L�ƨM
+----------------------------------------
+REF : HOẶC CHỈ BIỂU HIỆN BẰNG CÁC RỐI LOẠN CO BÓP
+PRED: THẶC CHỊ BIẾU HIIỆN BÀNG CẤC RỐ LẦN CỦ BẤC
+----------------------------------------
+REF : BỊ CÁC CÔ GÁI BAO VÂY RÁO RIẾT
+PRED: BỊC CẤC CÔ GÁI B VAY RÓU RẾT
+----------------------------------------
+REF : CHẠM VÀO PHẦN THÓP MỀM TRÊN ĐẦU BÉ
+PRED: CHẢM VÀU PHẦNG THÓP MÊM KÊN ĐẦU BÉ
+----------------------------------------
+REF : PHỤC VỤ CHO MÙA THI ĐẠI HỌC ĐANG ĐẾN SÁT SẠT
+PRED: VỘT VỘ TRO MộA THI ĐẠI HỌC ĐANG ĐẾN SÁC SẠ
+----------------------------------------
+REF : ĐẦU TIÊN LÀ BÀ CON MÌNH VẬT VÃ LÀM ĂN
+PRED: TỘ TI LÀ BÀ CÓ MÌNH VẰT VÁ LÀM�NG
+----------------------------------------
+REF : NHƯ LẦN NÀY ĐƯỢC NẾM MÓN GIÒ THỦ HOÀN TOÀN LÀM TỪ TAI HEO
+PRED: NHƯ LẰN NÀY ĐƯỢC ĐẾM MÓI GỒ THỦ HOÀNG TOÊN LÀM TỪ TÁI HE
+----------------------------------------
+REF : CHÍN MƯƠI TÁM CHÍN MƯƠI CHÍN
+PRED: CHÍM MƯ�I TÁM CHÍN MƯƠI CHÍN
+----------------------------------------
+REF : VÌ ĐÓ MỚI CHÍNH LÀ THỨ BẠN CẦN
+PRED: VÌ ĐÓ MỚI CHÍNH LÀ THỨ BẠN CẦN
+----------------------------------------
+REF : THÌ BỖNG NGHE THẤY TIẾNG OÁC OÁC TỪ VẠT RỪNG PHI LAO
+PRED: THỌ BỘNG NGHE TIẾN ÁC QUÁC TỪ VẠT RẊN PHÍ RA
+----------------------------------------
+REF : VÀO CƠ QUAN LÀ ANH HÓT GIỐNG HỆT NHỒNG MỚI LỘT LƯỠI VẬY
+PRED: VÀ CƠ QUAN LÀ ANH HÓT GIỐNG HỆT NHÒNG VỚI LỘT LỮI VỢI
+----------------------------------------
+REF : TRẬN CHIẾN XÍCH BÍCH
+PRED: CẪN CHẾN SÍCH BÍCH
+----------------------------------------
+REF : HAI MƯƠI TÁM HAI MƯƠI CHÍN
+PRED: HAÁMƠI TÁÁ MƯƠI CHÍN
+----------------------------------------
+REF : BẢY MƯƠI TÁM BẢY MƯƠI CHÍN
+PRED: BẢY MƯƠI TÁMẢY MƯƠI CHÍN
+----------------------------------------
+REF : NƠI CÓ MẤY TÊN TRÔNG RẤT GẤU
+PRED: NƠI CÔNG MẾY TÊN TRONG RẤT GẤU
+----------------------------------------
+REF : ĐÃ CÓ DỰ ÁN ĐỂ XÂY DỰNG MỘT CÁI CẦU TỪ ĐẤT LIỀN
+PRED: ĐẂ CÓ DỰ Á ĐỂ XÍ DỰNG MỘT CÁI CẦU Cƪ ĐẤT L MỊN
+----------------------------------------
+REF : CÓ HAI TÁC DỤNG TÍCH CỰC
+PRED: CÓ HA T�ÁT DỤNG TÍCH KẰC
+----------------------------------------
+REF : THAM GIA GIẢNG DẠY LÀ LỰC LƯỢNG ĐOÀN VIÊN
+PRED: THÁM DA GIẢN DẬY LÀ LẰC L�ỢN ĐæNG VIÊN
+----------------------------------------
+REF : HOẶC CHO VÀO VẠI MUỐI ĐỂ LỢN ĂN DẦN
+PRED: THẶC CHO VÀO VẢI MUỐI ĐẾ LỢN ĂNG DẦNG
+----------------------------------------
+REF : CHÍU CHÍT GỢI TÌNH MẸ CON SUM HỌP
+PRED: CHỾ CHI�ÍT NGỞI TÌNH M� CÓ S�INH HỒC
+----------------------------------------
+REF : CHỦ TÀU CHO BIẾT SẼ TIẾP TỤC THƯƠNG THUYẾT VỀ SỐ CHI PHÍ NÀY
+PRED: CHỦ TẦU CHO BIẾC S� TIẾP TỤC THƠNG THẾT VỜ SỐA CH PHÍ NÀY
+----------------------------------------
+REF : MÀ CHO ĐẾN LÚC ĐÓ ĐƯỢC XEM LÀ CỦA TƯ NHÂN
+PRED: MÀ CHO ĐẾNH N�ÚC ĐÓ Đ�ỢC X�É LÀ CỦA Tƨ NHÂN
+----------------------------------------
+REF : NHỮNG NGƯỜI HOÀI NGHI NÓI RẰNG GIỮ ĐƯỢC VẬT TREO LỦNG LẲNG TRÊN NGƯỜI
+PRED: NHỮNG NGƯỜI HÀI NGHI NÓI RẰNG DỮ ĐƯỢC VẰT CAO LỤNG LẢNG TRINN NGƯỜI
+----------------------------------------
+REF : ÁNG CHỪNG ĐÃ NGOẠI BẢY MƯƠI
+PRED: ÁN CHẪNG ĐÃ VẢI BẪY MƯI
+----------------------------------------
+REF : SÁU MƯƠI TÁM SÁU MƯƠI CHÍN
+PRED: S�U M�ỠI TÁM SÁU MƯƠIT CHÍN
+----------------------------------------
+REF : RÔ BÓT THÔNG MINH
+PRED: L� B�T THÔNG MINH
+----------------------------------------
+REF : BUỔI SÁNG THÀNH PHỐ Ô NHIỄM HƠN BUỔI TRƯA
+PRED: BỔI SÁNG THæNH PHỐA NHIỄM HƠN BỔI TRƯC
+----------------------------------------
+REF : NHIỀU NGƯỜI CHO BIẾT
+PRED: NHỜ NGƯỜI CHO BIẾT
+----------------------------------------
+REF : NÓNG GIẬN TÔI ĐÃ LĂNG MẠ ANH
+PRED: NÓNG DẪN TÔI ĐÃ LĂNG MẀ ANH
+----------------------------------------
+REF : HỌ CŨNG LUÔN TRÁNH XA NHỮNG TÌNH HUỐNG CÓ THỂ GÂY HẠI CHO HỌ
+PRED: HỌ CŨNG L LUÔN TRÁNH SA NHỮNG TÌNH HỐN CÓ THỂ G�Y HỢ CHO HỎ
+----------------------------------------
+REF : TRONG CUỘC SỐNG CỦA TÔI CHÚNG KHÔNG DÙNG ĐỂ KIẾM RA LỢI NHUẬN
+PRED: TONG CUỘC SỐNG CỦA TÔI CHÚNG KHÔNG DÙNG ĐỂ KIẾM RA LỞI NHỤN
+----------------------------------------
+REF : ĐÓ HẲN LÀ MỘT MÓN QUÀ
+PRED: N�Ó HẲNG LÀ MỘT M�N QUÒ
+----------------------------------------
+REF : VÀ KHI THẤY TÔI VẪN KIÊN ĐỊNH TRẢ LỜI TRỚT QUỚT
+PRED: VÀ KH THẤY TÔI VẪN KIÊN ĐỊNH TRẢ LỜI TRỚT QUỐT
+----------------------------------------
+REF : GIÓ TRỜI KHÔNG THỂ THÔNG THỐC THỔI VÀO KHAI TRUNG
+PRED: SÓ TRỜI KHÔNG THỂ PHÔNG TH�ÚNG THỔI VÀU KHAYI TRUNG
+----------------------------------------
+REF : NGUYÊN THỨ TRƯỞNG BỘ ĐẠI HỌC VÀ GIÁO DỤC CHUYÊN NGHIỆP CŨ
+PRED: NGYÊN THỨ TRƯỢNG BỘ ĐÂI HỌC VÀ GIÁU DỤNG KHẾN NHIỆP CỦ
+----------------------------------------
+REF : NHIỀU TRỤ ĐÁ DI TÍCH NẰM NGHIÊNG NGẢ VÀ VỠ NÁT
+PRED: NHỀU TỦ ĐÁ GÊ TÍCH NẰMGHIïN NGẢ VỀO VỞA NÁ
+----------------------------------------
+REF : HAI MƯƠI BỐN HAI MƯƠI LĂM
+PRED: HAM MƯƠI BỐN HAÁIM MƠI LĂM
+----------------------------------------
+REF : NĂM MƯƠI HAI NĂM MƯƠI BA
+PRED: NĂM MƯƠI HAI NÁM MƯƠI BA
+----------------------------------------
+REF : CỨ CHỤM CÁC ĐẦU NGÓN TAY LẠI MỘT CHỖ
+PRED: CỨ CHỰN K�ÁC ĐỦU GÓN T�AYY LẠI MỘT TRỔ
+----------------------------------------
+REF : CHO NHỮNG CHUYẾN DÃ NGOẠI CỦA DU KHÁCH
+PRED: CHO NHỮNG CHIẾN GIÁO NGOỀI CỔA DU KHÁC
+----------------------------------------
+REF : HẰNG NĂM CHÚNG TA THẢI RA HÀNG TỈ THIẾT BỊ ĐIỆN TỬ
+PRED: KHÂN NĂM CHÚNG TA THỂ RA HÀNG TỂ THỨC BỂ ĐIỂN TỞ
+----------------------------------------
+REF : BỞI CƠ QUAN CHUYÊN MÔN HOẶC THUÊ TỔ CHỨC KIỂM TOÁN ĐỘC LẬP
+PRED: BỞI CƯA QUAN CHỊNG MÔN HOẬT THƠI TỔA CHỨC KIỂN TÁN ĐỘC LẶP
+----------------------------------------
+REF : NHỮNG NHƯỢC ĐIỂM CỦA MÌNH
+PRED: NHỮNG DƯỰC ĐIỂM CỦA MÌNH
+----------------------------------------
+REF : TRỪ KHI BẠN BIẾT TÔN TRỌNG BẢN THÂN MÌNH
+PRED: CHỜ KHI BẠM BIẾT TÔN CHỒNG BẢ THÂN MÌNH
+----------------------------------------
+REF : KHI TRẪM KHỎI BỆNH THÌ SẼ CHÉM ĐẦU
+PRED: K CHẲM KHỔI BÊNH THÌ SẼ CHÉM ĐẦU
+----------------------------------------
+REF : XUÂN NÀY EM KHÔNG VỀ
+PRED: S�INN NÀY EM KHÔNG VỜI
+----------------------------------------
+REF : NHỮNG CON ĐƯỜNG NGẮN NGỦN NHƯ NHỮNG NHÁT CẮT
+PRED: NHỮNG CON ĐƯỜNG NẤN NGỤNG NHƯ NHỮNG NHÁT CẤC
+----------------------------------------
+REF : NÃO BỘ CHÚNG TA PHÁT TRIỂN NHỮNG RUNG ĐỘNG YÊU THƯƠNG
+PRED: N�Ã BỘI CHÚNG TA PHÁI CHYỂN NHỮNG G�UNG ĐỘNG QU�ï HƠN
+----------------------------------------
+REF : NHỮNG CƠN GIÓ MẠNH VÀ MƯA ĐÓNG BĂNG GÂY TRƠN TRỢT
+PRED: NHỮNG CƠN GIÓ MẠNH VÀ� MƯA ĐỐNG BĂN G TRÊN TRỢT
+----------------------------------------
+REF : GIÁM ĐỐC SỞ GIÁO DỤC ĐÀO TẠO NINH THUẬN CHO BIẾT
+PRED: GIÁM Đ�C SỢ GIÁ DỤC ĐÀO TỜ NÊH HỘN CHO BIẾT
+----------------------------------------
+REF : VÀ RẤT SÁNG TẠO
+PRED: VÀ ĐƯỨC SÁNG TẠO
+----------------------------------------
+REF : THẬT SỰ MÀ LÀ BỞI LÒNG HẬN THÙ
+PRED: HẰT SỰA M LÀ BỞ LÒNG �ẪN HÒ
+----------------------------------------
+REF : NHƯNG TÔI THÍCH XEM BỘ PHIM TRUYỆN PHÁT NGAY SAU CHƯƠNG TRÌNH NÀY
+PRED: NHƯNG TÔI THẤT XE BỘ VIÊM TRỆN PHÁT THAY SA CHƠNG CHÌNH NÀY
+----------------------------------------
+REF : NGỌN LỬA BẠO ĐỘNG Ở TRUNG ĐÔNG VÀ PHÁ VỠ LỘ TRÌNH HÒA BÌNH
+PRED: NGÌN LƯỮ BỌ ĐỘNG Ở TRUNG ĐÔNG QU PHÁ V�Á RỘI CHINNH QUA BÌNH
+----------------------------------------
+REF : XIN ĐƯỢC CHÂN KHUÂN VÁC
+PRED: CHINNH ĐỢC CHÂN KHÔNG PHÁ
+----------------------------------------
+REF : DI TÍCH CÓ BẢY PHỖNG ÔNG VÀ HAI PHỖNG BÀ ĐƯỢC LÀM BẰNG GỖ MÍT
+PRED: D� TÍCH CÓ BẢY PHỨNG ÔNG V HAI PHỔNG VÀ Đ�ỢC LÀM VẰNG GỘ MÍCH
+----------------------------------------
+REF : CŨNG CHƯA BIẾT NỮA
+PRED: CŨNG TRƯA BIẾT NỮ
+----------------------------------------
+REF : CŨNG LÊN TIẾNG ỦNG HỘ CÁC KIẾN NGHỊ NÀY
+PRED: CŨNG LÊN TIẾN C�NG HỒ CÁT KẾ NGHÈY NÀY
+----------------------------------------
+REF : TRƯỞNG CÔNG AN XÃ CHẠY SANG CAN NGĂN CŨNG BỊ TUYẾN ĐÁNH TIẾP
+PRED: CHƯỢNG CÔNG AN S� CHẢI SAN CAN NGĂN CŨNG MỊ TIẾN ĐÁNH TIẾT
+----------------------------------------
+REF : NÓ TRỐN MẤT TIÊU RỒI CÒN ĐÂU
+PRED: NÓ TRỐN MẤT TIÊU GỒI CỒ Đ�
+----------------------------------------
+REF : CÁC CHÚ CŨNG THOẢI MÁI PHÓNG UẾ GIỮA CHỐN ĐÔNG NGƯỜI MÀ KHÔNG SỢ
+PRED: CÁC CHÚ CŨNG HỎI MÁI PHỐNG �Ố GIỮA CHỐ ĐÔNG NGƯƠI MÀ C KHÔNG SỢ
+----------------------------------------
+REF : CHẮC SẮP TỚI THU XẾP ĐI DU LỊCH THÔI
+PRED: CHÁT SÁC TỚI THÔA SÍT ĐI DïI ĐẆ THÔI
+----------------------------------------
+REF : NHỮNG DỰ ĐỊNH CẦN PHẢI ĐƯỢC BIẾN THÀNH HIỆN THỰC
+PRED: NHỮNG DỰ ĐÊNH CẦN PH� ĐỰC BIẾN TH�ANNH HIÊN HẰC
+----------------------------------------
+REF : ĐÈN BỊ HƯ RỒI BA
+PRED: ĐÈN BỊ HƠ GÒ BA
+----------------------------------------
+REF : NHƯNG GIẤC NGỦ CHẬP CHỜN
+PRED: NHƯNG DỨC NGỤA CHẬP CHƠN
+----------------------------------------
+REF : TIẾNG CỌC CẠCH KHỰNG LẠI CỦA NHỮNG KHỚP SẮT
+PRED: TẾN CỘC CẠCH KHỦNG LÀI C�I HIỮNG KH�ÓC SẰT
+----------------------------------------
+REF : MỘT BÀ NGOẠI GIẶT ĐỒ THUÊ
+PRED: MỘT VÀ NGOÀ GIẶT ĐỒ HàI
+----------------------------------------
+REF : BÀN CHỔI SƠN BẰNG BÔNG MỀM RẤT PHỔ BIẾN
+PRED: BÀ CHỎ SƠN BẰNG BÔNG MỀM GƯỨC PHỘ BIẾN
+----------------------------------------
+REF : TỈNH QUẢNG TRỊ ĐÃ PHÊ DUYỆT
+PRED: TẈNH QU�ÁN CHỈ ĐÃ VƠ GỆC
+----------------------------------------
+REF : ĐÔI BÀN TAY EM KHÔNG ĐƯỢC MỀM MẠI VÀ NÕN NÀ
+PRED: �ÔI BÀN TAAYI EM KHÔNG ĐƯỢC MIÌM MỞI VÀ NỖN NÀ
+----------------------------------------
+REF : NHƯNG KHI TIẾN GẦN VÀO VỊNH THÌ MẶT BIỂN BỊ RẠN VỠ
+PRED: NHƯNG KHI TIẾN GẦN QUA BÊNH TH� MẶT BỸN BỆN G�ANN VỢ
+----------------------------------------
+REF : TÂY GIANG VẪN CÒN KHẮC KHOẢI KHÔNG THỂ VÀO XÃ A NÔNG
+PRED: T�AY G� VẪN CÒN KHẤCH KHỎI KHÔNG HỞ VÀ S�Á AI NÔNG
+----------------------------------------
+REF : VIỆC MỘT QUYỂN TIỂU THUYẾT NHƯ THẾ
+PRED: VỆC MỘT QUYỂN TIỂU HIẾT NHƯ THỾI
+----------------------------------------
+REF : VIỆC QUY TỘI ĐỂ BÙNG NỔ LOẠI SÁCH NÀY LÀ DO
+PRED: VỆC QUYÊ TỘI ĐỂI BÙNG NỖ LỘI S�ÁCH NÀY ĐÀI DO
+----------------------------------------
+REF : NHƯNG TÌNH YÊU VẪN NỒNG NÀN VÀ SAY ĐẮM NHƯ BUỔI BAN ĐẦU
+PRED: NHƯNG TÌNH YƯ MẰN NÒNG NANG VÀ XAY Đ�ÁM NHƯ BỘI BAN ĐẦU
+----------------------------------------
+REF : THẰNG ĐÓ CÓ CÁI MIỆNG NHƯ ĐÀN BÀ
+PRED: HẀN ĐÓ CÓ CẤI MỆ NHƯ ĐÀN BÀ
+----------------------------------------
+REF : NGƯỜI TA NÓI
+PRED: NGƯỜI TA N�ÓI
+----------------------------------------
+REF : CÔNG VĂN ĐỀ NGHỊ TỈNH CON TUM XÂY DỰNG CỬA KHẨU
+PRED: TÔNG V�ANN ĐỜ NGHỂ TÍNH CON TÂN X� DỪN CỬA KHẨ
+----------------------------------------
+REF : ANH PHÚ CHƯA BÚ ĐƯỢC SỮA MẸ LẦN NÀO
+PRED: ANH PHÚ CHƯ B�Ú ĐƯỢC SỰA MẸ LẦN N�O
+----------------------------------------
+REF : HIỆN RA TẬN PHÍA XA
+PRED: KHIỆN RA TẰN PHÍ SA
+----------------------------------------
+REF : ĐỂ TÀU KHÔNG PHẢI CƯỠI CẦU TÀU
+PRED: NẾI TÀ KHÔNG PHẢI CỮI CæU T TOÀ
+----------------------------------------
+REF : NGHE CHÚNG TÔI HỎI ĐIỀU NÀY CHỊ NGÁT RÂN RẤN NƯỚC MẮT
+PRED: NHIIA CHÚNG TÔI HỎ ĐIỀ NÀY CHỆN NGÉC GÊN GẨN ĐƯỨC MẮT
+----------------------------------------
+REF : DO CHÍNH PHỦ MỸ TIẾN HÀNH Ở VIỆT NAM
+PRED: D CHÍNH PHỦ MỸ TIẾN HÀNH Ở VIỆC NANG
+----------------------------------------
