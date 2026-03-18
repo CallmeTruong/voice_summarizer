@@ -1,5 +1,6 @@
 phowhisper_local_model\model.safetensors
-.venv/
+.venv
+.vscode
 __pycache__/
 *.pyc
 .env
