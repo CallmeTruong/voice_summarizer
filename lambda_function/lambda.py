@@ -6,7 +6,7 @@ from botocore.exceptions import ClientError
 transcribe = boto3.client("transcribe")
 s3 = boto3.client("s3")
 
-OUTPUT_BUCKET = "voice2text-manage-bucket"
+OUTPUT_BUCKET = "s3voice2text-bucket"
 OUTPUT_PREFIX = "transcripts/"
 HASH_TABLE_KEY = "hash_table.json"
 
