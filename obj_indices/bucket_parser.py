@@ -54,6 +54,15 @@ class HashTable:
                 return value
         return None
 
+    def mapping(self, InputFileID: list):
+        OutputID = []
+        if not InputFileID:
+            return
+        for id in InputFileID:
+            text_id = self._hash(id)
+            OutputID.append(text_id)
+        return OutputID
+
     def delete(self, k: str) -> bool:
         idx = self._hash(k)
         original_len = len(self.table[idx])
