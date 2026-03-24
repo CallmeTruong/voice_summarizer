@@ -28,15 +28,21 @@ if __name__ == "__main__":
     raw_id = "b24a7205b8c5f1b0a232d8fb651cf9a2d1e4c89c6752c238e351a4ab2fc15568"
 
     memory = mem_module.Memory(raw_id=raw_id)
+    question = input("Bạn: ").strip()
+    answer = mem_module.chat(memory, question)
+    print(f"\nTrợ lý: {answer}\n")
 
-    print("Nhập 'exit' để thoát.\n")
-    while True:
-        question = input("Bạn: ").strip()
-        if not question or question.lower() == "exit":
-            break
 
-        answer = mem_module.chat(memory, question)
-        print(f"\nTrợ lý: {answer}\n")
+
+#loop chat
+    # print("Nhập 'exit' để thoát.\n")
+    # while True:
+    #     question = input("Bạn: ").strip()
+    #     if not question or question.lower() == "exit":
+    #         break
+
+    #     answer = mem_module.chat(memory, question)
+    #     print(f"\nTrợ lý: {answer}\n")
 
 
 #Phần này để mai t gói vào 1 hàm khác nha.

@@ -2,13 +2,15 @@ from dataclasses import dataclass, field
 from collections import deque
 from . import router 
 from . import model_caller
-from dotenv import load_dotenv
 import os
-import json
+import boto3
 
 WORKING_WINDOW = 10
 SUMMARY_MAX_LINES = 30
 DEBUG = str(os.getenv("DEBUG"))
+
+dynamodb = boto3.resource("dynamodb")
+table = dynamodb.Table(str(os.getenv("HISTORY_TABLE")))
 
 @dataclass
 class Memory:
@@ -16,7 +18,7 @@ class Memory:
     text_id: str | None = None
     summary: str        = ""
     working: deque      = field(default_factory=lambda: deque(maxlen=WORKING_WINDOW))
-
+    chat_history: deque = field(default_factory=lambda: deque())
 
 
 _BASE_SYSTEM = """Bạn là trợ lý phân tích nội dung file âm thanh đã được chuyển thành văn bản.
@@ -84,4 +86,37 @@ def chat(memory: Memory, question: str) -> str:
     memory.working.append({"role": "user",      "content": question})
     memory.working.append({"role": "assistant",  "content": answer})
 
+    memory.chat_history({"role": "user",      "content": question})
+    memory.chat_history({"role": "assistant",  "content": answer})
+
     return answer
+
+def memory_to_item(memory: Memory) -> dict:
+    return {
+        "raw_id": memory.raw_id,
+        "text_id": memory.text_id,
+        "summary": memory.summary,
+        "working": list(memory.working),
+        "chat_history": list(memory.chat_history),
+    }
+
+def item_to_memory(item: dict) -> Memory:
+    mem = Memory(
+        raw_id=item["raw_id"],
+        text_id=item.get("text_id"),
+        summary=item.get("summary", "")
+    )
+    mem.working = deque(item.get("working", []), maxlen=WORKING_WINDOW)
+    mem.chat_history = deque(item.get("chat_history", []))
+    return mem
+
+def save_memory(memory: Memory):
+    item = memory_to_item(memory)
+    table.put_item(Item=item)
+
+def load_memory(raw_id) -> Memory | None:
+    res = table.get_item(Key={"raw_id": raw_id})
+    item = res.get("Item")
+    if not item:
+        return None
+    return item_to_memory(item)
