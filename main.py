@@ -5,6 +5,7 @@ from obj_indices import bucket_parser
 from retrieval_repare import audio2text, text2vect
 from vectors_controller import check_status
 import json
+from collections import deque
 
 load_dotenv(".env")
 
@@ -28,7 +29,8 @@ if __name__ == "__main__":
 
     raw_id = "b24a7205b8c5f1b0a232d8fb651cf9a2d1e4c89c6752c238e351a4ab2fc15568"
     memory = mem_module.Memory(raw_id=raw_id)
-    lst = []
+    chat_hist = []
+
     print("Nhập 'exit' để thoát.\n")
     while True:
         pair_chat = {}
@@ -38,15 +40,13 @@ if __name__ == "__main__":
         pair_chat["question"] = question
         answer = mem_module.chat(memory, question)
         pair_chat["answer"] = answer
-        lst.append(pair_chat)
-        chat_history = {
-            "raw_id" : raw_id,
-            "chat" : lst
-        }
+        chat_hist.append(pair_chat)
+
+        mem = mem_module.memory_export(memory, raw_id, chat_hist)
         print(f"\nTrợ lý: {answer}\n")
 
-    chat_his = json.dumps(chat_history, ensure_ascii=False, indent=2)
-    print(chat_his)
+    print(mem)
+    print(deque(list(memory.working)))
 
 #Phần này để mai t gói vào 1 hàm khác nha.
 

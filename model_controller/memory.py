@@ -4,8 +4,9 @@ from . import router
 from . import model_caller
 from dotenv import load_dotenv
 import os
+import json
 
-WORKING_WINDOW = 6
+WORKING_WINDOW = 10
 SUMMARY_MAX_LINES = 30
 DEBUG = str(os.getenv("DEBUG"))
 
@@ -84,3 +85,12 @@ def chat(memory: Memory, question: str) -> str:
     memory.working.append({"role": "assistant",  "content": answer})
 
     return answer
+
+def memory_export(memory: Memory, raw_id, chat_hist : list):
+        chat_history = {
+            "raw_id" : raw_id,
+            "chat_history" : chat_hist, 
+            "memory" : list(memory.working),
+        }
+        chat = json.dumps(chat_history, ensure_ascii=False, indent=2)
+        return chat
