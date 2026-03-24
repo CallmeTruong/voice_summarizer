@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from . import chunking, embedding_convert
-from model_controller import model_caller
+from core.model_controller import model_caller
 
 load_dotenv(".env")
 

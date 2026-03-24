@@ -87,8 +87,8 @@ def chat(memory: Memory, question: str) -> str:
     memory.working.append({"role": "user",      "content": question})
     memory.working.append({"role": "assistant",  "content": answer})
 
-    memory.chat_history({"role": "user",      "content": question})
-    memory.chat_history({"role": "assistant",  "content": answer})
+    memory.chat_history.append({"role": "user",      "content": question})
+    memory.chat_history.append({"role": "assistant",  "content": answer})
 
     return answer
 

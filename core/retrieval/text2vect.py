@@ -1,5 +1,4 @@
-from vectors_controller import vectors
-from vectors_controller import chunking
+from infrastructure.vectors_controller import vectors, chunking
 import boto3, os
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError

@@ -1,9 +1,8 @@
 from enum import Enum
 from dataclasses import dataclass
 import json, re
-from vectors_controller import vectors
-from model_controller import model_caller
-from vectors_controller import embedding_convert
+from infrastructure.vectors_controller import vectors, embedding_convert
+from core.model_controller import model_caller
 
 
 class QuestionType(str, Enum):

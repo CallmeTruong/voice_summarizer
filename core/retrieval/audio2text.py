@@ -1,5 +1,5 @@
-from audio_process import audio_controller
-from obj_indices import bucket_parser, hash_generator
+from core.audio_process import audio_controller
+from infrastructure.obj_indices import bucket_parser, hash_generator
 
 def voice_transcript(file_name, bucket, client, raw_bucket_folder, table):
     

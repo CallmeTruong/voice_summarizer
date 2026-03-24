@@ -1,9 +1,9 @@
 from dotenv import load_dotenv
 import os
-from model_controller import memory as mem_module
-from obj_indices import bucket_parser
-from retrieval_repare import audio2text, text2vect
-from vectors_controller import check_status
+from core.model_controller import memory as mem_module
+from infrastructure.obj_indices import bucket_parser
+from core.retrieval import audio2text, text2vect
+from infrastructure.vectors_controller import check_status
 
 load_dotenv(".env")
 
