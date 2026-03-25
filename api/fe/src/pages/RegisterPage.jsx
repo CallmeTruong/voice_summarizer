@@ -22,7 +22,7 @@ export default function RegisterPage() {
     setMsg("");
 
     if (form.password !== form.confirmPassword) {
-      setMsg("Mật khẩu xác nhận không khớp");
+      setMsg("Passwords do not match");
       return;
     }
 
@@ -38,11 +38,12 @@ export default function RegisterPage() {
           },
         },
       });
+      window.__toast("Register successful", "success");
 
       navigate(`/confirm?email=${encodeURIComponent(form.email)}`);
     } catch (err) {
       console.error(err);
-      setMsg(err.message || "Đăng ký thất bại");
+      window.__toast(err.message || "Registration failed", "error");
     } finally {
       setLoading(false);
     }
@@ -52,7 +53,6 @@ export default function RegisterPage() {
     <div className="min-h-screen bg-slate-100 p-4">
       <div className="mx-auto mt-10 max-w-md rounded-3xl bg-white p-6 shadow">
         <h1 className="text-3xl font-bold text-slate-900">Create account</h1>
-        <p className="mt-2 text-slate-500">Đăng ký bằng Cognito</p>
 
         <form onSubmit={handleRegister} className="mt-6 space-y-4">
           <input
@@ -84,18 +84,12 @@ export default function RegisterPage() {
             disabled={loading}
             className="h-12 w-full rounded-xl bg-indigo-600 font-semibold text-white hover:bg-indigo-700 disabled:opacity-60"
           >
-            {loading ? "Đang đăng ký..." : "Register"}
+            {loading ? "Registering..." : "Register"}
           </button>
         </form>
 
-        {msg && (
-          <div className="mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-600">
-            {msg}
-          </div>
-        )}
-
         <p className="mt-5 text-sm text-slate-500">
-          Đã có tài khoản?{" "}
+          Already have one?{" "}
           <Link to="/login" className="font-semibold text-indigo-600">
             Login
           </Link>

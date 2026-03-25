@@ -12,34 +12,68 @@ export default function LoginPage() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setMsg("");
+
+    const normalizedEmail = email.trim().toLowerCase();
+
+    if (!normalizedEmail) {
+      setMsg("Email is required");
+      return;
+    }
+
+    if (!password) {
+      setMsg("Password is required");
+      return;
+    }
+
     setLoading(true);
 
     try {
       const result = await signIn({
-        username: email,
+        username: normalizedEmail,
         password,
       });
 
       console.log("signIn result:", result);
-      setMsg("Đăng nhập thành công");
-      navigate("/dashboard");
+
+      if (result?.isSignedIn) {
+        window.__toast?.("Logging in successful 🎉", "success");
+        navigate("/dashboard");
+        return;
+      }
+
+      const step = result?.nextStep?.signInStep;
+
+      if (
+        step === "CONFIRM_SIGN_UP" ||
+        step === "CONFIRM_SIGN_IN_WITH_EMAIL_CODE" ||
+        step === "CONFIRM_SIGN_IN_WITH_SMS_CODE"
+      ) {
+        window.__toast?.("Please confirm your account first", "warn");
+        navigate(`/confirm?email=${encodeURIComponent(normalizedEmail)}`);
+        return;
+      }
+
+      setMsg(`Additional auth step required: ${step || "unknown step"}`);
+      window.__toast?.("Additional auth step required", "warn");
     } catch (err) {
       console.error(err);
-      setMsg(err.message || "Đăng nhập thất bại");
+      const errorMessage = err?.message || "Logging in failed";
+      setMsg(errorMessage);
+      window.__toast?.(errorMessage, "error");
     } finally {
       setLoading(false);
     }
   };
 
   return (
-    <div className="min-h-screen bg-[#f5f6fa] p-4 md:p-8">
-      <div className="mx-auto grid min-h-[85vh] max-w-6xl overflow-hidden rounded-[28px] bg-white shadow-xl lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="relative hidden overflow-hidden bg-gradient-to-br from-indigo-500 to-indigo-700 lg:block">
+    <div className="min-h-screen bg-[#f5f6fa] p-4 md:p-8 flex items-center justify-center">
+      <div className="mx-auto grid w-full max-w-6xl overflow-hidden rounded-[28px] bg-white shadow-xl lg:grid-cols-[1.15fr_0.85fr]">
+        <div className="relative hidden min-h-[520px] overflow-hidden bg-gradient-to-br from-indigo-500 to-indigo-700 lg:block">
           <div className="absolute left-10 top-10 z-10 text-4xl font-black text-white">
             Sound Capture
           </div>
 
-          <div className="relative z-10 max-w-lg px-10 pt-48 text-white">
+          <div className="relative z-10 max-w-lg px-10 pt-28 text-white">
             <h1 className="text-6xl font-black leading-[0.95]">
               The Exquisite
               <br />
@@ -51,13 +85,12 @@ export default function LoginPage() {
             </p>
           </div>
 
-          <div className="absolute bottom-0 left-[18%] h-[60%] w-[80%] rounded-tl-[40px] bg-[linear-gradient(180deg,rgba(30,58,138,0.25),rgba(147,197,253,0.28))]" />
+          <div className="absolute bottom-0 left-[30%] h-[60%] w-[80%] rounded-tl-[40px] bg-[linear-gradient(180deg,rgba(30,58,138,0.25),rgba(147,197,253,0.28))]" />
         </div>
 
-        <div className="min-h-screen bg-slate-100 p-4">
-          <div className="mx-auto mt-10 max-w-md rounded-3xl bg-white p-6 shadow">
+        <div className="flex items-center justify-center bg-slate-100 p-6 md:p-8">
+          <div className="w-full max-w-md rounded-3xl bg-white p-6 shadow">
             <h1 className="text-3xl font-bold text-slate-900">Login</h1>
-            <p className="mt-2 text-slate-500">Đăng nhập bằng Cognito</p>
 
             <form onSubmit={handleLogin} className="mt-6 space-y-4">
               <input
@@ -81,7 +114,7 @@ export default function LoginPage() {
                 disabled={loading}
                 className="h-12 w-full rounded-xl bg-indigo-600 font-semibold text-white hover:bg-indigo-700 disabled:opacity-60"
               >
-                {loading ? "Đang đăng nhập..." : "Login"}
+                {loading ? "Logging in..." : "Login"}
               </button>
             </form>
 
@@ -92,7 +125,7 @@ export default function LoginPage() {
             )}
 
             <p className="mt-5 text-sm text-slate-500">
-              Chưa có tài khoản?{" "}
+              Register?{" "}
               <Link to="/register" className="font-semibold text-indigo-600">
                 Register
               </Link>

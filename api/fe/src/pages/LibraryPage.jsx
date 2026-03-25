@@ -1,48 +1,61 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AppSidebar from "../components/AppSidebar";
 import AppTopbar from "../components/AppTopbar";
+import UserMenu from "../components/UserMenu";
 import MeetingCard from "../components/MeetingCard";
-import { recordings } from "../data/mockData";
+import { recordings as mockRecordings } from "../data/mockData";
 
 export default function LibraryPage() {
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
+
+  useEffect(() => {
+    try {
+      setItems(mockRecordings);
+    } catch (err) {
+      console.error(err);
+      setError("Failed to load recordings");
+    } finally {
+      setLoading(false);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
       <AppSidebar />
 
       <main className="p-4 md:p-7">
-        <AppTopbar
-          title="Library"
-          subtitle="Browse your recorded conversations and transcripts"
-        />
+        <div className="mb-6 flex items-center justify-between gap-4">
+          <div>
+            <h1 className="text-3xl font-extrabold text-slate-900 md:text-4xl">
+              Library
+            </h1>
+            <p className="mt-2 text-slate-500">
+              Your collection of recorded meetings and insights.
+            </p>
+          </div>
 
-        <div className="mb-6 grid overflow-hidden rounded-2xl border border-slate-200 bg-white md:grid-cols-3">
-          <div className="border-b border-slate-200 p-6 md:border-b-0 md:border-r">
-            <div className="text-xs font-extrabold tracking-[0.12em] text-slate-500">
-              TOTAL RECORDINGS
-            </div>
-            <div className="mt-2 text-4xl font-black text-slate-900">5</div>
-          </div>
-          <div className="border-b border-slate-200 p-6 md:border-b-0 md:border-r">
-            <div className="text-xs font-extrabold tracking-[0.12em] text-slate-500">
-              TOTAL DURATION
-            </div>
-            <div className="mt-2 text-4xl font-black text-slate-900">
-              2h 20m
-            </div>
-          </div>
-          <div className="p-6">
-            <div className="text-xs font-extrabold tracking-[0.12em] text-slate-500">
-              THIS WEEK
-            </div>
-            <div className="mt-2 text-4xl font-black text-slate-900">3</div>
-          </div>
+          <UserMenu />
         </div>
 
-        <div className="space-y-5">
-          {recordings.map((item) => (
-            <MeetingCard key={item.id} item={item} />
-          ))}
-        </div>
+        {loading ? (
+          <div className="mt-6 text-sm text-slate-500">Loading...</div>
+        ) : error ? (
+          <div className="mt-6 rounded-2xl bg-red-50 p-6 text-sm text-red-600 shadow">
+            {error}
+          </div>
+        ) : items.length === 0 ? (
+          <div className="mt-6 rounded-2xl bg-white p-6 text-sm text-slate-500 shadow">
+            No recordings yet.
+          </div>
+        ) : (
+          <div className="space-y-5">
+            {items.map((item) => (
+              <MeetingCard key={item.id} item={item} />
+            ))}
+          </div>
+        )}
       </main>
     </div>
   );

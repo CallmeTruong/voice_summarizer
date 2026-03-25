@@ -57,10 +57,6 @@ export default function AppSidebar() {
 
       <div className="space-y-2">
         <a href="#" className={`${navItemBase} ${navItemIdle}`}>
-          <i className="bi bi-gear" />
-          <span>Settings</span>
-        </a>
-        <a href="#" className={`${navItemBase} ${navItemIdle}`}>
           <i className="bi bi-question-circle" />
           <span>Support</span>
         </a>

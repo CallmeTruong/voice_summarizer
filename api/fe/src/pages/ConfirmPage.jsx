@@ -25,11 +25,11 @@ export default function ConfirmPage() {
         username: email,
         confirmationCode: code,
       });
-
+      window.__toast("Successfully confirmed your account", "success");
       navigate("/login");
     } catch (err) {
       console.error(err);
-      setMsg(err.message || "Xác thực thất bại");
+      window.__toast(err.message || "Failed to confirm account", "error");
     } finally {
       setLoading(false);
     }
@@ -40,7 +40,8 @@ export default function ConfirmPage() {
       <div className="mx-auto mt-10 max-w-md rounded-3xl bg-white p-6 shadow">
         <h1 className="text-3xl font-bold text-slate-900">Confirm account</h1>
         <p className="mt-2 text-slate-500">
-          Nhập mã xác thực Cognito gửi về email
+          Enter the verification code sent to your email to confirm your
+          account.
         </p>
 
         <form onSubmit={handleConfirm} className="mt-6 space-y-4">
@@ -65,18 +66,12 @@ export default function ConfirmPage() {
             disabled={loading}
             className="h-12 w-full rounded-xl bg-indigo-600 font-semibold text-white hover:bg-indigo-700 disabled:opacity-60"
           >
-            {loading ? "Đang xác thực..." : "Confirm"}
+            {loading ? "Confirming..." : "Confirm"}
           </button>
         </form>
 
-        {msg && (
-          <div className="mt-4 rounded-xl bg-red-50 p-3 text-sm text-red-600">
-            {msg}
-          </div>
-        )}
-
         <p className="mt-5 text-sm text-slate-500">
-          Quay lại{" "}
+          Back to{" "}
           <Link to="/login" className="font-semibold text-indigo-600">
             Login
           </Link>

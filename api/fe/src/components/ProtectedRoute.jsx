@@ -1,26 +1,58 @@
 import React, { useEffect, useState } from "react";
 import { Navigate } from "react-router-dom";
-import { getCurrentUser } from "aws-amplify/auth";
+import { getCurrentUser, fetchAuthSession } from "aws-amplify/auth";
 
 export default function ProtectedRoute({ children }) {
-  const [status, setStatus] = useState("loading");
+  const [status, setStatus] = useState("checking");
 
   useEffect(() => {
-    getCurrentUser()
-      .then(() => setStatus("authenticated"))
-      .catch(() => setStatus("unauthenticated"));
+    let mounted = true;
+
+    async function checkAuth() {
+      try {
+        await getCurrentUser();
+        const session = await fetchAuthSession();
+
+        const hasToken = Boolean(
+          session?.tokens?.idToken || session?.tokens?.accessToken,
+        );
+
+        if (!mounted) return;
+
+        if (hasToken) {
+          setStatus("authenticated");
+        } else {
+          setStatus("unauthenticated");
+        }
+      } catch (err) {
+        if (!mounted) return;
+        setStatus("unauthenticated");
+      }
+    }
+
+    checkAuth();
+
+    return () => {
+      mounted = false;
+    };
   }, []);
 
-  if (status === "loading") {
+  if (status === "checking") {
     return (
-      <div className="flex min-h-screen items-center justify-center bg-slate-100">
-        <div className="rounded-2xl bg-white px-6 py-4 shadow">Loading...</div>
+      <div className="min-h-screen flex items-center justify-center bg-slate-100">
+        <div className="text-slate-600 text-sm">Checking authentication...</div>
       </div>
     );
   }
 
   if (status === "unauthenticated") {
-    return <Navigate to="/login" replace />;
+    return (
+      <Navigate
+        to="/login"
+        replace
+        state={{ from: window.location.pathname }}
+      />
+    );
   }
 
   return children;
