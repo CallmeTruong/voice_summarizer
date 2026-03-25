@@ -91,7 +91,7 @@ def classify_question(question: str) -> ClassifyResult:
             result.retrieval_strategy = RetrievalStrategy.COMPREHENSIVE
             result.reason += " [upgraded: low confidence]"
 
-        if result.retrieval_strategy == RetrievalStrategy.SUMMARY and result.confidence < 0.80:
+        if result.retrieval_strategy == RetrievalStrategy.SUMMARY and result.confidence < 0.6:
             result.retrieval_strategy = RetrievalStrategy.COMPREHENSIVE
             result.reason += " [upgraded: summary low confidence → comprehensive]"
 

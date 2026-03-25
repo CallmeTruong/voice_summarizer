@@ -17,7 +17,7 @@ table           = os.getenv("TABLE_NAME")
 
 if __name__ == "__main__":
 
-    # # upload file and push to vect
+    # upload file and push to vect
     # meta    = audio2text.voice_transcript(file_name, bucket, client, raw_bucket_folder, table)
     # raw_id  = meta["raw_id"]
     # text_id = meta["text_id"]
@@ -25,24 +25,30 @@ if __name__ == "__main__":
     # text2vect.vect_push(raw_id=raw_id, text_id=text_id)
     # print(raw_id)
 
-    raw_id = "b24a7205b8c5f1b0a232d8fb651cf9a2d1e4c89c6752c238e351a4ab2fc15568"
+    raw_id = "eec92ed5882ab11a5345c4ceadba1e52e477528021f9f5261d230540e27c596a"
 
     memory = mem_module.Memory(raw_id=raw_id)
+
     question = input("Bạn: ").strip()
     answer = mem_module.chat(memory, question)
     print(f"\nTrợ lý: {answer}\n")
+    mem_module.save_memory(memory)
+    m = mem_module.load_memory(raw_id)
+    print(m)
 
 
+# # loop chat
+#     print("Nhập 'exit' để thoát.\n")
+#     while True:
+#         question = input("Bạn: ").strip()
+#         if not question or question.lower() == "exit":
+#             break
 
-#loop chat
-    # print("Nhập 'exit' để thoát.\n")
-    # while True:
-    #     question = input("Bạn: ").strip()
-    #     if not question or question.lower() == "exit":
-    #         break
-
-    #     answer = mem_module.chat(memory, question)
-    #     print(f"\nTrợ lý: {answer}\n")
+#         answer = mem_module.chat(memory, question)
+#         print(f"\nTrợ lý: {answer}\n")
+#         mem_module.save_memory(memory)
+#         m = mem_module.load_memory(raw_id)
+#         print(m)
 
 
 #Phần này để mai t gói vào 1 hàm khác nha.

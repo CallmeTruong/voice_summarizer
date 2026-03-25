@@ -10,8 +10,8 @@ SUMMARY_MAX_LINES = 30
 DEBUG = str(os.getenv("DEBUG"))
 REGION = str(os.getenv("REGION"))
 
-# dynamodb = boto3.resource("dynamodb", REGION)
-# table = dynamodb.Table(str(os.getenv("HISTORY_TABLE")))
+dynamodb = boto3.resource("dynamodb", REGION)
+table = dynamodb.Table(str(os.getenv("HISTORY_TABLE")))
 
 @dataclass
 class Memory:
