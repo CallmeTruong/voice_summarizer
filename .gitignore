@@ -12,3 +12,4 @@ raw_audio
 filtered_signal.wav
 meeting.wav
 private
+venv

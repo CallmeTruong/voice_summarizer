@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 REGION = os.getenv("REGION")
 bucket = os.getenv("BUCKET_NAME")
-path = f"{os.getenv("RAW_BUCKET_FOLDER")}/"
+path = f"{os.getenv('RAW_BUCKET_FOLDER')}/"
 
 s3 = boto3.client("s3", REGION)
 

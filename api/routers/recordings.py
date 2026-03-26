@@ -114,6 +114,7 @@ async def get_upload_url(request: UploadUrlRequest):
         "s3_key":   s3_key,
         "createdAt": datetime.now(timezone.utc).isoformat(),
     })
+    print(f"[DEBUG] put_item vào table: {status_table.table_name} | raw_id: {recording_id}")
 
     return {
         "success": True,
@@ -205,21 +206,32 @@ async def update_recording(recording_id: str, request: UpdateRecordingRequest):
         "data": {"id": recording_id, "title": request.title}
     }
 
-
 @router.post("/{recording_id}/process")
-async def start_processing(recording_id: str, transcript_id: str, request: ProcessRequest):
+async def start_processing(recording_id: str, request: ProcessRequest):
     res  = status_table.get_item(Key={"raw_id": recording_id})
     item = res.get("Item")
 
     if not item:
         raise HTTPException(status_code=404, detail={
-            "code":    "NOT_FOUND",
-            "message": f"{recording_id} không tồn tại"
+            "code": "NOT_FOUND", "message": f"{recording_id} không tồn tại"
         })
 
+    current_status = item.get("status", "")
+    if current_status == "completed":
+        raise HTTPException(status_code=400, detail={
+            "code": "ALREADY_COMPLETED",
+            "message": "Recording đã xử lý xong, không cần chạy lại"
+        })
+    if current_status == "processing":
+        raise HTTPException(status_code=400, detail={
+            "code": "ALREADY_PROCESSING",
+            "message": "Recording đang được xử lý"
+        })
+
+    transcript_id = item.get("text_id")
     process_audio_task.delay(
         recording_id=recording_id,
-        transcript_id = transcript_id,
+        transcript_id=transcript_id,
         file_name=item["fileName"]
     )
 
@@ -313,11 +325,10 @@ async def get_summary(recording_id: str):
             "code": "NOT_READY", "message": "Recording chưa xử lý xong"
         })
 
-    actual_raw_id = item.get("actual_raw_id", recording_id)
     segments_prefix = os.getenv("SEGMENTS_PREFIX")
 
     try:
-        obj  = s3.get_object(Bucket=BUCKET, Key=f"{segments_prefix}/{actual_raw_id}.json")
+        obj  = s3.get_object(Bucket=BUCKET, Key=f"{segments_prefix}/{recording_id}.json")
         data = json.loads(obj["Body"].read().decode("utf-8"))
     except Exception as e:
         raise HTTPException(status_code=404, detail={
@@ -349,8 +360,7 @@ async def get_chat_history(recording_id: str):
             "code": "NOT_FOUND", "message": "Recording không tồn tại"
         })
 
-    actual_raw_id = item.get("actual_raw_id", recording_id)
-    memory = mem_module.load_memory(actual_raw_id)
+    memory = mem_module.load_memory(recording_id)
 
     if not memory:
         return {
@@ -386,9 +396,8 @@ async def delete_chat_history(recording_id: str):
             "code": "NOT_FOUND", "message": "Recording không tồn tại"
         })
 
-    actual_raw_id = item.get("actual_raw_id", recording_id)
 
-    fresh_memory = mem_module.Memory(raw_id=actual_raw_id)
+    fresh_memory = mem_module.Memory(raw_id=recording_id)
     mem_module.save_memory(fresh_memory)
 
     return {
@@ -414,11 +423,9 @@ async def query_assistant(recording_id: str, request: QueryRequest):
             "message": "Recording chưa xử lý xong"
         })
 
-    actual_raw_id = item.get("actual_raw_id", recording_id)
-
-    memory = mem_module.load_memory(actual_raw_id)
+    memory = mem_module.load_memory(recording_id)
     if not memory:
-        memory = mem_module.Memory(raw_id=actual_raw_id)
+        memory = mem_module.Memory(raw_id=recording_id)
 
     answer = mem_module.chat(memory, request.message)
     mem_module.save_memory(memory)

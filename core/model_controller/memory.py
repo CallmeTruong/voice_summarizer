@@ -11,7 +11,7 @@ DEBUG = str(os.getenv("DEBUG"))
 REGION = str(os.getenv("REGION"))
 
 dynamodb = boto3.resource("dynamodb", REGION)
-table = dynamodb.Table(str(os.getenv("HISTORY_TABLE")))
+table = dynamodb.Table(str(os.getenv("MEMORY_TABLE")))
 
 @dataclass
 class Memory:
