@@ -298,9 +298,46 @@ async def get_transcript(recording_id: str):
 
     return {"success": True, "data": {"items": items}}
 
+@router.get("/{recording_id}/summary")
+async def get_summary(recording_id: str):
+    res  = status_table.get_item(Key={"raw_id": recording_id})
+    item = res.get("Item")
 
+    if not item:
+        raise HTTPException(status_code=404, detail={
+            "code": "NOT_FOUND", "message": "Recording không tồn tại"
+        })
 
+    if item.get("status") != "completed":
+        raise HTTPException(status_code=400, detail={
+            "code": "NOT_READY", "message": "Recording chưa xử lý xong"
+        })
 
+    actual_raw_id = item.get("actual_raw_id", recording_id)
+    segments_prefix = os.getenv("SEGMENTS_PREFIX")
+
+    try:
+        obj  = s3.get_object(Bucket=BUCKET, Key=f"{segments_prefix}/{actual_raw_id}.json")
+        data = json.loads(obj["Body"].read().decode("utf-8"))
+    except Exception as e:
+        raise HTTPException(status_code=404, detail={
+            "code": "SUMMARY_NOT_FOUND", "message": str(e)
+        })
+
+    return {
+        "success": True,
+        "data": {
+            "globalSummary": data.get("global_summary", ""),
+            "segments": [
+                {
+                    "index":      s["segment_idx"],
+                    "topicLabel": s["topic_label"],
+                    "summary":    s["summary"],
+                }
+                for s in data.get("segments", [])
+            ]
+        }
+    }
 
 @router.get("/{recording_id}/assistant")
 async def history_chat(recording_id: str, request: QueryRequest):
