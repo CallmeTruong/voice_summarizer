@@ -24,58 +24,58 @@ path = os.getenv("RAW_BUCKET_FOLDER")
 table = os.getenv("TABLE_NAME")
 
 
-@router.get("")
-async def list_recordings(
-    page: int = 1,
-    limit: int = 10,
-    status: str = None,
-    search: str = None,
-):
-    # DynamoDB scan
-    scan_kwargs = {}
-    filters = []
+# @router.get("")
+# async def list_recordings(
+#     page: int = 1,
+#     limit: int = 10,
+#     status: str = None,
+#     search: str = None,
+# ):
+#     # DynamoDB scan
+#     scan_kwargs = {}
+#     filters = []
 
-    if status:
-        filters.append(Attr("status").eq(status))
-    if search:
-        filters.append(
-            Attr("fileName").contains(search) | Attr("title").contains(search)
-        )
+#     if status:
+#         filters.append(Attr("status").eq(status))
+#     if search:
+#         filters.append(
+#             Attr("fileName").contains(search) | Attr("title").contains(search)
+#         )
 
-    if filters:
-        expression = filters[0]
-        for f in filters[1:]:
-            expression = expression & f
-        scan_kwargs["FilterExpression"] = expression
+#     if filters:
+#         expression = filters[0]
+#         for f in filters[1:]:
+#             expression = expression & f
+#         scan_kwargs["FilterExpression"] = expression
 
-    res = status_table.scan(**scan_kwargs)
-    items = res.get("Items", [])
+#     res = status_table.scan(**scan_kwargs)
+#     items = res.get("Items", [])
 
-    # Sort
-    items.sort(key=lambda x: x.get("createdAt", ""), reverse=True)
+#     # Sort
+#     items.sort(key=lambda x: x.get("createdAt", ""), reverse=True)
 
-    # Phân trang
-    total = len(items)
-    start = (page - 1) * limit
-    page_items = items[start:start + limit]
+#     # Phân trang
+#     total = len(items)
+#     start = (page - 1) * limit
+#     page_items = items[start:start + limit]
 
-    return {
-        "items": [
-            {
-                "id":           i["raw_id"],
-                "title":        i.get("title", i.get("fileName", "")),
-                "fileName":     i.get("fileName", ""),
-                "status":       i.get("status", "unknown"),
-                "createdAt":    i.get("createdAt", ""),
-                "durationSec":  i.get("durationSec", None),
-                "summaryShort": i.get("summaryShort", ""),
-            }
-            for i in page_items
-        ],
-        "total": total,
-        "page":  page,
-        "limit": limit,
-    }
+#     return {
+#         "items": [
+#             {
+#                 "id":           i["raw_id"],
+#                 "title":        i.get("title", i.get("fileName", "")),
+#                 "fileName":     i.get("fileName", ""),
+#                 "status":       i.get("status", "unknown"),
+#                 "createdAt":    i.get("createdAt", ""),
+#                 "durationSec":  i.get("durationSec", None),
+#                 "summaryShort": i.get("summaryShort", ""),
+#             }
+#             for i in page_items
+#         ],
+#         "total": total,
+#         "page":  page,
+#         "limit": limit,
+#     }
 
 @router.post("/upload-url")
 async def get_upload_url(request: UploadUrlRequest):
@@ -375,7 +375,6 @@ async def get_chat_history(recording_id: str):
             "summary": memory.summary,
         }
     }
-
 
 @router.delete("/{recording_id}/assistant")
 async def delete_chat_history(recording_id: str):
