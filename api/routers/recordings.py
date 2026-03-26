@@ -340,33 +340,62 @@ async def get_summary(recording_id: str):
     }
 
 @router.get("/{recording_id}/assistant")
-async def history_chat(recording_id: str, request: QueryRequest):
+async def get_chat_history(recording_id: str):
     res  = status_table.get_item(Key={"raw_id": recording_id})
     item = res.get("Item")
 
     if not item:
         raise HTTPException(status_code=404, detail={
-            "code":    "NOT_FOUND",
-            "message": "Recording không tồn tại"
+            "code": "NOT_FOUND", "message": "Recording không tồn tại"
         })
 
-    if item.get("status") != "completed":
-        raise HTTPException(status_code=400, detail={
-            "code":    "NOT_READY",
-            "message": "Recording chưa xử lý xong"
-        })
     actual_raw_id = item.get("actual_raw_id", recording_id)
     memory = mem_module.load_memory(actual_raw_id)
+
     if not memory:
-            return {
-            "sucess": True,
-            "data": {},
-        }
-    else:
         return {
-            "sucess": True,
-            "data": {mem_module.memory_to_item(memory)},
+            "success": True,
+            "data": {"items": [], "summary": ""}
         }
+
+    history = list(memory.chat_history)
+    items = []
+    for i in range(0, len(history) - 1, 2):
+        user_msg      = history[i]
+        assistant_msg = history[i + 1] if i + 1 < len(history) else None
+        items.append({
+            "question": user_msg.get("content", ""),
+            "answer":   assistant_msg.get("content", "") if assistant_msg else "",
+        })
+
+    return {
+        "success": True,
+        "data": {
+            "items":   items,
+            "summary": memory.summary,
+        }
+    }
+
+
+@router.delete("/{recording_id}/assistant")
+async def delete_chat_history(recording_id: str):
+    res  = status_table.get_item(Key={"raw_id": recording_id})
+    item = res.get("Item")
+
+    if not item:
+        raise HTTPException(status_code=404, detail={
+            "code": "NOT_FOUND", "message": "Recording không tồn tại"
+        })
+
+    actual_raw_id = item.get("actual_raw_id", recording_id)
+
+    fresh_memory = mem_module.Memory(raw_id=actual_raw_id)
+    mem_module.save_memory(fresh_memory)
+
+    return {
+        "success": True,
+        "message": "Chat history cleared"
+    }
 
 
 @router.post("/{recording_id}/assistant/query")
