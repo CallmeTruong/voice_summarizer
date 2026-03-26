@@ -30,6 +30,7 @@ class ClassifyResult:
     reason:             str
 
 _SYSTEM_PROMPT = """Bạn là bộ phân loại câu hỏi cho hệ thống RAG phân tích transcript.
+Trong transcript có những đoạn bị lỗi chính tả, bạn có quyền sửa lại cho phù hợp ngữ cảnh.
 
 NGUYÊN TẮC QUAN TRỌNG: Khi nghi ngờ giữa các loại, ưu tiên theo thứ tự:
 comprehensive > topic_summary > fast > summary

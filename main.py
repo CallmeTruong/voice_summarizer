@@ -50,27 +50,3 @@ if __name__ == "__main__":
 #         m = mem_module.load_memory(raw_id)
 #         print(m)
 
-
-#Phần này để mai t gói vào 1 hàm khác nha.
-
-    # raw_controller = audio_controller.raw_audio(file_name, bucket, client, object_name, content_type='audio/wav')
-
-    # mapper = bucket_parser.HashTable(
-    #     size=16,
-    #     bucket=bucket,
-    #     key=f"{table}.json"
-    # )
-    # mapper.insert(obj_id, transcript_obj)
-
-    # raw_controller.pushing_to_bucket()
-
-    # user_stack = bucket_parser.UserIndex(bucket=bucket, key="user_index.json")
-    # user_stack.push(mock_user_id, obj_id)
-
-    # res = raw_controller.GetAll_bucket_fileid(f"{raw_bucket_folder}/")
-    # print(res)
-    # print("..................")
-    # print("Hash Table:", mapper.table)
-    # print(f"User Stack ({mock_user_id}):", user_stack.get_stack(mock_user_id))
-    # for k in res:
-    #     print(mapper.get(k))
