@@ -9,6 +9,7 @@ class UploadUrlRequest(BaseModel):
     fileName: str
     contentType: str
     fileSize: int
+    durationSec:int
 
 class ProcessRequest(BaseModel):
     fileUrl: str

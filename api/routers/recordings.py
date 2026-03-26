@@ -22,69 +22,14 @@ s3           = boto3.client("s3", region_name=os.getenv("REGION"))
 BUCKET       = os.getenv("BUCKET_NAME")
 path = os.getenv("RAW_BUCKET_FOLDER")
 table = os.getenv("TABLE_NAME")
+user_table = dynamodb.Table(os.getenv("USER_TABLE"))
 
-
-# @router.get("")
-# async def list_recordings(
-#     page: int = 1,
-#     limit: int = 10,
-#     status: str = None,
-#     search: str = None,
-# ):
-#     # DynamoDB scan
-#     scan_kwargs = {}
-#     filters = []
-
-#     if status:
-#         filters.append(Attr("status").eq(status))
-#     if search:
-#         filters.append(
-#             Attr("fileName").contains(search) | Attr("title").contains(search)
-#         )
-
-#     if filters:
-#         expression = filters[0]
-#         for f in filters[1:]:
-#             expression = expression & f
-#         scan_kwargs["FilterExpression"] = expression
-
-#     res = status_table.scan(**scan_kwargs)
-#     items = res.get("Items", [])
-
-#     # Sort
-#     items.sort(key=lambda x: x.get("createdAt", ""), reverse=True)
-
-#     # Phân trang
-#     total = len(items)
-#     start = (page - 1) * limit
-#     page_items = items[start:start + limit]
-
-#     return {
-#         "items": [
-#             {
-#                 "id":           i["raw_id"],
-#                 "title":        i.get("title", i.get("fileName", "")),
-#                 "fileName":     i.get("fileName", ""),
-#                 "status":       i.get("status", "unknown"),
-#                 "createdAt":    i.get("createdAt", ""),
-#                 "durationSec":  i.get("durationSec", None),
-#                 "summaryShort": i.get("summaryShort", ""),
-#             }
-#             for i in page_items
-#         ],
-#         "total": total,
-#         "page":  page,
-#         "limit": limit,
-#     }
 
 @router.post("/upload-url")
-async def get_upload_url(request: UploadUrlRequest):
+async def get_upload_url(user_id: str, request: UploadUrlRequest):
     recording_id = hash_generator.hash_key()
-
     s3_key = f"{path}/{recording_id}"
-
     transcript_obj = hash_generator.hash_key()
-
 
     mapper = bucket_parser.HashTable(
         size=16,
@@ -111,10 +56,19 @@ async def get_upload_url(request: UploadUrlRequest):
         "progress": 0,
         "stage":    "waiting",
         "fileName": request.fileName,
+        "file_type": request.contentType,
+        "durationSec": request.durationSec,
         "s3_key":   s3_key,
         "createdAt": datetime.now(timezone.utc).isoformat(),
     })
     print(f"[DEBUG] put_item vào table: {status_table.table_name} | raw_id: {recording_id}")
+
+    user_table.put_item(Item={
+        "user_id": user_id,
+        "raw_id":   recording_id,
+    })
+
+    print(f"[DEBUG] put_item vào table: {user_table.table_name} | user_id: {user_id}")
 
     return {
         "success": True,
@@ -138,7 +92,7 @@ async def get_recording(recording_id: str):
             "code": "NOT_FOUND", "message": f"{recording_id} không tồn tại"
         })
 
-    # Tạo presigned URL để nghe audio
+    # Tạo presigned URL
     audio_url = None
     if item.get("s3_key"):
         try:
@@ -207,7 +161,7 @@ async def update_recording(recording_id: str, request: UpdateRecordingRequest):
     }
 
 @router.post("/{recording_id}/process")
-async def start_processing(recording_id: str, request: ProcessRequest):
+async def start_processing(recording_id: str):
     res  = status_table.get_item(Key={"raw_id": recording_id})
     item = res.get("Item")
 

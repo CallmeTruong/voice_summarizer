@@ -3,6 +3,7 @@ from infrastructure.vectors_controller import check_status
 from infrastructure.obj_indices import bucket_parser, hash_generator
 from core.retrieval import text2vect
 from core.audio_process import check_status as upload_status
+from infrastructure.vectors_controller import vectors
 import boto3, os
 from dotenv import load_dotenv
 import time
@@ -57,17 +58,23 @@ def process_audio_task(self, recording_id: str, transcript_id: str, file_name: s
         _update_status(recording_id, "processing", 70, "vectorizing")
         text2vect.vect_push(raw_id=recording_id, text_id=transcript_id)
 
+        segments_data = vectors.get_segments(recording_id)
+        summary_short = ""
+        if segments_data:
+            full_summary = segments_data.get("global_summary", "")
+            summary_short = full_summary[:100] + "..." if len(full_summary) > 100 else full_summary
+
         result = status_table.update_item(
             Key={"raw_id": recording_id},
-            UpdateExpression="SET #s = :s, progress = :p, stage = :st, text_id = :t",
+            UpdateExpression="SET #s = :s, progress = :p, stage = :st, text_id = :t, summaryShort = :ss",
             ExpressionAttributeNames={"#s": "status"},
             ExpressionAttributeValues={
                 ":s":  "completed",
                 ":p":  100,
                 ":st": "done",
                 ":t":  transcript_id,
-            },
-            ReturnValues="ALL_NEW"  # ← trả về item sau khi update
+                ":ss": summary_short,
+            }
         )
         print(f"[DEBUG] Final update result: {result.get('Attributes')}")
 

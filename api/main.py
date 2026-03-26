@@ -2,17 +2,16 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from api.routers import recordings, users
+from api.routers import recordings, users, library
 from dotenv import load_dotenv
 
 load_dotenv(".env")
 
 app = FastAPI(title="Voice Summarizer API")
 
-# CORS — cho phép FE gọi vào
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],       # đổi thành domain FE khi production
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
@@ -21,8 +20,9 @@ app.add_middleware(
 # Đăng ký routers
 app.include_router(recordings.router)
 app.include_router(users.router)
+app.include_router(library.router)
 
-# Bắt lỗi không lường trước — không để server crash
+
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
     return JSONResponse(
