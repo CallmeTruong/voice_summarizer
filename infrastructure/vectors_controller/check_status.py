@@ -4,7 +4,7 @@ from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 import os
 
-load_dotenv(".env")
+load_dotenv()
 
 
 REGION = os.getenv("REGION")

@@ -8,7 +8,7 @@ from . import chunking, embedding_convert
 from core.model_controller import model_caller
 from concurrent.futures import ThreadPoolExecutor
 
-load_dotenv(".env")
+load_dotenv()
 
 VECTOR_BUCKET    = os.getenv("VECTOR_BUCKET")
 INDEX_NAME       = os.getenv("INDEX_NAME")

@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 from .model_registry import get_embedding_model
 import os
 
-load_dotenv(".env")
+load_dotenv()
 
 def _split_sentences(text: str, min_chars: int = 60) -> list[str]:
     raw = re.split(r'(?<=[.!?])\s+|(?<=\n)', text.strip())

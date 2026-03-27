@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 from . import process_percent
 
-load_dotenv(dotenv_path= '.env')
+load_dotenv()
 DEBUG = os.getenv("DEBUG")
 
 class raw_audio():

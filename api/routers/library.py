@@ -3,7 +3,7 @@ from boto3.dynamodb.conditions import Key, Attr
 import boto3, os
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv()
 router = APIRouter(prefix="/api/library")
 
 dynamodb     = boto3.resource("dynamodb", os.getenv("REGION"))

@@ -5,7 +5,7 @@ from infrastructure.obj_indices import bucket_parser
 from core.retrieval import audio2text, text2vect
 from infrastructure.vectors_controller import check_status
 
-load_dotenv(".env")
+load_dotenv()
 
 file_name = "meeting.wav"
 

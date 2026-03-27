@@ -4,7 +4,7 @@ import os
 import time
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv()
 REGION = os.getenv("REGION")
 bucket = os.getenv("BUCKET_NAME")
 path = f"{os.getenv('RAW_BUCKET_FOLDER')}/"

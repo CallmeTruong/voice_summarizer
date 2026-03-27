@@ -13,7 +13,7 @@ from dotenv import load_dotenv
 from datetime import datetime, timezone
 import json
 
-load_dotenv(".env")
+load_dotenv()
 router = APIRouter(prefix="/api/recordings")
 
 dynamodb     = boto3.resource("dynamodb", os.getenv("REGION"))

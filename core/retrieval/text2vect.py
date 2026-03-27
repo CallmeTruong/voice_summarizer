@@ -3,7 +3,7 @@ import boto3, os
 from dotenv import load_dotenv
 from botocore.exceptions import ClientError
 
-load_dotenv(".env")
+load_dotenv()
 
 s3                 = boto3.client("s3")
 text_bucket_folder = os.getenv("TEXT_BUCKET_FOLDER")

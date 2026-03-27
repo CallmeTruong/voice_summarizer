@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer
 from dotenv import load_dotenv
 from .model_registry import get_embedding_model
 
-load_dotenv(".env")
+load_dotenv()
 MODEL_NAME = os.getenv("EMB_MODEL")
 dim = int(os.getenv("EMB_DIM"))
 

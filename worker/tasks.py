@@ -8,7 +8,7 @@ import boto3, os
 from dotenv import load_dotenv
 import time
 
-load_dotenv(".env")
+load_dotenv()
 
 dynamodb     = boto3.resource("dynamodb", os.getenv("REGION"))
 status_table = dynamodb.Table(os.getenv("HISTORY_TABLE"))

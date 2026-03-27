@@ -5,7 +5,7 @@ from fastapi.responses import JSONResponse
 from api.routers import recordings, users, library
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv()
 
 app = FastAPI(title="Voice Summarizer API")
 

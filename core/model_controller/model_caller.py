@@ -2,7 +2,7 @@ import os
 from litellm import completion
 from dotenv import load_dotenv
 
-load_dotenv(".env")
+load_dotenv()
 api_key = os.getenv("API_KEY")
 model = os.getenv("MODEL")
 
