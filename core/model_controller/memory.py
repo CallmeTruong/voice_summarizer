@@ -131,7 +131,7 @@ def item_to_memory(item: dict) -> Memory:
     )
     mem.working = deque(item.get("working", []), maxlen=WORKING_WINDOW)
     mem.chat_history = deque(item.get("chat_history", []), maxlen=CHAT_HISTORY)
-    mem.sources = deque(item.get("chat_history", []), maxlen=SOURCE_HISTORY)
+    mem.sources = deque(item.get("sources", []), maxlen=SOURCE_HISTORY)
 
     return mem
 

@@ -30,7 +30,7 @@ async def list_recordings(
     raw_ids = [i["raw_id"] for i in user_items]
 
     keys = [{"raw_id": rid} for rid in raw_ids]
-    batch_res = boto3.resource("dynamodb", os.getenv("REGION")).batch_get_item(
+    batch_res = dynamodb.batch_get_item(
         RequestItems={
             os.getenv("HISTORY_TABLE"): {"Keys": keys}
         }
