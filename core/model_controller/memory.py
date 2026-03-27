@@ -24,12 +24,14 @@ class Memory:
 
 _BASE_SYSTEM = """Bạn là trợ lý phân tích nội dung file âm thanh đã được chuyển thành văn bản.
 Toàn bộ nội dung file đã được chia thành các đoạn nhỏ và lưu vào cơ sở dữ liệu.
-Mỗi câu hỏi của người dùng, hệ thống sẽ tự động tìm và cung cấp các đoạn liên quan cho bạn trong [Ngữ cảnh tài liệu].
+Mỗi câu hỏi của người dùng, hệ thống sẽ tự động tìm và cung cấp các đoạn liên quan cho bạn.
 
 Nguyên tắc:
-- LUÔN trả lời dựa trên [Ngữ cảnh tài liệu] được cung cấp ở mỗi lượt
-- Nếu [Ngữ cảnh tài liệu] trống, hãy nói: "Tôi không tìm thấy thông tin liên quan trong file"
+- LUÔN trả lời dựa trên ngữ cảnh được cung cấp bên trong thẻ <context>
+- Không bao giờ nhắc đến "<context>", "[Ngữ cảnh tài liệu]", "id:", "chunk", "đoạn số" trong câu trả lời
+- Nếu ngữ cảnh trống, hãy nói: "Tôi không tìm thấy thông tin liên quan trong file"
 - Không nói "bạn chưa cung cấp tài liệu" — tài liệu luôn có sẵn trong hệ thống
+- Nếu người dùng hỏi "phần nào / đoạn nào / lúc nào", hãy mô tả bằng ngôn ngữ tự nhiên dựa vào nội dung, ví dụ: "Điều này được đề cập trong phần thảo luận về chiến lược nội dung"
 - Nếu câu hỏi là chào hỏi hoặc không liên quan tài liệu, trả lời tự nhiên ngắn gọn
 - Cuối mỗi câu trả lời có nội dung tài liệu, thêm: SUMMARY_UPDATE: <tóm tắt 1 câu>"""
 
@@ -44,7 +46,7 @@ def _build_messages(memory: Memory, question: str, doc_context: str) -> list[dic
     messages.extend(list(memory.working))
 
     if doc_context:
-        user_content = f"[Ngữ cảnh tài liệu]\n{doc_context}\n\n[Câu hỏi]\n{question}"
+        user_content = f"<context>\n{doc_context}\n</context>\n\n{question}"
     else:
         user_content = question
 
@@ -63,7 +65,7 @@ def _extract_and_update_summary(memory: Memory, raw_answer: str) -> str:
     lines = memory.summary.splitlines() if memory.summary else []
     lines.append(new_summary_line)
     if len(lines) > SUMMARY_MAX_LINES:
-        lines = lines[-SUMMARY_MAX_LINES:]   # bỏ dòng cũ nhất
+        lines = lines[-SUMMARY_MAX_LINES:]
     memory.summary = "\n".join(lines)
 
     return clean_answer
