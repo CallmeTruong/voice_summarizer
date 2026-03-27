@@ -1,59 +1,495 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
+import { getCurrentUser } from "aws-amplify/auth";
+import { useNavigate } from "react-router-dom";
 import AppSidebar from "../components/AppSidebar";
-import AppTopbar from "../components/AppTopbar";
 import UserMenu from "../components/UserMenu";
-import MeetingCard from "../components/MeetingCard";
-import { recordings as mockRecordings } from "../data/mockData";
+import { getAuthToken } from "../utils/auth";
+
+const API_BASE = "https://39k9qcfkh3.execute-api.ap-southeast-2.amazonaws.com";
+
+function formatDuration(seconds) {
+  if (seconds == null || Number.isNaN(seconds)) return "--:--";
+
+  const total = Math.max(0, Math.floor(seconds));
+  const hrs = Math.floor(total / 3600);
+  const mins = Math.floor((total % 3600) / 60);
+  const secs = total % 60;
+
+  if (hrs > 0) {
+    return `${String(hrs).padStart(2, "0")}:${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+  }
+
+  return `${String(mins).padStart(2, "0")}:${String(secs).padStart(2, "0")}`;
+}
+
+function formatDisplayDate(value) {
+  if (!value) return "";
+  const date = new Date(value);
+
+  return date.toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
+
+function getStatusBadgeClass(status) {
+  const normalized = String(status || "").toLowerCase();
+
+  if (normalized === "completed") {
+    return "bg-sky-100 text-sky-700";
+  }
+
+  if (
+    normalized === "processing" ||
+    normalized === "queued" ||
+    normalized === "pending"
+  ) {
+    return "bg-amber-100 text-amber-700";
+  }
+
+  if (normalized === "failed") {
+    return "bg-red-100 text-red-700";
+  }
+
+  return "bg-slate-100 text-slate-600";
+}
+
+function parseTextOrJson(text) {
+  try {
+    return JSON.parse(text);
+  } catch {
+    return text;
+  }
+}
+
+function getErrorMessage(text) {
+  try {
+    const parsed = JSON.parse(text);
+    return parsed?.detail?.message || parsed?.message || text;
+  } catch {
+    return text;
+  }
+}
 
 export default function LibraryPage() {
+  const navigate = useNavigate();
+
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [userId, setUserId] = useState("");
 
-  useEffect(() => {
+  const [openMenuId, setOpenMenuId] = useState(null);
+  const [renameModal, setRenameModal] = useState({
+    open: false,
+    recordingId: "",
+    currentTitle: "",
+    value: "",
+  });
+  const [actionLoading, setActionLoading] = useState({});
+
+  const fetchTextOrJson = async (url, options = {}) => {
+    const token = await getAuthToken();
+
+    const res = await fetch(url, {
+      ...options,
+      headers: {
+        Accept: "application/json",
+        Authorization: `Bearer ${token}`,
+        "ngrok-skip-browser-warning": "true",
+        ...(options.headers || {}),
+      },
+    });
+
+    const text = await res.text();
+
+    if (!res.ok) {
+      throw new Error(getErrorMessage(text));
+    }
+
+    return parseTextOrJson(text);
+  };
+
+  const syncLocalRecordings = (serverItems) => {
+    const mapped = serverItems.map((item) => ({
+      recordingId: item.id,
+      fileName: item.fileName || item.title || "Untitled",
+      title: item.title || item.fileName || "Untitled",
+      status: item.status || "unknown",
+      createdAt: item.createdAt,
+      duration: item.durationSec || 0,
+      summaryShort: item.summaryShort || "",
+    }));
+
+    localStorage.setItem("recordings", JSON.stringify(mapped));
+    window.dispatchEvent(new Event("recordings-updated"));
+  };
+
+  const fetchLibrary = async () => {
+    setLoading(true);
+    setError("");
+
     try {
-      setItems(mockRecordings);
+      const currentUser = await getCurrentUser();
+      const resolvedUserId = currentUser.userId || currentUser.username || "";
+      setUserId(resolvedUserId);
+
+      const data = await fetchTextOrJson(
+        `${API_BASE}/api/library?user_id=${encodeURIComponent(resolvedUserId)}&page=1&limit=20`,
+        { method: "GET" },
+      );
+
+      const serverItems = data?.data?.items || [];
+
+      setItems(
+        serverItems.map((item) => ({
+          recordingId: item.id,
+          title: item.title || item.fileName || "Untitled",
+          fileName: item.fileName || item.title || "Untitled",
+          status: item.status || "unknown",
+          createdAt: item.createdAt,
+          duration: item.durationSec || 0,
+          summaryShort: item.summaryShort || "No summary available.",
+        })),
+      );
+
+      syncLocalRecordings(serverItems);
     } catch (err) {
       console.error(err);
-      setError("Failed to load recordings");
+      setError(err.message || "Không tải được library.");
+      window.__toast?.(err.message || "Không tải được library", "error");
     } finally {
       setLoading(false);
     }
+  };
+
+  useEffect(() => {
+    fetchLibrary();
   }, []);
+
+  useEffect(() => {
+    const handleClickOutside = () => setOpenMenuId(null);
+    window.addEventListener("click", handleClickOutside);
+    return () => window.removeEventListener("click", handleClickOutside);
+  }, []);
+
+  const sortedItems = useMemo(() => {
+    return [...items].sort((a, b) => {
+      const aTime = new Date(a.createdAt || 0).getTime();
+      const bTime = new Date(b.createdAt || 0).getTime();
+      return bTime - aTime;
+    });
+  }, [items]);
+
+  const openRenameModal = (item) => {
+    setRenameModal({
+      open: true,
+      recordingId: item.recordingId,
+      currentTitle: item.title || item.fileName || "",
+      value: item.title || item.fileName || "",
+    });
+    setOpenMenuId(null);
+  };
+
+  const closeRenameModal = () => {
+    setRenameModal({
+      open: false,
+      recordingId: "",
+      currentTitle: "",
+      value: "",
+    });
+  };
+
+  const handleRenameRecording = async () => {
+    const newTitle = renameModal.value.trim();
+    if (!newTitle) {
+      window.__toast?.("Tên mới không được để trống", "error");
+      return;
+    }
+
+    const recordingId = renameModal.recordingId;
+    if (!recordingId) return;
+
+    setActionLoading((prev) => ({ ...prev, [recordingId]: true }));
+
+    try {
+      await fetchTextOrJson(`${API_BASE}/api/recordings/${recordingId}`, {
+        method: "PATCH",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          title: newTitle,
+        }),
+      });
+
+      setItems((prev) =>
+        prev.map((item) =>
+          item.recordingId === recordingId
+            ? {
+                ...item,
+                title: newTitle,
+                fileName: newTitle,
+              }
+            : item,
+        ),
+      );
+
+      const saved = JSON.parse(localStorage.getItem("recordings") || "[]");
+      const updated = saved.map((item) =>
+        item.recordingId === recordingId
+          ? {
+              ...item,
+              title: newTitle,
+              fileName: newTitle,
+            }
+          : item,
+      );
+      localStorage.setItem("recordings", JSON.stringify(updated));
+      window.dispatchEvent(new Event("recordings-updated"));
+
+      closeRenameModal();
+      window.__toast?.("Đã đổi tên recording", "success");
+    } catch (err) {
+      console.error(err);
+      window.__toast?.(err.message || "Rename thất bại", "error");
+    } finally {
+      setActionLoading((prev) => ({ ...prev, [recordingId]: false }));
+    }
+  };
+
+  const handleDeleteRecording = async (recordingId) => {
+    const confirmed = window.confirm(
+      "Bạn có chắc muốn xóa recording này không?",
+    );
+    if (!confirmed) return;
+
+    setActionLoading((prev) => ({ ...prev, [recordingId]: true }));
+
+    try {
+      await fetchTextOrJson(`${API_BASE}/api/recordings/${recordingId}`, {
+        method: "DELETE",
+      });
+
+      setItems((prev) =>
+        prev.filter((item) => item.recordingId !== recordingId),
+      );
+
+      const saved = JSON.parse(localStorage.getItem("recordings") || "[]");
+      const updated = saved.filter((item) => item.recordingId !== recordingId);
+      localStorage.setItem("recordings", JSON.stringify(updated));
+      window.dispatchEvent(new Event("recordings-updated"));
+
+      setOpenMenuId(null);
+      window.__toast?.("Đã xóa recording", "success");
+    } catch (err) {
+      console.error(err);
+      window.__toast?.(err.message || "Delete thất bại", "error");
+    } finally {
+      setActionLoading((prev) => ({ ...prev, [recordingId]: false }));
+    }
+  };
 
   return (
     <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
       <AppSidebar />
 
-      <main className="p-4 md:p-7">
-        <div className="mb-6 flex items-center justify-between gap-4">
-          <div>
-            <h1 className="text-3xl font-extrabold text-slate-900 md:text-4xl">
-              Library
-            </h1>
-            <p className="mt-2 text-slate-500">
-              Your collection of recorded meetings and insights.
-            </p>
+      <main className="min-h-screen px-6 py-7 md:px-10">
+        <div className="mx-auto max-w-7xl">
+          <div className="mb-8 flex items-start justify-between gap-4">
+            <div>
+              <h1 className="text-5xl font-extrabold tracking-tight text-slate-900">
+                Library
+              </h1>
+              <p className="mt-3 text-xl text-slate-500">
+                Your collection of recorded meetings and insights.
+              </p>
+            </div>
+
+            <UserMenu />
           </div>
 
-          <UserMenu />
+          {error && (
+            <div className="mb-6 rounded-2xl border border-red-200 bg-red-50 px-5 py-4 text-sm text-red-600">
+              {error}
+            </div>
+          )}
+
+          {loading ? (
+            <div className="rounded-3xl bg-white p-6 text-sm text-slate-500 shadow-sm">
+              Loading library...
+            </div>
+          ) : sortedItems.length === 0 ? (
+            <div className="rounded-3xl bg-white p-6 text-sm text-slate-500 shadow-sm">
+              No recordings yet.
+            </div>
+          ) : (
+            <div className="space-y-6">
+              {sortedItems.map((item) => {
+                const menuOpen = openMenuId === item.recordingId;
+                const busy = !!actionLoading[item.recordingId];
+
+                return (
+                  <div
+                    key={item.recordingId}
+                    className="rounded-[28px] border border-slate-200 bg-white px-6 py-6 shadow-sm transition hover:shadow-md"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex min-w-0 gap-4">
+                        <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-indigo-50 text-indigo-600">
+                          <i className="bi bi-mic-fill text-xl" />
+                        </div>
+
+                        <div className="min-w-0">
+                          <div className="flex flex-wrap items-center gap-3">
+                            <h3 className="truncate text-2xl font-extrabold text-slate-900">
+                              {item.title}
+                            </h3>
+
+                            <span
+                              className={`inline-flex rounded-full px-3 py-1 text-xs font-bold capitalize ${getStatusBadgeClass(
+                                item.status,
+                              )}`}
+                            >
+                              {item.status}
+                            </span>
+                          </div>
+
+                          <p className="mt-2 line-clamp-1 text-lg text-slate-500">
+                            {item.summaryShort}
+                          </p>
+
+                          <div className="mt-4 flex flex-wrap items-center gap-6 text-sm text-slate-400">
+                            <div className="flex items-center gap-2">
+                              <i className="bi bi-calendar3" />
+                              <span>{formatDisplayDate(item.createdAt)}</span>
+                            </div>
+
+                            <div className="flex items-center gap-2">
+                              <i className="bi bi-clock" />
+                              <span>{formatDuration(item.duration)}</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="relative shrink-0">
+                        <button
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setOpenMenuId((prev) =>
+                              prev === item.recordingId
+                                ? null
+                                : item.recordingId,
+                            );
+                          }}
+                          className="flex h-11 w-11 items-center justify-center rounded-xl border border-slate-200 text-slate-500 hover:bg-slate-50"
+                        >
+                          <i className="bi bi-chevron-down" />
+                        </button>
+
+                        {menuOpen && (
+                          <div
+                            className="absolute right-0 top-14 z-20 w-52 overflow-hidden rounded-2xl border border-slate-200 bg-white py-2 shadow-xl"
+                            onClick={(e) => e.stopPropagation()}
+                          >
+                            <button
+                              onClick={() =>
+                                navigate(`/assistant/${item.recordingId}`)
+                              }
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-slate-700 hover:bg-slate-50"
+                            >
+                              <i className="bi bi-stars text-indigo-600" />
+                              <span>Open Assistant</span>
+                            </button>
+
+                            <button
+                              onClick={() => openRenameModal(item)}
+                              disabled={busy}
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-slate-700 hover:bg-slate-50 disabled:opacity-60"
+                            >
+                              <i className="bi bi-pencil-square text-amber-600" />
+                              <span>Rename</span>
+                            </button>
+
+                            <button
+                              onClick={() =>
+                                handleDeleteRecording(item.recordingId)
+                              }
+                              disabled={busy}
+                              className="flex w-full items-center gap-3 px-4 py-3 text-left text-sm text-red-600 hover:bg-red-50 disabled:opacity-60"
+                            >
+                              <i className="bi bi-trash3" />
+                              <span>Delete</span>
+                            </button>
+                          </div>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
 
-        {loading ? (
-          <div className="mt-6 text-sm text-slate-500">Loading...</div>
-        ) : error ? (
-          <div className="mt-6 rounded-2xl bg-red-50 p-6 text-sm text-red-600 shadow">
-            {error}
-          </div>
-        ) : items.length === 0 ? (
-          <div className="mt-6 rounded-2xl bg-white p-6 text-sm text-slate-500 shadow">
-            No recordings yet.
-          </div>
-        ) : (
-          <div className="space-y-5">
-            {items.map((item) => (
-              <MeetingCard key={item.id} item={item} />
-            ))}
+        {renameModal.open && (
+          <div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4"
+            onClick={closeRenameModal}
+          >
+            <div
+              className="w-full max-w-md rounded-3xl bg-white p-6 shadow-2xl"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <h3 className="text-xl font-bold text-slate-900">
+                Rename recording
+              </h3>
+
+              <p className="mt-2 text-sm text-slate-500">
+                Enter a new title for this recording.
+              </p>
+
+              <input
+                type="text"
+                value={renameModal.value}
+                onChange={(e) =>
+                  setRenameModal((prev) => ({
+                    ...prev,
+                    value: e.target.value,
+                  }))
+                }
+                onKeyDown={(e) => {
+                  if (e.key === "Enter") {
+                    handleRenameRecording();
+                  }
+                }}
+                className="mt-5 h-12 w-full rounded-2xl border border-slate-200 px-4 outline-none"
+                placeholder="Enter new title"
+                autoFocus
+              />
+
+              <div className="mt-6 flex justify-end gap-3">
+                <button
+                  onClick={closeRenameModal}
+                  className="rounded-2xl border border-slate-200 px-4 py-2 text-sm font-medium text-slate-600 hover:bg-slate-50"
+                >
+                  Cancel
+                </button>
+
+                <button
+                  onClick={handleRenameRecording}
+                  disabled={
+                    !!actionLoading[renameModal.recordingId] ||
+                    !renameModal.value.trim()
+                  }
+                  className="rounded-2xl bg-indigo-600 px-4 py-2 text-sm font-medium text-white hover:bg-indigo-700 disabled:opacity-60"
+                >
+                  Save
+                </button>
+              </div>
+            </div>
           </div>
         )}
       </main>
