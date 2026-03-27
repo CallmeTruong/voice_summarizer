@@ -6,6 +6,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from . import chunking, embedding_convert
 from core.model_controller import model_caller
+from concurrent.futures import ThreadPoolExecutor
 
 load_dotenv(".env")
 
@@ -171,7 +172,6 @@ def search_with_filter(
     if text_id is not None:
         filters.append({"text_id": {"$eq": str(text_id)}})
 
-    # Filter theo segment nếu có — giảm search space đáng kể
     if segment_idx is not None:
         filters.append({"segment_idx": {"$eq": str(segment_idx)}})
 
@@ -215,7 +215,6 @@ def search_comprehensive(
             filter={"$and": filters},
         )
 
-    from concurrent.futures import ThreadPoolExecutor
     with ThreadPoolExecutor(max_workers=2) as pool:
         f1, f2 = pool.submit(_query, query_vec), pool.submit(_query, hyde_vec)
         raw1, raw2 = f1.result(), f2.result()

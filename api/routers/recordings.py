@@ -323,13 +323,19 @@ async def get_chat_history(recording_id: str):
         }
 
     history = list(memory.chat_history)
+    sources = list(memory.sources)
+
     items = []
     for i in range(0, len(history) - 1, 2):
         user_msg      = history[i]
         assistant_msg = history[i + 1] if i + 1 < len(history) else None
+        turn_idx = i // 2
+        turn_sources = sources[turn_idx]["sources"] if turn_idx < len(sources) else []
+
         items.append({
             "question": user_msg.get("content", ""),
             "answer":   assistant_msg.get("content", "") if assistant_msg else "",
+            "sources":  turn_sources,
         })
 
     return {
@@ -384,13 +390,13 @@ async def query_assistant(recording_id: str, request: QueryRequest):
     answer = mem_module.chat(memory, request.message)
     mem_module.save_memory(memory)
 
+    current_sources = list(memory.sources)[-1]["sources"] if memory.sources else []
+
     return {
         "success": True,
         "data": {
-            "answer":      answer,
-            "sources":     [],
-            "suggestions": []
+            "answer":  answer,
+            "sources": current_sources,
         }
     }
-
 

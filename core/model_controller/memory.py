@@ -7,6 +7,10 @@ import boto3
 
 WORKING_WINDOW = 10
 SUMMARY_MAX_LINES = 30
+SOURCE_HISTORY = 50
+SOURCE_MAX_CHARS = 100
+CHAT_HISTORY = 200
+
 DEBUG = str(os.getenv("DEBUG"))
 REGION = str(os.getenv("REGION"))
 
@@ -19,7 +23,8 @@ class Memory:
     text_id: str | None = None
     summary: str        = ""
     working: deque      = field(default_factory=lambda: deque(maxlen=WORKING_WINDOW))
-    chat_history: deque = field(default_factory=lambda: deque())
+    chat_history: deque = field(default_factory=lambda: deque(maxlen = CHAT_HISTORY))
+    sources:      deque      = field(default_factory=lambda: deque(maxlen=SOURCE_HISTORY))
 
 
 _BASE_SYSTEM = """Bạn là trợ lý phân tích nội dung file âm thanh đã được chuyển thành văn bản.
@@ -76,6 +81,16 @@ def chat(memory: Memory, question: str) -> str:
     doc_context = "\n\n".join(
         c.get("metadata", {}).get("source_text", "") for c in chunks
     )
+    source_meta = [
+        {
+            "topic_label": c.get("metadata", {}).get("topic_label", ""),
+            "segment_idx": c.get("metadata", {}).get("segment_idx", ""),
+            "text":        c.get("metadata", {}).get("source_text", "")[:SOURCE_MAX_CHARS] + "..."
+                           if len(c.get("metadata", {}).get("source_text", "")) > SOURCE_MAX_CHARS
+                           else c.get("metadata", {}).get("source_text", ""),
+        }
+        for c in chunks[:15]
+    ]
 
     if DEBUG == "True":
         print(f"[DEBUG] raw_id={memory.raw_id} | text_id={memory.text_id}")
@@ -91,6 +106,10 @@ def chat(memory: Memory, question: str) -> str:
 
     memory.chat_history.append({"role": "user",      "content": question})
     memory.chat_history.append({"role": "assistant",  "content": answer})
+    memory.sources.append({
+        "question": question,
+        "sources":  source_meta,
+    })
 
     return answer
 
@@ -101,6 +120,7 @@ def memory_to_item(memory: Memory) -> dict:
         "summary": memory.summary,
         "working": list(memory.working),
         "chat_history": list(memory.chat_history),
+        "sources": list(memory.sources)
     }
 
 def item_to_memory(item: dict) -> Memory:
@@ -110,7 +130,9 @@ def item_to_memory(item: dict) -> Memory:
         summary=item.get("summary", "")
     )
     mem.working = deque(item.get("working", []), maxlen=WORKING_WINDOW)
-    mem.chat_history = deque(item.get("chat_history", []))
+    mem.chat_history = deque(item.get("chat_history", []), maxlen=CHAT_HISTORY)
+    mem.sources = deque(item.get("chat_history", []), maxlen=SOURCE_HISTORY)
+
     return mem
 
 def save_memory(memory: Memory):
