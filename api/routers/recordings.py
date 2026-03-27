@@ -1,4 +1,3 @@
-# api/routers/recordings.py
 from fastapi import APIRouter, HTTPException
 from api.schemas.request import (
     QueryRequest, UploadUrlRequest,

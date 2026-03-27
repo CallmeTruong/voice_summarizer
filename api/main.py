@@ -1,8 +1,7 @@
-# api/main.py
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from api.routers import recordings, users, library
+from api.routers import recordings, library
 from dotenv import load_dotenv
 
 load_dotenv()
