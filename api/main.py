@@ -17,9 +17,7 @@ app.add_middleware(
     allow_credentials=True,
 )
 
-# Đăng ký routers
 app.include_router(recordings.router)
-app.include_router(users.router)
 app.include_router(library.router)
 
 
