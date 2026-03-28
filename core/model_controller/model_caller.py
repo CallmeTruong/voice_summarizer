@@ -7,11 +7,19 @@ api_key = os.getenv("API_KEY")
 model = os.getenv("MODEL")
 
 def get_model_response(message, api_key=api_key, model=model):
-    resp = completion(
-        model=model,
-        messages=message,
-        api_key=api_key,
-    )
+    try:
+        resp = completion(
+            model=model,
+            messages=message,
+            api_key=api_key,
+            thinking={"type": "enabled", "budget_tokens": 3000},
+        )
+    except Exception:
+        resp = completion(
+            model=model,
+            messages=message,
+            api_key=api_key,
+        )
 
     msg = resp.choices[0].message
     answer = msg.content or ""
