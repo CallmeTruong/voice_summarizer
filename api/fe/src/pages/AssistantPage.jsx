@@ -33,7 +33,7 @@ function extractAssistantText(res) {
   if (typeof res?.answer === "string") return res.answer;
   return "No answer returned from assistant API.";
 }
-const API_BASE = "https://39k9qcfkh3.execute-api.ap-southeast-2.amazonaws.com";
+const API_BASE = "https://1hf3sfyu6g.execute-api.ap-southeast-2.amazonaws.com/";
 function parseTextOrJson(text) {
   try {
     return JSON.parse(text);

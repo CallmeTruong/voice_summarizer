@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import UserMenu from "../components/UserMenu";
 import AppSidebar from "../components/AppSidebar";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { getAuthToken } from "../utils/auth";
 import { getCurrentUser } from "aws-amplify/auth";
-const API_BASE = "https://39k9qcfkh3.execute-api.ap-southeast-2.amazonaws.com";
+const API_BASE = "https://1hf3sfyu6g.execute-api.ap-southeast-2.amazonaws.com/";
 
 export default function DashboardPage() {
   const fileInputRef = useRef(null);
@@ -18,7 +18,8 @@ export default function DashboardPage() {
   const [uploadInfo, setUploadInfo] = useState(null);
   const [processResult, setProcessResult] = useState(null);
   const [statusResult, setStatusResult] = useState(null);
-
+  const [showUploadWarning, setShowUploadWarning] = useState(false);
+  const navigate = useNavigate();
   const handleBrowseClick = () => {
     fileInputRef.current?.click();
   };
@@ -110,7 +111,7 @@ export default function DashboardPage() {
     setUploadInfo(null);
     setProcessResult(null);
     setStatusResult(null);
-
+    setShowUploadWarning(true);
     try {
       const token = await getAuthToken();
       const contentType = selectedFile.type || "application/octet-stream";
@@ -241,6 +242,7 @@ export default function DashboardPage() {
       setStepText("");
       window.__toast?.(err.message || "Có lỗi xảy ra", "error");
     } finally {
+      setShowUploadWarning(false);
       setLoading(false);
     }
   };
@@ -287,14 +289,14 @@ export default function DashboardPage() {
           <UserMenu />
         </div>
 
-        <div className="grid gap-6 xl:grid-cols-[1fr_300px]">
-          <div>
+        <div className="flex flex-col gap-6">
+          <div className="space-y-6">
             <div className="mb-4 inline-flex rounded-full bg-indigo-50 px-4 py-2 text-[11px] font-extrabold tracking-[0.12em] text-indigo-600">
               ENGINE READY TO ANALYZE
             </div>
 
-            <div className="rounded-[28px] border-2 border-dashed border-slate-200 bg-white p-8 shadow-sm">
-              <div className="mx-auto max-w-2xl text-center">
+            <div className="rounded-[28px] border-2 border-dashed border-slate-200 bg-white p-8 shadow-sm md:p-10">
+              <div className="mx-auto max-w-3xl text-center">
                 <input
                   ref={fileInputRef}
                   type="file"
@@ -361,6 +363,18 @@ export default function DashboardPage() {
                   >
                     {loading ? "Đang xử lý..." : "Upload & Process"}
                   </button>
+
+                  {processResult?.data?.status && uploadInfo?.recordingId && (
+                    <button
+                      onClick={() =>
+                        navigate(`/assistant/${uploadInfo.recordingId}`)
+                      }
+                      className="rounded-xl bg-indigo-100 px-5 py-3 font-semibold text-indigo-700 hover:bg-indigo-200"
+                    >
+                      <i className="bi bi-stars mr-2" />
+                      Open Assistant
+                    </button>
+                  )}
                 </div>
               </div>
             </div>
@@ -383,8 +397,10 @@ export default function DashboardPage() {
                 </pre>
               </div>
             )}
+          </div>
 
-            <div className="mt-7 flex items-center justify-between">
+          <aside className="rounded-[28px] border border-slate-200 bg-white p-6 shadow-sm">
+            <div className="mb-4 flex items-center justify-between">
               <h3 className="text-xl font-bold text-slate-900">
                 Recent Insights
               </h3>
@@ -392,20 +408,21 @@ export default function DashboardPage() {
                 VIEW LIBRARY →
               </Link>
             </div>
-            <div className="mt-4 grid gap-4">
+
+            <div className="space-y-4">
               {recentItems.length === 0 ? (
-                <div className="rounded-2xl bg-white p-5 text-slate-500 shadow-sm">
+                <div className="rounded-2xl bg-slate-50 p-5 text-slate-500">
                   Chưa có insight gần đây.
                 </div>
               ) : (
                 recentItems.map((item) => (
                   <div
                     key={item.recordingId}
-                    className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm"
+                    className="rounded-2xl border border-slate-200 bg-slate-50 p-4"
                   >
                     <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <h4 className="text-base font-bold text-slate-900">
+                      <div className="min-w-0">
+                        <h4 className="truncate text-base font-bold text-slate-900">
                           {item.fileName}
                         </h4>
                         <p className="mt-1 text-sm text-slate-500">
@@ -426,9 +443,34 @@ export default function DashboardPage() {
                 ))
               )}
             </div>
-          </div>
+          </aside>
         </div>
       </main>
+
+      {showUploadWarning && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4">
+          <div className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-2xl">
+            <div className="flex items-start gap-4">
+              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+                <i className="bi bi-exclamation-triangle-fill text-xl" />
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900">
+                  Upload in progress
+                </h3>
+                <p className="mt-2 leading-7 text-slate-600">
+                  Please do not refresh the page or switch to another menu while
+                  the audio file is being uploaded and processed.
+                </p>
+                <p className="mt-3 text-sm font-medium text-indigo-600">
+                  {stepText || "Preparing upload..."}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

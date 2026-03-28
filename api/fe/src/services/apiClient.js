@@ -1,7 +1,7 @@
 import { getAuthToken } from "../utils/auth";
 
 const API_BASE_URL =
-  "https://39k9qcfkh3.execute-api.ap-southeast-2.amazonaws.com";
+  "https://1hf3sfyu6g.execute-api.ap-southeast-2.amazonaws.com/";
 
 async function request(path, options = {}) {
   const token = await getAuthToken();
