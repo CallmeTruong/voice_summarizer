@@ -1,13 +1,29 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { signIn } from "aws-amplify/auth";
+import { getCurrentUser, signIn } from "aws-amplify/auth";
 
 export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
+  const [checkingSession, setCheckingSession] = useState(true);
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkExistingSession = async () => {
+      try {
+        await getCurrentUser();
+        navigate("/dashboard", { replace: true });
+      } catch {
+        // Chưa đăng nhập, cho ở lại trang login
+      } finally {
+        setCheckingSession(false);
+      }
+    };
+
+    checkExistingSession();
+  }, [navigate]);
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -57,6 +73,13 @@ export default function LoginPage() {
       window.__toast?.("Additional auth step required", "warn");
     } catch (err) {
       console.error(err);
+
+      if (err?.name === "UserAlreadyAuthenticatedException") {
+        window.__toast?.("You are already signed in", "warn");
+        navigate("/dashboard", { replace: true });
+        return;
+      }
+
       const errorMessage = err?.message || "Logging in failed";
       setMsg(errorMessage);
       window.__toast?.(errorMessage, "error");
@@ -64,6 +87,16 @@ export default function LoginPage() {
       setLoading(false);
     }
   };
+
+  if (checkingSession) {
+    return (
+      <div className="flex min-h-screen items-center justify-center bg-[#f5f6fa]">
+        <div className="rounded-2xl bg-white px-6 py-4 text-sm text-slate-600 shadow">
+          Checking session...
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#f5f6fa] p-4 md:p-8 flex items-center justify-center">
