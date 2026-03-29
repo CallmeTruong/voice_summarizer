@@ -320,7 +320,7 @@ export default function LibraryPage() {
   };
   return (
     <PageTransition>
-      <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
+      <div className="min-h-screen bg-[#f7f7f2] md:grid md:grid-cols-[250px_1fr]">
         <AppSidebar />
 
         <main className="min-h-screen px-6 py-7 md:px-10">
@@ -334,8 +334,6 @@ export default function LibraryPage() {
                   Your collection of recorded meetings and insights.
                 </p>
               </div>
-
-              <UserMenu />
             </div>
 
             {error && (

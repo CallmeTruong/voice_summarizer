@@ -308,7 +308,7 @@ export default function DashboardPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
+      <div className="min-h-screen bg-[#f7f7f2] md:grid md:grid-cols-[250px_1fr]">
         <AppSidebar />
 
         <main className="p-4 md:p-7">
@@ -322,8 +322,6 @@ export default function DashboardPage() {
                 extract insights
               </p>
             </div>
-
-            <UserMenu />
           </div>
 
           <div className="flex flex-col gap-6">
