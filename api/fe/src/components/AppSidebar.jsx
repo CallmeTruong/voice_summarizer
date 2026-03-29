@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-
+import { getCurrentUser, signOut } from "aws-amplify/auth";
 const navItemBase =
   "flex items-center gap-3 rounded-xl px-4 py-3 text-[15px] font-medium transition";
 const navItemIdle = "text-slate-500 hover:bg-slate-100";
@@ -9,7 +9,42 @@ const navItemActive = "bg-indigo-50 text-[#5B4CF5]";
 export default function AppSidebar() {
   const [recordingCount, setRecordingCount] = useState(0);
   const navigate = useNavigate();
+  const [openAccount, setOpenAccount] = useState(false);
+  const [email, setEmail] = useState("");
+  const accountRef = useRef(null);
+  useEffect(() => {
+    const loadUser = async () => {
+      try {
+        const user = await getCurrentUser();
+        const loginId = user?.signInDetails?.loginId || user?.username || "";
+        setEmail(loginId);
+      } catch (err) {
+        console.error(err);
+      }
+    };
 
+    loadUser();
+  }, []);
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (accountRef.current && !accountRef.current.contains(e.target)) {
+        setOpenAccount(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+  useEffect(() => {
+    const handleClickOutside = (e) => {
+      if (accountRef.current && !accountRef.current.contains(e.target)) {
+        setOpenAccount(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
   useEffect(() => {
     const loadCount = () => {
       const data = JSON.parse(localStorage.getItem("recordings") || "[]");
@@ -23,7 +58,16 @@ export default function AppSidebar() {
       window.removeEventListener("recordings-updated", loadCount);
     };
   }, []);
-
+  const handleLogout = async () => {
+    try {
+      await signOut();
+      window.__toast?.("Đã đăng xuất", "success");
+      navigate("/login");
+    } catch (err) {
+      console.error(err);
+      window.__toast?.("Logout thất bại", "error");
+    }
+  };
   const handleOpenAssistant = () => {
     try {
       const saved = JSON.parse(localStorage.getItem("recordings") || "[]");
@@ -103,14 +147,35 @@ export default function AppSidebar() {
         </nav>
       </div>
 
-      <div className="mt-auto border-t border-slate-200 p-4">
-        <button className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left hover:bg-slate-100">
+      <div
+        ref={accountRef}
+        className="relative mt-auto border-t border-slate-200 p-4"
+      >
+        <button
+          onClick={() => setOpenAccount((prev) => !prev)}
+          className="flex w-full items-center gap-3 rounded-xl px-3 py-3 text-left hover:bg-slate-100"
+        >
           <div className="flex h-9 w-9 items-center justify-center rounded-full bg-[#5B4CF5] text-sm font-bold text-white">
             K
           </div>
           <span className="text-sm font-medium text-slate-700">Account</span>
         </button>
       </div>
+      {openAccount && (
+        <div className="absolute bottom-16 left-4 z-50 w-[220px] rounded-2xl border border-slate-200 bg-white p-3 shadow-xl">
+          <p className="text-xs text-slate-400">Signed in as</p>
+          <p className="mt-1 break-all text-sm text-slate-700">
+            {email || "Unknown"}
+          </p>
+
+          <button
+            onClick={handleLogout}
+            className="mt-3 w-full rounded-xl bg-red-500 px-4 py-2 text-sm font-semibold text-white hover:bg-red-600"
+          >
+            Logout
+          </button>
+        </div>
+      )}
     </aside>
   );
 }
