@@ -341,14 +341,11 @@ export default function AssistantPage() {
               </button>
 
               <div>
-                <h2 className="text-xl font-bold text-slate-900">
+                <h2 className="text-lg font-semibold text-slate-900">
                   AI Assistant
                 </h2>
-                <p className="text-sm text-slate-500">
-                  Ask anything about this recording
-                </p>
-                <p className="mt-1 break-all text-xs text-slate-400">
-                  Recording ID: {recordingId}
+                <p className="mt-0.5 break-all text-xs text-slate-400">
+                  {recordingId}
                 </p>
               </div>
             </div>
@@ -356,7 +353,7 @@ export default function AssistantPage() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowTranscript(true)}
-                className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-indigo-200 hover:bg-indigo-50 hover:text-[#5B4CF5]"
               >
                 <i className="bi bi-card-text mr-2" />
                 View Transcript
@@ -436,7 +433,9 @@ export default function AssistantPage() {
                             >
                               <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-400">
                                 <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-slate-400" />
-                                Thinking
+                                {msg.isThinking
+                                  ? "Thinking"
+                                  : "Thinking process"}
                               </div>
 
                               <div
@@ -498,13 +497,13 @@ export default function AssistantPage() {
                   if (e.key === "Enter") handleSend();
                 }}
                 placeholder="Ask anything about the call..."
-                className="h-14 flex-1 rounded-2xl border border-slate-200 px-5 outline-none"
+                className="h-14 flex-1 rounded-2xl border border-slate-200 bg-white px-5 outline-none transition focus:border-[#5B4CF5] focus:ring-4 focus:ring-indigo-100"
               />
 
               <button
                 onClick={handleSend}
                 disabled={loading || !input.trim()}
-                className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-600 text-white disabled:opacity-60"
+                className="flex h-14 w-14 items-center justify-center rounded-2xl bg-[#5B4CF5] text-white transition hover:brightness-110 disabled:opacity-60"
               >
                 <i className="bi bi-send-fill" />
               </button>

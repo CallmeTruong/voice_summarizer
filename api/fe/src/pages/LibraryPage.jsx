@@ -78,6 +78,8 @@ export default function LibraryPage() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
+  const [statusFilter, setStatusFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("latest");
   const [renameModal, setRenameModal] = useState({
     open: false,
     recordingId: "",
@@ -145,7 +147,12 @@ export default function LibraryPage() {
           status: item.status || "unknown",
           createdAt: item.createdAt,
           duration: item.durationSec || 0,
-          summaryShort: item.summaryShort || "No summary available.",
+          summaryShort:
+            item.status === "pending" || item.status === "processing"
+              ? "Đang xử lý transcript — thường mất 2–5 phút."
+              : (item.summaryShort || "No summary available.")
+                  .replace(/<think>[\s\S]*?<\/think>/gi, "")
+                  .trim(),
         })),
       );
 
@@ -163,13 +170,35 @@ export default function LibraryPage() {
     fetchLibrary();
   }, []);
 
-  const sortedItems = useMemo(() => {
-    return [...items].sort((a, b) => {
-      const aTime = new Date(a.createdAt || 0).getTime();
-      const bTime = new Date(b.createdAt || 0).getTime();
-      return bTime - aTime;
+  const filteredAndSortedItems = useMemo(() => {
+    let next = [...items];
+
+    if (statusFilter !== "all") {
+      next = next.filter(
+        (item) => String(item.status || "").toLowerCase() === statusFilter,
+      );
+    }
+
+    next.sort((a, b) => {
+      if (sortBy === "oldest") {
+        return (
+          new Date(a.createdAt || 0).getTime() -
+          new Date(b.createdAt || 0).getTime()
+        );
+      }
+
+      if (sortBy === "title") {
+        return String(a.title || "").localeCompare(String(b.title || ""));
+      }
+
+      return (
+        new Date(b.createdAt || 0).getTime() -
+        new Date(a.createdAt || 0).getTime()
+      );
     });
-  }, [items]);
+
+    return next;
+  }, [items, statusFilter, sortBy]);
 
   const openRenameModal = (item) => {
     setRenameModal({
@@ -314,18 +343,49 @@ export default function LibraryPage() {
                 {error}
               </div>
             )}
+            <div className="mb-6 flex flex-wrap items-center justify-between gap-3">
+              <div className="flex flex-wrap gap-2">
+                {[
+                  { key: "all", label: "All recordings" },
+                  { key: "completed", label: "Completed" },
+                  { key: "pending", label: "Pending" },
+                  { key: "processing", label: "Processing" },
+                ].map((chip) => (
+                  <button
+                    key={chip.key}
+                    onClick={() => setStatusFilter(chip.key)}
+                    className={`rounded-full px-4 py-2 text-sm font-medium transition ${
+                      statusFilter === chip.key
+                        ? "bg-indigo-100 text-[#5B4CF5]"
+                        : "border border-slate-200 bg-white text-slate-600 hover:bg-slate-50"
+                    }`}
+                  >
+                    {chip.label}
+                  </button>
+                ))}
+              </div>
 
+              <select
+                value={sortBy}
+                onChange={(e) => setSortBy(e.target.value)}
+                className="h-10 rounded-xl border border-slate-200 bg-white px-3 text-sm text-slate-700 outline-none"
+              >
+                <option value="latest">Latest</option>
+                <option value="oldest">Oldest</option>
+                <option value="title">Title</option>
+              </select>
+            </div>
             {loading ? (
               <div className="rounded-3xl bg-white p-6 text-sm text-slate-500 shadow-sm">
                 Loading library...
               </div>
-            ) : sortedItems.length === 0 ? (
+            ) : filteredAndSortedItems.length === 0 ? (
               <div className="rounded-3xl bg-white p-6 text-sm text-slate-500 shadow-sm">
                 No recordings yet.
               </div>
             ) : (
               <div className="space-y-5">
-                {sortedItems.map((item) => {
+                {filteredAndSortedItems.map((item) => {
                   const busy = !!actionLoading[item.recordingId];
 
                   return (
@@ -345,12 +405,18 @@ export default function LibraryPage() {
                                 {item.title}
                               </h3>
 
-                              <span
-                                className={`inline-flex rounded-full px-3 py-1 text-xs font-bold capitalize ${getStatusBadgeClass(
-                                  item.status,
-                                )}`}
-                              >
-                                {item.status}
+                              <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-medium text-slate-600">
+                                <span
+                                  className={`h-1.5 w-1.5 rounded-full ${
+                                    item.status === "completed"
+                                      ? "bg-emerald-500"
+                                      : item.status === "failed"
+                                        ? "bg-red-500"
+                                        : "bg-amber-500"
+                                  }`}
+                                />
+                                {item.status?.charAt(0).toUpperCase() +
+                                  item.status?.slice(1)}
                               </span>
                             </div>
 
