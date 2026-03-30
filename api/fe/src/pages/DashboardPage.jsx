@@ -1,9 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import UserMenu from "../components/UserMenu";
+
 import AppSidebar from "../components/AppSidebar";
 import { Link, useNavigate } from "react-router-dom";
 import { getAuthToken } from "../utils/auth";
 import { getCurrentUser } from "aws-amplify/auth";
+
 import PageTransition from "../components/PageTransition";
 const API_BASE = "https://1hf3sfyu6g.execute-api.ap-southeast-2.amazonaws.com/";
 
@@ -21,6 +22,7 @@ export default function DashboardPage() {
   const [statusResult, setStatusResult] = useState(null);
   const [showUploadWarning, setShowUploadWarning] = useState(false);
   const navigate = useNavigate();
+  const [dragActive, setDragActive] = useState(false);
   const handleBrowseClick = () => {
     fileInputRef.current?.click();
   };
@@ -48,7 +50,33 @@ export default function DashboardPage() {
     setProcessResult(null);
     setStatusResult(null);
   };
+  const handleDragOver = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(true);
+  };
 
+  const handleDragLeave = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+  };
+
+  const handleDrop = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    setDragActive(false);
+
+    const file = e.dataTransfer?.files?.[0];
+    if (!file) return;
+
+    setSelectedFile(file);
+    setError("");
+    setStepText("");
+    setUploadInfo(null);
+    setProcessResult(null);
+    setStatusResult(null);
+  };
   const formatFileSize = (bytes) => {
     if (bytes < 1024) return `${bytes} B`;
     if (bytes < 1024 * 1024) return `${(bytes / 1024).toFixed(2)} KB`;
@@ -56,6 +84,13 @@ export default function DashboardPage() {
       return `${(bytes / (1024 * 1024)).toFixed(2)} MB`;
     }
     return `${(bytes / (1024 * 1024 * 1024)).toFixed(2)} GB`;
+  };
+  const formatStatus = (value) => {
+    const text = String(value || "")
+      .trim()
+      .toLowerCase();
+    if (!text) return "Unknown";
+    return text.charAt(0).toUpperCase() + text.slice(1);
   };
   const getAudioDuration = (file) => {
     return new Promise((resolve, reject) => {
@@ -181,7 +216,7 @@ export default function DashboardPage() {
       if (!s3UploadRes.ok) {
         const s3ErrorText = await s3UploadRes.text();
         throw new Error(
-          `Upload lên S3 thất bại: HTTP ${s3UploadRes.status} - ${s3ErrorText}`,
+          `Upload lên  thất bại: HTTP ${s3UploadRes.status} - ${s3ErrorText}`,
         );
       }
 
@@ -235,7 +270,7 @@ export default function DashboardPage() {
       saveRecordingToLocal(newItem);
       loadRecentItems();
 
-      setStepText("Hoàn tất: upload S3 và process thành công.");
+      setStepText(" upload  và process thành công.");
       window.__toast?.("Upload và process thành công", "success");
     } catch (err) {
       console.error(err);
@@ -273,7 +308,7 @@ export default function DashboardPage() {
 
   return (
     <PageTransition>
-      <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
+      <div className="min-h-screen bg-[#f7f7f2] md:grid md:grid-cols-[250px_1fr]">
         <AppSidebar />
 
         <main className="p-4 md:p-7">
@@ -287,17 +322,25 @@ export default function DashboardPage() {
                 extract insights
               </p>
             </div>
-
-            <UserMenu />
           </div>
 
           <div className="flex flex-col gap-6">
             <div className="space-y-6">
-              <div className="mb-3 inline-flex rounded-full bg-indigo-50 px-3 py-1.5 text-[10px] font-bold tracking-[0.1em] text-indigo-600">
-                ENGINE READY TO ANALYZE
+              <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1.5 text-xs font-medium text-[#5B4CF5]">
+                <span className="h-2 w-2 rounded-full bg-[#5B4CF5]" />
+                Engine ready
               </div>
 
-              <div className="rounded-[28px] border-2 border-dashed border-slate-200 bg-white p-8 shadow-sm transition-all duration-200 hover:shadow-md md:p-10">
+              <div
+                onDragOver={handleDragOver}
+                onDragLeave={handleDragLeave}
+                onDrop={handleDrop}
+                className={`rounded-[24px] border border-dashed bg-white px-6 py-8 shadow-sm transition-all duration-200 ${
+                  dragActive
+                    ? "border-[#5B4CF5] bg-indigo-50/40 shadow-md"
+                    : "border-slate-200"
+                }`}
+              >
                 <div className="mx-auto max-w-3xl text-center">
                   <input
                     ref={fileInputRef}
@@ -307,18 +350,17 @@ export default function DashboardPage() {
                     onChange={handleFileChange}
                   />
 
-                  <div className="mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-indigo-100 text-indigo-600">
-                    <i className="bi bi-cloud-arrow-up text-2xl" />
+                  <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-2xl bg-indigo-100 text-[#5B4CF5]">
+                    <i className="bi bi-cloud-arrow-up text-lg" />
                   </div>
 
-                  <h2 className="text-3xl font-bold text-slate-900 md:text-[32px]">
-                    Capture the Sound
+                  <h2 className="text-2xl font-semibold text-slate-900">
+                    Upload audio file
                   </h2>
 
-                  <p className="mx-auto mt-2 max-w-xl text-sm leading-6 text-slate-500">
-                    Chọn file audio muôn upload và phân tích.
+                  <p className="mt-2 text-sm text-slate-500">
+                    Drop audio here or choose a file to start analysis.
                   </p>
-
                   {selectedFile && (
                     <div className="mt-6 rounded-2xl border border-slate-200 bg-slate-50 p-4 text-left">
                       <div className="mb-2 text-sm font-bold text-slate-800">
@@ -422,7 +464,7 @@ export default function DashboardPage() {
                   recentItems.map((item) => (
                     <div
                       key={item.recordingId}
-                      className="rounded-2xl border border-slate-200 bg-slate-50 p-4 transition-all duration-200 hover:-translate-y-0.5 hover:shadow-sm"
+                      className="group rounded-2xl border border-slate-200 bg-slate-50 p-4 transition-all duration-200 hover:border-slate-300 hover:bg-white hover:shadow-sm"
                     >
                       <div className="flex items-start justify-between gap-4">
                         <div className="min-w-0">
@@ -434,8 +476,17 @@ export default function DashboardPage() {
                           </p>
                         </div>
 
-                        <span className="inline-flex rounded-full bg-emerald-50 px-2.5 py-1 text-[11px] font-semibold text-emerald-600">
-                          {item.status}
+                        <span className="inline-flex items-center gap-1.5 rounded-full bg-slate-100 px-2.5 py-1 text-[11px] font-medium text-slate-600">
+                          <span
+                            className={`h-1.5 w-1.5 rounded-full ${
+                              String(item.status).toLowerCase() === "completed"
+                                ? "bg-emerald-500"
+                                : String(item.status).toLowerCase() === "failed"
+                                  ? "bg-red-500"
+                                  : "bg-amber-500"
+                            }`}
+                          />
+                          {formatStatus(item.status)}
                         </span>
                       </div>
 
@@ -455,8 +506,8 @@ export default function DashboardPage() {
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4">
             <div className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
-                  <i className="bi bi-exclamation-triangle-fill text-xl" />
+                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
+                  <i className="bi bi-exclamation-triangle-fill text-2xl" />
                 </div>
 
                 <div>

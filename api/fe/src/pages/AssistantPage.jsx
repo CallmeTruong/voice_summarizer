@@ -4,7 +4,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import AppSidebar from "../components/AppSidebar";
 import PageTransition from "../components/PageTransition";
-import UserMenu from "../components/UserMenu";
+
 import { getAuthToken } from "../utils/auth";
 function formatTime(seconds) {
   if (seconds == null || Number.isNaN(seconds)) return "Now";
@@ -330,7 +330,7 @@ export default function AssistantPage() {
       <div className="min-h-screen bg-[#f6f7fb] md:grid md:grid-cols-[250px_1fr]">
         <AppSidebar />
 
-        <main className="flex h-screen min-h-0 flex-col bg-white">
+        <main className="flex h-screen min-h-0 flex-col bg-[#f7f7f2]">
           <div className="flex items-center justify-between border-b border-slate-200 px-6 py-4">
             <div className="flex items-center gap-3">
               <button
@@ -341,14 +341,11 @@ export default function AssistantPage() {
               </button>
 
               <div>
-                <h2 className="text-xl font-bold text-slate-900">
+                <h2 className="text-lg font-semibold text-slate-900">
                   AI Assistant
                 </h2>
-                <p className="text-sm text-slate-500">
-                  Ask anything about this recording
-                </p>
-                <p className="mt-1 break-all text-xs text-slate-400">
-                  Recording ID: {recordingId}
+                <p className="mt-0.5 break-all text-xs text-slate-400">
+                  {recordingId}
                 </p>
               </div>
             </div>
@@ -356,12 +353,11 @@ export default function AssistantPage() {
             <div className="flex items-center gap-3">
               <button
                 onClick={() => setShowTranscript(true)}
-                className="rounded-xl border border-slate-200 bg-slate-50 px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-100"
+                className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-indigo-200 hover:bg-indigo-50 hover:text-[#5B4CF5]"
               >
                 <i className="bi bi-card-text mr-2" />
                 View Transcript
               </button>
-              <UserMenu />
             </div>
           </div>
 
@@ -370,7 +366,7 @@ export default function AssistantPage() {
               {error}
             </div>
           )}
-          <div className="flex-1 min-h-0 overflow-y-auto px-6 py-6">
+          <div className="flex-1 min-h-0 overflow-y-auto px-6 py-6 bg-[#f7f7f2]">
             <div className="mx-auto mb-6 max-w-4xl">
               <div className="mb-3 text-[11px] font-extrabold tracking-[0.15em] text-slate-400">
                 SUGGESTIONS
@@ -432,11 +428,13 @@ export default function AssistantPage() {
                                   [msg.id]: !prev[msg.id],
                                 }))
                               }
-                              className="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-left"
+                              className="w-full rounded-[22px] border border-slate-200 bg-white px-4 py-3 text-left shadow-sm"
                             >
                               <div className="mb-2 flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-slate-400">
                                 <span className="inline-flex h-2 w-2 animate-pulse rounded-full bg-slate-400" />
-                                Thinking
+                                {msg.isThinking
+                                  ? "Thinking"
+                                  : "Thinking process"}
                               </div>
 
                               <div
@@ -461,7 +459,7 @@ export default function AssistantPage() {
                             </button>
                           )}
 
-                          <div className="rounded-2xl bg-slate-100 px-5 py-4 text-[15px] leading-7 text-slate-700">
+                          <div className="rounded-[22px] border border-slate-200 bg-white px-5 py-4 text-[15px] leading-7 text-slate-700 shadow-sm">
                             {msg.isThinking ? (
                               <div className="space-y-3">
                                 <div className="h-4 w-2/3 animate-pulse rounded bg-slate-200" />
@@ -488,8 +486,8 @@ export default function AssistantPage() {
             )}
           </div>
 
-          <div className="border-t border-slate-200 bg-white px-6 py-4">
-            <div className="mx-auto flex max-w-4xl gap-3">
+          <div className="border-t border-slate-200 bg-[#f7f7f2] px-6 py-4">
+            <div className="mx-auto flex max-w-4xl gap-3 rounded-[24px] border border-slate-300 bg-white p-3 shadow-sm">
               <input
                 type="text"
                 value={input}
@@ -498,13 +496,13 @@ export default function AssistantPage() {
                   if (e.key === "Enter") handleSend();
                 }}
                 placeholder="Ask anything about the call..."
-                className="h-14 flex-1 rounded-2xl border border-slate-200 px-5 outline-none"
+                className="h-12 flex-1 rounded-2xl border border-slate-200 bg-white px-5 outline-none transition focus:border-[#5B4CF5] focus:ring-4 focus:ring-indigo-100"
               />
 
               <button
                 onClick={handleSend}
                 disabled={loading || !input.trim()}
-                className="flex h-14 w-14 items-center justify-center rounded-2xl bg-indigo-600 text-white disabled:opacity-60"
+                className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[#5B4CF5] text-white transition hover:brightness-110 disabled:opacity-60"
               >
                 <i className="bi bi-send-fill" />
               </button>
