@@ -3,8 +3,10 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from api.routers import recordings, library, health_check
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+ENV = os.getenv("ENV_MODE")
 
 app = FastAPI(title="Voice Summarizer API")
 
@@ -14,6 +16,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
+    docs_url=None if ENV == "prod" else "/docs",
+    redoc_url=None if ENV == "prod" else "/redoc",
+    openapi_url=None if ENV == "prod" else "/openapi.json",
 )
 
 app.include_router(recordings.router)
