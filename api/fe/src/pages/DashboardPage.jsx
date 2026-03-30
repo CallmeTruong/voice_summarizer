@@ -6,7 +6,8 @@ import { getAuthToken } from "../utils/auth";
 import { getCurrentUser } from "aws-amplify/auth";
 
 import PageTransition from "../components/PageTransition";
-const API_BASE = "https://1hf3sfyu6g.execute-api.ap-southeast-2.amazonaws.com/";
+const API_BASE =
+  "http://voicesummarizer-1167047568.ap-southeast-2.elb.amazonaws.com";
 
 export default function DashboardPage() {
   const fileInputRef = useRef(null);
@@ -506,8 +507,8 @@ export default function DashboardPage() {
           <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/30 px-4">
             <div className="w-full max-w-lg rounded-3xl bg-white p-6 shadow-2xl">
               <div className="flex items-start gap-4">
-                <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-100 text-amber-600">
-                  <i className="bi bi-exclamation-triangle-fill text-2xl" />
+                <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-yellow-100 shadow-inner">
+                  <i className="bi bi-exclamation-triangle-fill text-[34px] text-yellow-500 animate-pulse" />
                 </div>
 
                 <div>
