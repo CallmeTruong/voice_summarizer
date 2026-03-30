@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
-from api.routers import recordings, library
+from api.routers import recordings, library, health_check
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -18,6 +18,7 @@ app.add_middleware(
 
 app.include_router(recordings.router)
 app.include_router(library.router)
+app.include_router(health_check.router)
 
 
 @app.exception_handler(Exception)
