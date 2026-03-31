@@ -8,7 +8,11 @@ import os
 load_dotenv()
 ENV = os.getenv("ENV_MODE")
 
-app = FastAPI(title="Voice Summarizer API")
+app = FastAPI(title="Voice Summarizer API",    
+    docs_url=None if ENV == "prod" else "/docs",
+    redoc_url=None if ENV == "prod" else "/redoc",
+    openapi_url=None if ENV == "prod" else "/openapi.json"
+    )
 
 app.add_middleware(
     CORSMiddleware,
@@ -16,9 +20,6 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
     allow_credentials=True,
-    docs_url=None if ENV == "prod" else "/docs",
-    redoc_url=None if ENV == "prod" else "/redoc",
-    openapi_url=None if ENV == "prod" else "/openapi.json",
 )
 
 app.include_router(recordings.router)
