@@ -1,7 +1,7 @@
 import { getAuthToken } from "../utils/auth";
 
 const API_BASE =
-  "http://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
+  "https://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
 
 async function request(path, options = {}) {
   const token = await getAuthToken();
