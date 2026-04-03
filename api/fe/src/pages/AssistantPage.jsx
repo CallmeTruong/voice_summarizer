@@ -35,7 +35,7 @@ function extractAssistantText(res) {
   return "No answer returned from assistant API.";
 }
 const API_BASE =
-  "https://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
+  "http://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
 function parseTextOrJson(text) {
   try {
     return JSON.parse(text);
