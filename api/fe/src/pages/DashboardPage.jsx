@@ -6,8 +6,8 @@ import { getAuthToken } from "../utils/auth";
 import { getCurrentUser } from "aws-amplify/auth";
 
 import PageTransition from "../components/PageTransition";
-const API_BASE = "my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
-
+const API_BASE =
+  "http://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
 export default function DashboardPage() {
   const fileInputRef = useRef(null);
   const [userId, setUserId] = useState("");
