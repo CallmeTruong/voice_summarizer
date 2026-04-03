@@ -34,8 +34,7 @@ function extractAssistantText(res) {
   if (typeof res?.answer === "string") return res.answer;
   return "No answer returned from assistant API.";
 }
-const API_BASE =
-  "http://voicesummarizer-1167047568.ap-southeast-2.elb.amazonaws.com";
+const API_BASE = "my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
 function parseTextOrJson(text) {
   try {
     return JSON.parse(text);
