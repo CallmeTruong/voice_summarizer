@@ -119,24 +119,6 @@ voice_summarizer/
 └── README.md
 ```
 
-### How to generate your actual folder tree
-
-If you want the README to reflect the real repository structure, run one of these commands from the project root and paste the result into the `Project Structure` section.
-
-```bash
-tree -L 3
-```
-
-If `tree` is not installed:
-
-```bash
-find . -maxdepth 3 -type d | sort
-```
-
-A good practice is to keep only the most important folders in the README. Do not dump the full tree if it is too large.
-
----
-
 ## AWS Resources
 
 ### Storage and Processing Artifacts
