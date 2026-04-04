@@ -29,24 +29,24 @@ if __name__ == "__main__":
 
     memory = mem_module.Memory(raw_id=raw_id)
 
-    question = input("Bạn: ").strip()
-    answer = mem_module.chat(memory, question)
-    print(f"\nTrợ lý: {answer}\n")
-    mem_module.save_memory(memory)
-    m = mem_module.load_memory(raw_id)
-    print(m)
+    # question = input("Bạn: ").strip()
+    # answer = mem_module.chat(memory, question)
+    # print(f"\nTrợ lý: {answer}\n")
+    # mem_module.save_memory(memory)
+    # m = mem_module.load_memory(raw_id)
+    # print(m)
 
 
-# # loop chat
-#     print("Nhập 'exit' để thoát.\n")
-#     while True:
-#         question = input("Bạn: ").strip()
-#         if not question or question.lower() == "exit":
-#             break
+# loop chat
+    print("Nhập 'exit' để thoát.\n")
+    while True:
+        question = input("Bạn: ").strip()
+        if not question or question.lower() == "exit":
+            break
 
-#         answer = mem_module.chat(memory, question)
-#         print(f"\nTrợ lý: {answer}\n")
-#         mem_module.save_memory(memory)
-#         m = mem_module.load_memory(raw_id)
-#         print(m)
+        answer = mem_module.chat(memory, question)
+        print(f"\nTrợ lý: {answer}\n")
+        mem_module.save_memory(memory)
+        m = mem_module.load_memory(raw_id)
+        print(m)
 
