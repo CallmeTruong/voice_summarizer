@@ -45,7 +45,7 @@ The system is designed around an AWS-first architecture:
   - Amazon Transcribe for speech-to-text
 - **Runtime Host**: EC2 (`t3.xlarge` in the current deployment notes)
 - **AI Layer**:
-  - Gemini 2.5 Flash for conversation and reasoning
+  - Optional LLM conversation and reasoning
   - Sentence Transformers (`paraphrase-multilingual-MiniLM-L12-v2`) for embeddings
 
 ### Processing Flow
