@@ -1,7 +1,6 @@
 import { getAuthToken } from "../utils/auth";
 
-const API_BASE_URL =
-  "http://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
+const API_BASE_URL = "https://api.voicesumarizer.site";
 
 async function request(path, options = {}) {
   const token = await getAuthToken();

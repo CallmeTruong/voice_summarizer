@@ -5,8 +5,7 @@ import AppSidebar from "../components/AppSidebar";
 
 import { getAuthToken } from "../utils/auth";
 import PageTransition from "../components/PageTransition";
-const API_BASE =
-  "http://my-app-alb-1726539170.ap-southeast-1.elb.amazonaws.com";
+const API_BASE = "https://api.voicesumarizer.site";
 function formatDuration(seconds) {
   if (seconds == null || Number.isNaN(seconds)) return "--:--";
 
