@@ -1,8 +1,6 @@
 # Voice Summarizer
 
-An AWS-based application for audio ingestion, transcription, semantic retrieval, and AI-assisted summarization.
-
-This project combines a React front end, a Python backend, background workers, and multiple AWS services to process uploaded audio, generate transcripts, build vector representations, and serve AI responses in a user-facing interface.
+Voice Summarizer is an AWS-based application designed for converting audio files into summarized transcripts. The application leverages AWS services such as Lambda, S3, DynamoDB, and Transcribe, along with modern web technologies such as React and Vite for the front-end and Python with Celery/Redis for the back-end. The core of the system involves audio processing, vectorization for semantic search, and real-time interaction with users.
 
 ---
 
