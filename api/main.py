@@ -8,24 +8,29 @@ import os
 load_dotenv()
 ENV = os.getenv("ENV_MODE")
 
-app = FastAPI(title="Voice Summarizer API",    
+app = FastAPI(
+    title="Voice Summarizer API",
     docs_url=None if ENV == "prod" else "/docs",
     redoc_url=None if ENV == "prod" else "/redoc",
     openapi_url=None if ENV == "prod" else "/openapi.json"
-    )
+)
+
+origins = [
+    "https://main.d1oksauict97kd.amplifyapp.com",
+    "http://localhost:5173",
+]
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=origins,
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-    allow_credentials=True,
 )
 
 app.include_router(recordings.router)
 app.include_router(library.router)
 app.include_router(health_check.router)
-
 
 @app.exception_handler(Exception)
 async def global_exception_handler(request: Request, exc: Exception):
