@@ -80,7 +80,7 @@ The system is designed around an AWS-first architecture:
 
 ### AI / ML
 
-- Gemini 2.5 Flash
+- Optional LLM api
 - Sentence Transformers
 
 ### Infrastructure
@@ -103,6 +103,7 @@ Below is a **recommended README structure section** based on the folders referen
 voice_summarizer/
 ├── api/
 │   ├── main.py                  # FastAPI entrypoint
+│   ├── routers/               # API routers  
 │   └── fe/                      # Frontend application
 │       └── src/
 │           ├── aws-config.js    # AWS frontend integration
@@ -421,96 +422,3 @@ npm run dev
 ```
 
 ---
-
-## Recommended Additional Sections
-
-These sections are commonly added to make a project easier to understand:
-
-### 1. Features
-Describe the product from a user perspective.
-
-### 2. Architecture Diagram
-A simple diagram helps readers understand the flow much faster.
-
-### 3. Environment Variables
-List all required variables and describe what each one does.
-
-Example:
-
-```env
-AWS_REGION=
-S3_BUCKET_NAME=
-DYNAMODB_TABLE_AUDIOFILES=
-REDIS_URL=
-GEMINI_API_KEY=
-```
-
-### 4. Local Development
-Explain how to run backend, frontend, and workers locally.
-
-### 5. API Reference
-Document core endpoints such as:
-
-- `GET /health`
-- `POST /upload`
-- `POST /chat`
-- `GET /audio/{id}`
-
-### 6. Troubleshooting
-Capture known issues such as:
-
-- package installation problems
-- Redis container issues
-- missing IAM permissions
-- service startup failures
-
-### 7. Security Notes
-Mention IAM scope, secrets handling, and network exposure.
-
-### 8. Roadmap
-Useful if the project is still evolving.
-
----
-
-## Suggested README Order
-
-A cleaner README usually follows this order:
-
-1. Project name
-2. One-paragraph summary
-3. Features
-4. Architecture / system overview
-5. Tech stack
-6. Project structure
-7. Setup and local development
-8. Deployment
-9. Environment variables
-10. API reference
-11. Troubleshooting
-12. License
-
----
-
-## Notes on Consistency
-
-To keep the README clean and professional:
-
-- Use **English only** throughout the document
-- Use one naming style consistently
-- Keep headings short and descriptive
-- Separate infrastructure, application logic, and deployment notes
-- Move long shell instructions into clearly labeled code blocks
-- Avoid mixing folder descriptions, runtime architecture, and deployment commands in the same section
-
----
-
-## License
-
-Add your license here if the repository is intended to be shared publicly.
-
-For example:
-
-```text
-MIT License
-```
-
