@@ -16,7 +16,7 @@ app = FastAPI(
 )
 
 origins = [
-    "https://main.d1oksauict97kd.amplifyapp.com",
+    "https://main.d115zxzd91is5t.amplifyapp.com",
     "http://localhost:5173",
 ]
 
