@@ -18,7 +18,7 @@ app = FastAPI(
 origins = [
     "https://main.d115zxzd91is5t.amplifyapp.com",
     "http://localhost:5173",
-    "https://voicesumarizer.site/",
+    "https://voicesumarizer.site",
 ]
 
 app.add_middleware(
