@@ -3,9 +3,16 @@ from botocore.exceptions import ClientError
 from datetime import datetime
 import os
 
-DYNAMODB_REGION = os.environ.get("DYNAMODB_REGION")
+def _required_env(name):
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"{name} must be configured.")
+    return value
+
+
+DYNAMODB_REGION = _required_env("DYNAMODB_REGION")
+USERS_TABLE = _required_env("USERS_TABLE")
 dynamodb = boto3.resource("dynamodb", region_name=DYNAMODB_REGION)
-USERS_TABLE = "Users"
 
 def lambda_handler(event, context):
     """

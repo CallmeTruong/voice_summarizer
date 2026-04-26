@@ -1,9 +1,10 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import AppSidebar from "../components/AppSidebar";
 import PageTransition from "../components/PageTransition";
+import { API_BASE_URL } from "../config";
 
 import { getAuthToken } from "../utils/auth";
 function formatTime(seconds) {
@@ -27,14 +28,7 @@ function getSpeakerBadge(name) {
   return `${parts[0][0] || ""}${parts[1][0] || ""}`.toUpperCase();
 }
 
-function extractAssistantText(res) {
-  if (typeof res === "string") return res;
-  if (typeof res?.data === "string") return res.data;
-  if (typeof res?.data?.answer === "string") return res.data.answer;
-  if (typeof res?.answer === "string") return res.answer;
-  return "No answer returned from assistant API.";
-}
-const API_BASE = "https://api.voicesumarizer.site";
+const API_BASE = API_BASE_URL;
 function parseTextOrJson(text) {
   try {
     return JSON.parse(text);
@@ -122,7 +116,7 @@ export default function AssistantPage() {
   const [showTranscript, setShowTranscript] = useState(false);
   const [expandedThinking, setExpandedThinking] = useState({});
   const chatEndRef = useRef(null);
-  const loadTranscript = async () => {
+  const loadTranscript = useCallback(async () => {
     const token = await getAuthToken();
 
     const res = await fetch(
@@ -146,9 +140,9 @@ export default function AssistantPage() {
     const data = parseTextOrJson(text);
     const items = data?.data?.items || data?.items || [];
     setTranscriptItems(Array.isArray(items) ? items : []);
-  };
+  }, [recordingId]);
 
-  const loadAssistantHistory = async () => {
+  const loadAssistantHistory = useCallback(async () => {
     const token = await getAuthToken();
 
     const res = await fetch(
@@ -196,7 +190,7 @@ export default function AssistantPage() {
       : [];
 
     setAssistantHistory(mapped);
-  };
+  }, [recordingId]);
   useEffect(() => {
     async function loadPage() {
       if (!recordingId) {
@@ -215,17 +209,10 @@ export default function AssistantPage() {
     }
 
     loadPage();
-  }, [recordingId]);
+  }, [loadAssistantHistory, loadTranscript, recordingId]);
   useEffect(() => {
     chatEndRef.current?.scrollIntoView({ behavior: "smooth" });
   }, [assistantHistory, loading]);
-  const firstHumanSpeaker = useMemo(() => {
-    const first = transcriptItems.find(
-      (msg) =>
-        msg.speaker && msg.speaker !== "You" && msg.speaker !== "Assistant",
-    );
-    return first?.speaker || null;
-  }, [transcriptItems]);
   const handleSend = async () => {
     const value = input.trim();
     if (!value || loading || !recordingId) return;
@@ -287,8 +274,6 @@ export default function AssistantPage() {
       const rawAnswer =
         firstItem?.answer || data?.data?.answer || data?.answer || "";
       const sources =
-        firstItem?.sources || data?.data?.sources || data?.sources || [];
-      const responseSources =
         firstItem?.sources || data?.data?.sources || data?.sources || [];
 
       const { thinking, answer } = splitThinkAndAnswer(rawAnswer, sources);

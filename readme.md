@@ -1,375 +1,252 @@
 # Voice Summarizer
 
-Voice Summarizer is an AWS-based application designed for converting audio files into summarized transcripts. The application leverages AWS services such as Lambda, S3, DynamoDB, and Transcribe, along with modern web technologies such as React and Vite for the front-end and Python with Celery/Redis for the back-end. The core of the system involves audio processing, vectorization for semantic search, and real-time interaction with users.
+Voice Summarizer is an audio intelligence web application for uploading recordings, generating transcripts, summarizing conversations, and asking questions about meeting content. The product is presented in the interface as **The Archivist**.
 
----
+The system uses a React frontend, a FastAPI backend, Celery workers for asynchronous processing, and AWS services for authentication, storage, transcription, and metadata management.
 
-## Overview
+## Preview
 
-The system is designed around an AWS-first architecture:
+### Dashboard
 
-- **Front end** serves the user interface and renders assistant responses in Markdown.
-- **Backend API** handles application logic and orchestration.
-- **Background workers** process heavier tasks such as audio decoding and vector generation.
-- **AWS services** handle storage, metadata, triggers, and transcription.
-- **LLM + embeddings** power reasoning and semantic search.
+![Dashboard upload audio](images/z7737075518035_faea3d4a8c11bd065aaae67053e2fdd8.jpg)
 
----
+### Library
 
-## Key Capabilities
+![Library recordings](images/z7737075521664_f1069169d5ef39226af75f6365aaeb8a.jpg)
 
-- Upload and process audio files
-- Store raw audio, transcript artifacts, and derived data in AWS
-- Run automated triggers with AWS Lambda
-- Generate transcripts with Amazon Transcribe
-- Store metadata and processing status in DynamoDB
-- Build embeddings for semantic search
-- Render AI responses in Markdown on the front end
-- Run asynchronous background jobs with Celery and Redis
+### AI Assistant
 
----
+![AI Assistant](images/z7737075518034_83e5ebb316ff5509d9ceef3e4defc67d.jpg)
+
+## What It Does
+
+- Upload audio recordings from the browser.
+- Store raw audio and generated artifacts in Amazon S3.
+- Start speech-to-text transcription with Amazon Transcribe.
+- Track recording status and metadata in Amazon DynamoDB.
+- Generate summaries and searchable transcript segments.
+- Ask questions about a specific recording through an AI assistant.
+- Render assistant responses with Markdown support.
+- Manage recordings from a dedicated library view.
 
 ## Architecture
 
-### High-level Components
+```text
+Browser
+  |
+  | React + Vite frontend
+  v
+FastAPI backend
+  |
+  | creates presigned URLs, stores metadata, starts background work
+  v
+Amazon S3  <---->  AWS Lambda  <---->  Amazon Transcribe
+  |
+  | transcript and processing artifacts
+  v
+Celery worker + Redis
+  |
+  | vectorization, summaries, assistant context
+  v
+DynamoDB + S3 Vector storage
+```
 
-- **Frontend**: React + Vite, integrated with AWS Amplify and Cognito
-- **Backend**: Python application served with FastAPI/Uvicorn
-- **Worker Layer**: Celery + Redis for background task execution
-- **Cloud Services**:
-  - Amazon S3 for audio, transcript files, and vector-related artifacts
-  - Amazon DynamoDB for metadata, memory, users, and processing status
-  - AWS Lambda for automated event-driven processing
-  - Amazon Transcribe for speech-to-text
-- **Runtime Host**: EC2 (`t3.xlarge` in the current deployment notes)
-- **AI Layer**:
-  - Optional LLM conversation and reasoning
-  - Sentence Transformers (`paraphrase-multilingual-MiniLM-L12-v2`) for embeddings
-
-### Processing Flow
-
-1. A user uploads audio.
-2. Files and processing artifacts are stored in S3.
-3. Lambda and backend services trigger the processing pipeline.
-4. Amazon Transcribe generates transcripts.
-5. Celery workers process additional tasks such as decoding and vector generation.
-6. Metadata and status are written to DynamoDB.
-7. The application uses embeddings and the LLM to support search and assistant responses.
-
----
+The frontend uploads audio directly to S3 using presigned URLs from the backend. S3 events trigger Lambda functions that start transcription jobs. Celery workers wait for transcription output, process the transcript, create vectorized segments, and update the recording status. The assistant uses the processed content to answer user questions in context.
 
 ## Tech Stack
 
-### Frontend
+| Area | Technology |
+| --- | --- |
+| Frontend | React, Vite, AWS Amplify, React Router, React Markdown |
+| Backend | Python, FastAPI, Uvicorn, Pydantic |
+| Worker | Celery, Redis |
+| Cloud | Amazon S3, DynamoDB, Lambda, Cognito, Transcribe |
+| AI | LiteLLM, Sentence Transformers |
 
-- React
-- Vite
-- AWS Amplify
-- Amazon Cognito
-- React Markdown
-
-### Backend
-
-- Python
-- FastAPI
-- Uvicorn
-- Celery
-- Redis
-
-### AI / ML
-
-- Optional LLM api
-- Sentence Transformers
-
-### Infrastructure
-
-- AWS Lambda
-- Amazon S3
-- Amazon DynamoDB
-- Amazon Transcribe
-- EC2
-- Nginx
-- Docker
-
----
-
-## Project Structure
-
-Below is a **recommended README structure section** based on the folders referenced in the current project notes. Update it to match your real repository tree.
+## Repository Structure
 
 ```text
 voice_summarizer/
-├── api/
-│   ├── main.py                  # FastAPI entrypoint
-│   ├── routers/               # API routers  
-│   └── fe/                      # Frontend application
-│       └── src/
-│           ├── aws-config.js    # AWS frontend integration
-│           ├── components/      # UI components and animations
-│           ├── data/            # Frontend data modules
-│           └── pages/
-│               └── AssistantPage.jsx
-├── core/                        # Validation and model control logic
-├── infrastructure/              # Vector storage, indexing, and infrastructure helpers
-│   └── setup_aws.py             # AWS bootstrap/setup script
-├── worker/                      # Celery worker and background jobs
-├── requirements.txt
-└── README.md
++-- api/
+|   +-- main.py
+|   +-- routers/
+|   +-- schemas/
+|   +-- lambda_function/
+|   +-- fe/
+|       +-- src/
+|           +-- components/
+|           +-- pages/
+|           +-- services/
+|           +-- aws-config.js
+|           +-- config.js
++-- core/
+|   +-- audio_process/
+|   +-- model_controller/
+|   +-- retrieval/
++-- infrastructure/
+|   +-- setup_aws.py
+|   +-- obj_indices/
+|   +-- vectors_controller/
++-- worker/
+|   +-- celery_app.py
+|   +-- tasks.py
++-- images/
++-- .env.example
++-- requirements.txt
++-- README.md
 ```
-
-## AWS Resources
-
-### Storage and Processing Artifacts
-
-The current notes mention the following core resources and data groups:
-
-- `hash_table.json`
-- `raw_audio`
-- `segments`
-- `transcrips`
-- `AudioFiles`
-- `memory_store`
-- `Users`
-- `voice_status_table`
-
-### Suggested Clarification
-
-In the actual project README, separate these into clearer categories:
-
-- **S3 objects / prefixes**: `hash_table.json`, `raw_audio`, `segments`, `transcripts`
-- **DynamoDB tables**: `AudioFiles`, `memory_store`, `Users`, `voice_status_table`
-
-Also fix naming for consistency:
-
-- Use `transcripts` instead of `transcrips`
-- Use lowercase or PascalCase consistently, depending on whether the item is an S3 prefix, a file, or a DynamoDB table
-
----
 
 ## Prerequisites
 
-Before deployment, make sure you have:
+- Python 3.11+
+- Node.js 20+
+- Docker, for running Redis locally
+- AWS CLI configured with an IAM identity that can manage S3, DynamoDB, Lambda, IAM, Cognito, and Transcribe resources
+- An LLM provider API key supported by LiteLLM
 
-- AWS account with appropriate IAM permissions
-- An EC2 instance running Amazon Linux
-- Python 3.11
-- Docker
-- Nginx
-- AWS CLI
-- Git
+## Environment Variables
 
----
-
-## Deployment on AWS
-
-### 1. Provision AWS Resources
-
-Create the required AWS resources using the infrastructure bootstrap script:
+Create a local `.env` file from `.env.example`:
 
 ```bash
-python Infrastructure/setup_aws.py
+cp .env.example .env
 ```
 
-### 2. Prepare the EC2 Instance
+On Windows PowerShell:
 
-Install system packages:
-
-```bash
-sudo dnf update -y
-sudo dnf install -y git python3.11 python3.11-pip nginx docker awscli
+```powershell
+Copy-Item .env.example .env
 ```
 
-Enable Docker and Nginx:
+Then update the values for your environment.
 
-```bash
-sudo systemctl enable docker
-sudo systemctl start docker
-sudo systemctl enable nginx
-```
+Important variables:
 
-Allow `ec2-user` to use Docker:
+| Variable | Purpose |
+| --- | --- |
+| `REGION` | AWS region used by backend and infrastructure scripts |
+| `ENV_MODE` | Runtime mode, usually `dev` or `prod` |
+| `CORS_ALLOW_ORIGINS` | Comma-separated frontend origins allowed by the API |
+| `BUCKET_NAME` | Main S3 bucket for audio and transcript artifacts |
+| `RAW_BUCKET_FOLDER` | S3 prefix for uploaded audio |
+| `TEXT_BUCKET_FOLDER` | S3 prefix for Amazon Transcribe output |
+| `SEGMENTS_PREFIX` | S3 prefix for generated segment summaries |
+| `HISTORY_TABLE` | DynamoDB table for recording status |
+| `USER_TABLE` | DynamoDB table mapping users to recordings |
+| `MEMORY_TABLE` | DynamoDB table for assistant memory |
+| `COGNITO_USERS_TABLE` | DynamoDB table populated by Cognito post-confirmation |
+| `VECTOR_BUCKET` | S3 Vector bucket name |
+| `INDEX_NAME` | Vector index name |
+| `MODEL` | LLM model name used by LiteLLM |
+| `API_KEY` | LLM provider API key |
+| `CELERY_BROKER_URL` | Redis URL used by Celery as broker |
+| `CELERY_RESULT_BACKEND` | Redis URL used by Celery as result backend |
+| `VITE_API_BASE_URL` | Public API base URL used by the frontend |
+| `VITE_COGNITO_USER_POOL_ID` | Cognito User Pool ID |
+| `VITE_COGNITO_USER_POOL_CLIENT_ID` | Cognito app client ID |
 
-```bash
-sudo usermod -aG docker ec2-user
-newgrp docker
-```
+Do not commit real secrets. Keep production values outside the repository.
 
-### 3. Clone the Repository
+## Local Development
 
-```bash
-sudo mkdir -p /opt/myapp
-sudo chown ec2-user:ec2-user /opt/myapp
-cd /opt/myapp
-git clone https://github.com/CallmeTruong/voice_summarizer.git
-cd /opt/myapp/voice_summarizer
-```
+### Backend
 
-### 4. Create the Python Environment
+Create a virtual environment and install dependencies:
 
-```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install --upgrade pip setuptools wheel uvicorn fastapi redis
+```powershell
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-If you hit a temporary directory or cache-related installation issue:
+Start Redis:
 
-```bash
-mkdir -p ~/tmp ~/pip-cache
-TMPDIR=$HOME/tmp TEMP=$HOME/tmp TMP=$HOME/tmp PIP_CACHE_DIR=$HOME/pip-cache \
-pip install -r requirements.txt --no-cache-dir
+```powershell
+docker run -d --name voice-summarizer-redis -p 127.0.0.1:6379:6379 redis:7
 ```
 
-### 5. Run Redis with Docker
+Run the API:
 
-```bash
-docker run -d \
-  --name redis \
-  --restart unless-stopped \
-  -p 127.0.0.1:6379:6379 \
-  -v redis_data:/data \
-  redis:7 redis-server --appendonly yes
+```powershell
+uvicorn api.main:app --reload --host 127.0.0.1 --port 8000
 ```
 
-Verify Redis:
+Check the API:
 
-```bash
-docker ps
-docker exec -it redis redis-cli ping
+```powershell
+curl http://127.0.0.1:8000/health
 ```
 
-Expected result:
+Start the worker:
+
+```powershell
+celery -A worker.celery_app.celery_app worker --pool=solo --loglevel=INFO
+```
+
+For Linux or EC2 deployments, `prefork` can be used instead:
+
+```bash
+celery -A worker.celery_app.celery_app worker --pool=prefork --loglevel=INFO
+```
+
+### Frontend
+
+```powershell
+cd api/fe
+npm install
+npm run dev
+```
+
+The Vite development server runs at:
 
 ```text
-PONG
+http://localhost:5173
 ```
 
-### 6. Configure Environment Variables
+Make sure this origin is included in `CORS_ALLOW_ORIGINS`.
 
-```bash
-sudo mkdir -p /etc/voice-summarizer
-sudo nano /etc/voice-summarizer/app.env
+## AWS Setup
+
+The project includes an infrastructure helper script:
+
+```powershell
+python infrastructure/setup_aws.py
 ```
 
-Copy the content from your project `.env` file into `/etc/voice-summarizer/app.env`.
+The script provisions or updates the main cloud resources:
 
-### 7. Attach IAM Role to EC2
+- S3 bucket and required prefixes.
+- S3 Vector bucket and index.
+- DynamoDB tables.
+- Lambda functions for transcription and Cognito user provisioning.
+- IAM roles and policies required by the Lambda functions.
+- S3 event notification for audio uploads.
 
-Attach an IAM role to the instance with the required AWS permissions.
+After the script completes, open the AWS Cognito Console and attach the `user-creation-db` Lambda to the User Pool **Post confirmation** trigger.
 
-The current notes mention:
+## Production Deployment
 
-- `AmazonS3FullAccess`
-- `AmazonDynamoDBFullAccess`
+A common production setup is:
 
-For production, consider replacing broad managed policies with **least-privilege custom policies**.
+- Frontend hosted on AWS Amplify or another static hosting platform.
+- FastAPI served on EC2 behind Nginx.
+- Redis running in Docker or on a managed Redis service.
+- Celery running as a systemd service.
+- AWS credentials provided through an EC2 IAM role.
 
-### 8. Create the FastAPI systemd Service
+Recommended production settings:
 
-Create `/etc/systemd/system/fastapi.service`:
+- Set `ENV_MODE=prod`.
+- Set `VITE_API_BASE_URL` to the public API domain.
+- Restrict `CORS_ALLOW_ORIGINS` to trusted frontend domains.
+- Store env values in a server-side environment file or secret manager.
+- Replace broad IAM permissions with least-privilege policies.
+- Enable HTTPS for both frontend and API domains.
 
-```ini
-[Unit]
-Description=FastAPI app
-After=network.target docker.service
-Requires=docker.service
+## Development Notes
 
-[Service]
-Type=simple
-User=ec2-user
-Group=ec2-user
-WorkingDirectory=/opt/myapp/voice_summarizer
-EnvironmentFile=/etc/voice-summarizer/app.env
-ExecStart=/opt/myapp/voice_summarizer/.venv/bin/python -m uvicorn api.main:app --host 127.0.0.1 --port 8000
-Restart=always
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-```
-
-### 9. Create the Celery systemd Service
-
-Create `/etc/systemd/system/celery.service`:
-
-```ini
-[Unit]
-Description=Celery Worker
-After=network.target docker.service
-Requires=docker.service
-
-[Service]
-Type=simple
-User=ec2-user
-Group=ec2-user
-WorkingDirectory=/opt/myapp/voice_summarizer
-EnvironmentFile=/etc/voice-summarizer/app.env
-ExecStart=/opt/myapp/voice_summarizer/.venv/bin/python -m celery -A worker.celery_app.celery_app worker --pool=prefork --loglevel=INFO
-Restart=always
-RestartSec=5
-
-[Install]
-WantedBy=multi-user.target
-```
-
-Enable and start the services:
-
-```bash
-sudo systemctl daemon-reload
-sudo systemctl enable fastapi
-sudo systemctl enable celery
-sudo systemctl start fastapi
-sudo systemctl start celery
-```
-
-### 10. Configure Nginx
-
-Create `/etc/nginx/conf.d/voice-summarizer.conf`:
-
-```nginx
-server {
-    listen 80;
-    server_name _;
-
-    client_max_body_size 50M;
-
-    location / {
-        proxy_pass http://127.0.0.1:8000;
-        proxy_http_version 1.1;
-        proxy_set_header Host $host;
-        proxy_set_header X-Real-IP $remote_addr;
-        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-        proxy_set_header X-Forwarded-Proto $scheme;
-    }
-}
-```
-
-Validate and restart Nginx:
-
-```bash
-sudo nginx -t
-sudo systemctl restart nginx
-sudo systemctl status nginx --no-pager -l
-```
-
-### 11. Health Checks
-
-```bash
-curl http://127.0.0.1
-curl http://127.0.0.1/health
-```
-
-### 12. Security Group
-
-Open **HTTP port 80** in the EC2 Security Group.
-
-Recommended:
-
-- Allow traffic only from the Application Load Balancer (ALB), if used
-
-Less restrictive option:
-
-- Allow `0.0.0.0/0` for public HTTP access
-
----
+- The frontend reads environment variables from the root `.env` file through Vite.
+- Only `VITE_*` variables are exposed to browser code.
+- Lambda environment variables are injected by `infrastructure/setup_aws.py`.
+- The assistant is scoped per recording, so chat memory and retrieval context are tied to the selected `recordingId`.

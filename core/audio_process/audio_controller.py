@@ -59,5 +59,20 @@ class raw_audio():
         return keys
 
 if __name__ == "__main__":
-    audio = raw_audio('filtered_signal.wav', 'rawvoice',"s3", 'raw_audio/filtered_signal.wav')
+    local_file = os.getenv("LOCAL_AUDIO_FILE")
+    bucket_name = os.getenv("BUCKET_NAME")
+    client_name = os.getenv("CLIENT")
+    raw_folder = os.getenv("RAW_BUCKET_FOLDER")
+
+    if not all([local_file, bucket_name, client_name, raw_folder]):
+        raise RuntimeError(
+            "LOCAL_AUDIO_FILE, BUCKET_NAME, CLIENT, and RAW_BUCKET_FOLDER must be configured."
+        )
+
+    audio = raw_audio(
+        local_file,
+        bucket_name,
+        client_name,
+        f"{raw_folder}/{local_file}",
+    )
     audio.pushing_to_bucket()

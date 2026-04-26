@@ -20,7 +20,7 @@ export default function ProtectedRoute({ children }) {
 
         if (!mounted) return;
         setStatus(hasToken ? "authenticated" : "unauthenticated");
-      } catch (err) {
+      } catch {
         if (!mounted) return;
         setStatus("unauthenticated");
       }

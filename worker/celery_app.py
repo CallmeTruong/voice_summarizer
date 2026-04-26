@@ -4,8 +4,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-REDIS_BROKER_URL = os.getenv("CELERY_BROKER_URL", "redis://127.0.0.1:6379/0")
-REDIS_BACKEND_URL = os.getenv("CELERY_RESULT_BACKEND", "redis://127.0.0.1:6379/1")
+REDIS_BROKER_URL = os.getenv("CELERY_BROKER_URL")
+REDIS_BACKEND_URL = os.getenv("CELERY_RESULT_BACKEND")
+
+if not REDIS_BROKER_URL or not REDIS_BACKEND_URL:
+    raise RuntimeError(
+        "CELERY_BROKER_URL and CELERY_RESULT_BACKEND must be configured."
+    )
 
 celery_app = Celery(
     "voice_summarizer",

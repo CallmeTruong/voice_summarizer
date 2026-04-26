@@ -12,6 +12,7 @@ load_dotenv()
 
 dynamodb     = boto3.resource("dynamodb", os.getenv("REGION"))
 status_table = dynamodb.Table(os.getenv("HISTORY_TABLE"))
+raw_bucket_folder = os.getenv("RAW_BUCKET_FOLDER")
 
 
 def _update_status(recording_id: str, status: str, progress: int, stage: str):
@@ -38,7 +39,7 @@ def process_audio_task(self, recording_id: str, transcript_id: str, file_name: s
 
         _update_status(recording_id, "processing", 10, "uploading")
 
-        print(f"[DEBUG] Checking S3 key: raw_audio/{recording_id}")
+        print(f"[DEBUG] Checking S3 key: {raw_bucket_folder}/{recording_id}")
         result = upload_status.wait_until_uploaded(recording_id)
         print(f"[DEBUG] wait_until_uploaded returned: {result}")
 

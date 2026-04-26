@@ -6,14 +6,15 @@ import { getAuthToken } from "../utils/auth";
 import { getCurrentUser } from "aws-amplify/auth";
 
 import PageTransition from "../components/PageTransition";
-const API_BASE = "https://api.voicesumarizer.site";
+import { API_BASE_URL } from "../config";
+
+const API_BASE = API_BASE_URL;
 export default function DashboardPage() {
   const fileInputRef = useRef(null);
   const [userId, setUserId] = useState("");
   const [selectedFile, setSelectedFile] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [statusLoading, setStatusLoading] = useState(false);
   const [stepText, setStepText] = useState("");
   const [recentItems, setRecentItems] = useState([]);
   const [uploadInfo, setUploadInfo] = useState(null);

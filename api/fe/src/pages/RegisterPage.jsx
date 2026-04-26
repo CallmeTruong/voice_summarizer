@@ -10,7 +10,6 @@ export default function RegisterPage() {
     password: "",
     confirmPassword: "",
   });
-  const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
 
   const updateField = (key, value) => {
@@ -19,10 +18,9 @@ export default function RegisterPage() {
 
   const handleRegister = async (e) => {
     e.preventDefault();
-    setMsg("");
 
     if (form.password !== form.confirmPassword) {
-      setMsg("Passwords do not match");
+      window.__toast("Passwords do not match", "error");
       return;
     }
 

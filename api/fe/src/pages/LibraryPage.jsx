@@ -1,11 +1,13 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useCallback, useEffect, useMemo, useState } from "react";
 import { getCurrentUser } from "aws-amplify/auth";
 import { useNavigate } from "react-router-dom";
 import AppSidebar from "../components/AppSidebar";
 
 import { getAuthToken } from "../utils/auth";
 import PageTransition from "../components/PageTransition";
-const API_BASE = "https://api.voicesumarizer.site";
+import { API_BASE_URL } from "../config";
+
+const API_BASE = API_BASE_URL;
 function formatDuration(seconds) {
   if (seconds == null || Number.isNaN(seconds)) return "--:--";
 
@@ -30,28 +32,6 @@ function formatDisplayDate(value) {
     day: "numeric",
     year: "numeric",
   });
-}
-
-function getStatusBadgeClass(status) {
-  const normalized = String(status || "").toLowerCase();
-
-  if (normalized === "completed") {
-    return "bg-sky-100 text-sky-700";
-  }
-
-  if (
-    normalized === "processing" ||
-    normalized === "queued" ||
-    normalized === "pending"
-  ) {
-    return "bg-amber-100 text-amber-700";
-  }
-
-  if (normalized === "failed") {
-    return "bg-red-100 text-red-700";
-  }
-
-  return "bg-slate-100 text-slate-600";
 }
 
 function parseTextOrJson(text) {
@@ -86,7 +66,7 @@ export default function LibraryPage() {
   });
   const [actionLoading, setActionLoading] = useState({});
 
-  const fetchTextOrJson = async (url, options = {}) => {
+  const fetchTextOrJson = useCallback(async (url, options = {}) => {
     const token = await getAuthToken();
 
     const res = await fetch(url, {
@@ -106,9 +86,9 @@ export default function LibraryPage() {
     }
 
     return parseTextOrJson(text);
-  };
+  }, []);
 
-  const syncLocalRecordings = (serverItems) => {
+  const syncLocalRecordings = useCallback((serverItems) => {
     const mapped = serverItems.map((item) => ({
       recordingId: item.id,
       title: item.title || item.fileName || "Untitled",
@@ -121,9 +101,9 @@ export default function LibraryPage() {
 
     localStorage.setItem("recordings", JSON.stringify(mapped));
     window.dispatchEvent(new Event("recordings-updated"));
-  };
+  }, []);
 
-  const fetchLibrary = async () => {
+  const fetchLibrary = useCallback(async () => {
     setLoading(true);
     setError("");
 
@@ -163,11 +143,11 @@ export default function LibraryPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [fetchTextOrJson, syncLocalRecordings]);
 
   useEffect(() => {
     fetchLibrary();
-  }, []);
+  }, [fetchLibrary]);
 
   const filteredAndSortedItems = useMemo(() => {
     let next = [...items];

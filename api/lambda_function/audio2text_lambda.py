@@ -1,4 +1,5 @@
 import json
+import os
 import urllib.parse
 import boto3
 from botocore.exceptions import ClientError
@@ -6,9 +7,17 @@ from botocore.exceptions import ClientError
 transcribe = boto3.client("transcribe")
 s3 = boto3.client("s3")
 
-OUTPUT_BUCKET = "s3voice2text-bucket"
-OUTPUT_PREFIX = "transcripts/"
-HASH_TABLE_KEY = "hash_table.json"
+def _required_env(name):
+    value = os.environ.get(name)
+    if not value:
+        raise RuntimeError(f"{name} must be configured.")
+    return value
+
+
+OUTPUT_BUCKET = _required_env("OUTPUT_BUCKET")
+OUTPUT_PREFIX = _required_env("OUTPUT_PREFIX").strip("/")
+HASH_TABLE_KEY = _required_env("HASH_TABLE_KEY")
+RAW_BUCKET_FOLDER = _required_env("RAW_BUCKET_FOLDER").strip("/")
 
 
 def _hash(key, size=16):
@@ -99,7 +108,7 @@ def lambda_handler(event, context):
 
             print(f"Processing: s3://{bucket}/{key}")
 
-            if not key.startswith("raw_audio/"):
+            if not key.startswith(f"{RAW_BUCKET_FOLDER}/"):
                 print(f"Skip non-raw-audio file: s3://{bucket}/{key}")
                 continue
 
@@ -126,7 +135,7 @@ def lambda_handler(event, context):
                 MediaFormat=media_format,
                 Media={"MediaFileUri": media_uri},
                 OutputBucketName=OUTPUT_BUCKET,
-                OutputKey=f"{OUTPUT_PREFIX}{job_name}.json"
+                OutputKey=f"{OUTPUT_PREFIX}/{job_name}.json"
             )
 
             item = {
@@ -135,7 +144,7 @@ def lambda_handler(event, context):
                 "content_type": content_type,
                 "media_format": media_format,
                 "status": resp["TranscriptionJob"]["TranscriptionJobStatus"],
-                "output_s3_uri": f"s3://{OUTPUT_BUCKET}/{OUTPUT_PREFIX}{job_name}.json"
+                "output_s3_uri": f"s3://{OUTPUT_BUCKET}/{OUTPUT_PREFIX}/{job_name}.json"
             }
             print(json.dumps(item, ensure_ascii=False))
             results.append(item)

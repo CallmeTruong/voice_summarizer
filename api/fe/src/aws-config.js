@@ -1,8 +1,13 @@
+import {
+  COGNITO_USER_POOL_CLIENT_ID,
+  COGNITO_USER_POOL_ID,
+} from "./config";
+
 const awsConfig = {
   Auth: {
     Cognito: {
-      userPoolId: "ap-southeast-1_NDVKotIe6",
-      userPoolClientId: "1l6d14a5hsg329p8nnuhegdlh4",
+      userPoolId: COGNITO_USER_POOL_ID,
+      userPoolClientId: COGNITO_USER_POOL_CLIENT_ID,
       loginWith: {
         email: true,
       },

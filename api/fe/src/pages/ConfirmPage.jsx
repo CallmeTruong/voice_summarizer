@@ -12,12 +12,10 @@ export default function ConfirmPage() {
 
   const [email, setEmail] = useState(initialEmail);
   const [code, setCode] = useState("");
-  const [msg, setMsg] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleConfirm = async (e) => {
     e.preventDefault();
-    setMsg("");
     setLoading(true);
 
     try {

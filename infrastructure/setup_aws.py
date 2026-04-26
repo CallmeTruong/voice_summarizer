@@ -7,18 +7,35 @@ from dotenv import load_dotenv
 
 load_dotenv(".env")
 
+
+def csv_env(name: str) -> list[str]:
+    return [
+        item.strip()
+        for item in os.getenv(name, "").split(",")
+        if item.strip()
+    ]
+
+
 REGION          = os.getenv("REGION")
 BUCKET_NAME     = os.getenv("BUCKET_NAME")
 VECTOR_BUCKET   = os.getenv("VECTOR_BUCKET")
 INDEX_NAME      = os.getenv("INDEX_NAME")
 HISTORY_TABLE   = os.getenv("HISTORY_TABLE")
 USER_TABLE      = os.getenv("USER_TABLE")
+COGNITO_USERS_TABLE = os.getenv("COGNITO_USERS_TABLE")
 MEMORY_TABLE    = os.getenv("MEMORY_TABLE")
 TABLE_NAME      = os.getenv("TABLE_NAME")
 SEGMENTS_PREFIX = os.getenv("SEGMENTS_PREFIX")
 RAW_BUCKET_FOLDER  = os.getenv("RAW_BUCKET_FOLDER")
 TEXT_BUCKET_FOLDER = os.getenv("TEXT_BUCKET_FOLDER")
 EMB_DIM         = int(os.getenv("EMB_DIM"))
+CORS_ALLOW_ORIGINS = csv_env("CORS_ALLOW_ORIGINS")
+
+if not CORS_ALLOW_ORIGINS:
+    raise RuntimeError("CORS_ALLOW_ORIGINS must contain at least one origin.")
+
+if not COGNITO_USERS_TABLE:
+    raise RuntimeError("COGNITO_USERS_TABLE must be configured.")
 
 s3        = boto3.client("s3",        region_name=REGION)
 dynamodb  = boto3.client("dynamodb",  region_name=REGION)
@@ -78,7 +95,7 @@ def create_s3_bucket():
                 "CORSRules": [{
                     "AllowedHeaders": ["*"],
                     "AllowedMethods": ["GET", "PUT", "POST", "DELETE", "HEAD"],
-                    "AllowedOrigins": ["*"],
+                    "AllowedOrigins": CORS_ALLOW_ORIGINS,
                     "ExposeHeaders":  ["ETag"],
                     "MaxAgeSeconds":  3000,
                 }]
@@ -150,7 +167,7 @@ def create_all_dynamodb():
     create_dynamodb_table(USER_TABLE,    pk="user_id", sk="raw_id")
     create_dynamodb_table(MEMORY_TABLE,  pk="raw_id")
     # Users table cho Cognito trigger
-    create_dynamodb_table("Users", pk="user_id")
+    create_dynamodb_table(COGNITO_USERS_TABLE, pk="user_id")
 
 
 # ─────────────────────────────────────────
@@ -297,6 +314,7 @@ def setup_audio2text_lambda():
             "OUTPUT_BUCKET":    BUCKET_NAME,
             "OUTPUT_PREFIX":    f"{TEXT_BUCKET_FOLDER}/",
             "HASH_TABLE_KEY":   f"{TABLE_NAME}.json",
+            "RAW_BUCKET_FOLDER": RAW_BUCKET_FOLDER,
         },
         timeout=60,
         memory=256,
@@ -315,7 +333,7 @@ def setup_user_creation_lambda():
                 "Sid":    "DynamoDBWrite",
                 "Effect": "Allow",
                 "Action": ["dynamodb:PutItem", "dynamodb:GetItem"],
-                "Resource": f"arn:aws:dynamodb:{REGION}:{ACCOUNT_ID}:table/Users"
+                "Resource": f"arn:aws:dynamodb:{REGION}:{ACCOUNT_ID}:table/{COGNITO_USERS_TABLE}"
             },
         ]
     }
@@ -325,7 +343,10 @@ def setup_user_creation_lambda():
         function_name="user-creation-db",
         file_path="api/lambda_function/user_creation_db.py",
         role_arn=role_arn,
-        env_vars={"DYNAMODB_REGION": REGION},
+        env_vars={
+            "DYNAMODB_REGION": REGION,
+            "USERS_TABLE": COGNITO_USERS_TABLE,
+        },
         timeout=30,
         memory=128,
     )

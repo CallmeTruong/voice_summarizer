@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import { motion as Motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -53,24 +53,24 @@ const floatingSlow = {
 export default function LandingPage() {
   return (
     <div className="relative overflow-hidden bg-[#f6f7fb] pb-10 pt-6">
-      <motion.div
+      <Motion.div
         variants={floatingSlow}
         animate="animate"
         className="pointer-events-none absolute -left-16 top-16 h-72 w-72 rounded-full bg-indigo-200/40 blur-3xl"
       />
-      <motion.div
+      <Motion.div
         variants={floating}
         animate="animate"
         className="pointer-events-none absolute right-[-40px] top-[220px] h-80 w-80 rounded-full bg-sky-200/30 blur-3xl"
       />
-      <motion.div
+      <Motion.div
         variants={floatingSlow}
         animate="animate"
         className="pointer-events-none absolute bottom-10 left-1/3 h-56 w-56 rounded-full bg-violet-200/30 blur-3xl"
       />
 
       <div className="mx-auto w-[95%] max-w-7xl">
-        <motion.header
+        <Motion.header
           initial="hidden"
           animate="show"
           custom={0}
@@ -95,17 +95,17 @@ export default function LandingPage() {
               Get Started
             </Link>
           </div>
-        </motion.header>
+        </Motion.header>
 
         <section className="mt-7 grid gap-8 rounded-3xl border border-slate-200 bg-white/85 p-6 backdrop-blur-sm md:p-10 lg:grid-cols-2">
-          <motion.div
+          <Motion.div
             initial="hidden"
             animate="show"
             variants={fadeIn}
             custom={0.1}
             className="flex flex-col justify-center"
           >
-            <motion.h1
+            <Motion.h1
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -119,9 +119,9 @@ export default function LandingPage() {
               Your
               <br />
               <span className="text-indigo-600">Conversations</span>
-            </motion.h1>
+            </Motion.h1>
 
-            <motion.p
+            <Motion.p
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -131,9 +131,9 @@ export default function LandingPage() {
               Experience the ethereal power of AI that does not just listen, but
               understands. Turn every meeting, interview, and voice note into a
               searchable, actionable database of intelligence.
-            </motion.p>
+            </Motion.p>
 
-            <motion.div
+            <Motion.div
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -158,9 +158,9 @@ export default function LandingPage() {
               >
                 Learn More
               </button>
-            </motion.div>
+            </Motion.div>
 
-            <motion.div
+            <Motion.div
               variants={fadeUp}
               initial="hidden"
               animate="show"
@@ -176,10 +176,10 @@ export default function LandingPage() {
               <div className="rounded-full border border-violet-100 bg-violet-50 px-4 py-2 text-sm font-medium text-violet-700">
                 Action Items
               </div>
-            </motion.div>
-          </motion.div>
+            </Motion.div>
+          </Motion.div>
 
-          <motion.div
+          <Motion.div
             initial="hidden"
             animate="show"
             variants={fadeUp}
@@ -187,7 +187,7 @@ export default function LandingPage() {
             className="flex items-center justify-center"
           >
             <div className="relative flex w-full max-w-[520px] gap-4">
-              <motion.div
+              <Motion.div
                 animate={{
                   y: [0, -8, 0],
                 }}
@@ -204,7 +204,7 @@ export default function LandingPage() {
                 </div>
 
                 <div className="relative h-52 overflow-hidden rounded-xl bg-[radial-gradient(circle_at_center,_rgba(255,210,120,0.8),_rgba(80,70,220,0.35)_45%,_#111827_80%)]">
-                  <motion.div
+                  <Motion.div
                     animate={{
                       opacity: [0.35, 0.7, 0.35],
                       scale: [1, 1.08, 1],
@@ -216,7 +216,7 @@ export default function LandingPage() {
                     }}
                     className="absolute left-1/2 top-1/2 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/30"
                   />
-                  <motion.div
+                  <Motion.div
                     animate={{
                       opacity: [0.2, 0.5, 0.2],
                       scale: [1, 1.18, 1],
@@ -229,7 +229,7 @@ export default function LandingPage() {
                     }}
                     className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/20"
                   />
-                  <motion.div
+                  <Motion.div
                     animate={{
                       opacity: [0.12, 0.35, 0.12],
                       scale: [1, 1.28, 1],
@@ -243,9 +243,9 @@ export default function LandingPage() {
                     className="absolute left-1/2 top-1/2 h-52 w-52 -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/10"
                   />
                 </div>
-              </motion.div>
+              </Motion.div>
 
-              <motion.div
+              <Motion.div
                 animate={{
                   y: [0, 10, 0],
                 }}
@@ -256,23 +256,23 @@ export default function LandingPage() {
                 }}
                 className="flex w-[110px] flex-col gap-4"
               >
-                <motion.div
+                <Motion.div
                   whileHover={{ y: -4, scale: 1.02 }}
                   className="flex h-40 flex-col items-center justify-center rounded-2xl bg-indigo-100 text-center text-slate-500 shadow"
                 >
                   <i className="bi bi-stars text-xl text-indigo-500" />
                   <span className="mt-2 text-sm font-medium">AI Insights</span>
-                </motion.div>
+                </Motion.div>
 
-                <motion.div
+                <Motion.div
                   whileHover={{ y: -4, scale: 1.02 }}
                   className="flex h-28 items-center justify-center rounded-2xl bg-indigo-600 text-white shadow"
                 >
                   <i className="bi bi-mic-fill text-xl" />
-                </motion.div>
-              </motion.div>
+                </Motion.div>
+              </Motion.div>
 
-              <motion.div
+              <Motion.div
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.8, duration: 0.6 }}
@@ -284,15 +284,15 @@ export default function LandingPage() {
                 <div className="mt-1 text-sm font-semibold text-slate-800">
                   3 action items detected
                 </div>
-              </motion.div>
+              </Motion.div>
             </div>
-          </motion.div>
+          </Motion.div>
         </section>
         <section
           id="features"
           className="mt-8 rounded-3xl bg-[#f9fafe] px-4 py-14 md:px-8"
         >
-          <motion.div
+          <Motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
@@ -301,9 +301,9 @@ export default function LandingPage() {
             className="text-center text-[11px] font-extrabold tracking-[0.25em] text-indigo-500"
           >
             MAIN FEATURES
-          </motion.div>
+          </Motion.div>
 
-          <motion.h2
+          <Motion.h2
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.25 }}
@@ -312,7 +312,7 @@ export default function LandingPage() {
             className="mt-3 text-center text-3xl font-black text-slate-900 md:text-4xl"
           >
             Perfect for Business
-          </motion.h2>
+          </Motion.h2>
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
             {[
@@ -335,7 +335,7 @@ export default function LandingPage() {
                 iconClass: "bg-slate-100 text-slate-600",
               },
             ].map((feature, index) => (
-              <motion.div
+              <Motion.div
                 key={feature.title}
                 initial="hidden"
                 whileInView="show"
@@ -354,12 +354,12 @@ export default function LandingPage() {
                 <p className="mt-3 text-sm leading-6 text-slate-500">
                   {feature.text}
                 </p>
-              </motion.div>
+              </Motion.div>
             ))}
           </div>
         </section>
 
-        <motion.section
+        <Motion.section
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.25 }}
@@ -368,7 +368,7 @@ export default function LandingPage() {
           className="mt-8"
         >
           <div className="relative overflow-hidden rounded-[28px] bg-indigo-600 px-6 py-14 text-center text-white shadow-xl">
-            <motion.div
+            <Motion.div
               animate={{
                 x: [0, 20, 0],
                 y: [0, -10, 0],
@@ -381,7 +381,7 @@ export default function LandingPage() {
               className="absolute -left-10 top-0 h-40 w-40 rounded-full bg-white/10 blur-2xl"
             />
 
-            <motion.div
+            <Motion.div
               animate={{
                 x: [0, -18, 0],
                 y: [0, 14, 0],
@@ -407,7 +407,7 @@ export default function LandingPage() {
               Create Your Free Account
             </Link>
           </div>
-        </motion.section>
+        </Motion.section>
       </div>
     </div>
   );

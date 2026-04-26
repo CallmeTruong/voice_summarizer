@@ -8,6 +8,14 @@ import os
 load_dotenv()
 ENV = os.getenv("ENV_MODE")
 
+
+def _csv_env(name: str) -> list[str]:
+    return [
+        item.strip()
+        for item in os.getenv(name, "").split(",")
+        if item.strip()
+    ]
+
 app = FastAPI(
     title="Voice Summarizer API",
     docs_url=None if ENV == "prod" else "/docs",
@@ -15,11 +23,10 @@ app = FastAPI(
     openapi_url=None if ENV == "prod" else "/openapi.json"
 )
 
-origins = [
-    "https://main.d115zxzd91is5t.amplifyapp.com",
-    "http://localhost:5173",
-    "https://voicesumarizer.site",
-]
+origins = _csv_env("CORS_ALLOW_ORIGINS")
+
+if not origins:
+    raise RuntimeError("CORS_ALLOW_ORIGINS must contain at least one origin.")
 
 app.add_middleware(
     CORSMiddleware,

@@ -1,6 +1,5 @@
 import { getAuthToken } from "../utils/auth";
-
-const API_BASE_URL = "https://api.voicesumarizer.site";
+import { API_BASE_URL } from "../config";
 
 async function request(path, options = {}) {
   const token = await getAuthToken();

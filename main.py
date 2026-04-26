@@ -7,7 +7,10 @@ from infrastructure.vectors_controller import check_status
 
 load_dotenv()
 
-file_name = "meeting.wav"
+file_name = os.getenv("LOCAL_AUDIO_FILE")
+
+if not file_name:
+    raise RuntimeError("LOCAL_AUDIO_FILE must be configured.")
 
 bucket = os.getenv("BUCKET_NAME")
 client = os.getenv("CLIENT")
