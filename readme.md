@@ -24,7 +24,7 @@ The system uses a React frontend, a FastAPI backend, Celery workers for asynchro
 - Store raw audio and generated artifacts in Amazon S3.
 - Start speech-to-text transcription with Amazon Transcribe.
 - Track recording status and metadata in Amazon DynamoDB.
-- Generate summaries and searchable transcript segments.
+- Generate summaries, topic segments, and vectorized retrieval data.
 - Ask questions about a specific recording through an AI assistant.
 - Render assistant responses with Markdown support.
 - Manage recordings from a dedicated library view.
@@ -42,16 +42,29 @@ FastAPI backend
   v
 Amazon S3  <---->  AWS Lambda  <---->  Amazon Transcribe
   |
-  | transcript and processing artifacts
+  | transcripts, segment summaries, and processing artifacts
   v
 Celery worker + Redis
   |
-  | vectorization, summaries, assistant context
+  | chunking, embedding, summaries, retrieval preparation
   v
 DynamoDB + S3 Vector storage
 ```
 
-The frontend uploads audio directly to S3 using presigned URLs from the backend. S3 events trigger Lambda functions that start transcription jobs. Celery workers wait for transcription output, process the transcript, create vectorized segments, and update the recording status. The assistant uses the processed content to answer user questions in context.
+The frontend uploads audio directly to S3 using presigned URLs from the backend. S3 events trigger Lambda functions that start transcription jobs. Celery workers wait for transcription output, segment the transcript, generate embeddings, write vectors to Amazon S3 Vector, store summary artifacts in S3, and update recording state in DynamoDB. The assistant then retrieves the most relevant transcript context for each question and uses it to answer in context.
+
+## Retrieval Workflow
+
+The assistant follows a retrieval-augmented generation workflow for each recording:
+
+1. A completed transcript is split into topic-aware chunks.
+2. Each chunk is embedded with the configured sentence-transformer model.
+3. Embeddings are written to the configured S3 Vector bucket and index.
+4. Segment summaries and global summaries are stored in S3.
+5. When a user asks a question, the backend selects an appropriate retrieval strategy.
+6. The assistant queries the vector index for relevant segments, combines that context with recording memory, and sends the prompt to the configured LLM.
+
+This keeps answers grounded in the uploaded recording instead of relying only on the model's general knowledge.
 
 ## Tech Stack
 
@@ -60,7 +73,7 @@ The frontend uploads audio directly to S3 using presigned URLs from the backend.
 | Frontend | React, Vite, AWS Amplify, React Router, React Markdown |
 | Backend | Python, FastAPI, Uvicorn, Pydantic |
 | Worker | Celery, Redis |
-| Cloud | Amazon S3, DynamoDB, Lambda, Cognito, Transcribe |
+| Cloud | Amazon S3, Amazon S3 Vector, DynamoDB, Lambda, Cognito, Transcribe |
 | AI | LiteLLM, Sentence Transformers |
 
 ## Repository Structure
@@ -250,3 +263,4 @@ Recommended production settings:
 - Only `VITE_*` variables are exposed to browser code.
 - Lambda environment variables are injected by `infrastructure/setup_aws.py`.
 - The assistant is scoped per recording, so chat memory and retrieval context are tied to the selected `recordingId`.
+- Transcript artifacts and summary JSON files are stored in S3, while vector search data is stored in S3 Vector.
